@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/collections-generic-4.01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-r07.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.mylyn.wikitext.core_2.2.0.N20140819-1817.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.mylyn.wikitext.mediawiki.core_2.2.0.N20140702-2138.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/eclipselink.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

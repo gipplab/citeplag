@@ -1,0 +1,48 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Citation Chunking (CC)</h3>
+</div>
+<div class="modal-body">
+	<p>
+		The Citation Chunking algorithms are a set of heuristic procedures that aim to identify matching citation 
+		patterns regardless of whether the order of matching citations differs in both documents.
+	</p>
+	<p>
+		We derived several strategies for forming citation chunks by observing behaviors of plagiarists and 
+		modeling the resulting citation patterns. The figure below illustrates the chunking strategy currently
+		implemented in the CitePlag prototype.
+	</p>
+	<div class="centered figure">
+		<p><strong>Doc A:</strong> x,<span class="badge badge-important">1, 2, 3, x, x, 4, 5,</span> x, x, x, x, x, x, <span class="badge badge-success">6, 7</span></p>
+		<p><strong>Doc B:</strong> <span class="badge badge-important">3, 2, x, 1, x, x, 4,</span> x, x, x, x, x, <span class="badge badge-success">5, 6, 7,</span> x</p>
+		<p class="figure-description">Schematic depiction of Citation Chunking</p>
+	</div>
+	<p>
+		The procedure chunks both documents. Chunking means that matching citations are grouped and 
+		considered as a chunk if n ≤ 1 or 1 > n ≤ s non-matching citations separate it from the last preceding 
+		matching citation. The number s denotes the number of citations in the chunk currently under 
+		construction.
+	</p>
+	<p>
+		Once chunks have been formed for both documents, the order of citations within a chunk is disregarded 
+		and each chunk of the first document is compared with each chunk of the second document. The chunk 
+		pairs having the highest number of matching citations are permanently related to each other and 
+		considered a match. If multiple chunks in the documents share the same number matching citations, all 
+		combinations of chunks with equally many matching citations are stored.
+	</p>
+	<p>
+		The chunking strategy aims to uncover potential cases in which text segments or logical structures have 
+		been taken over from or influenced by another text. The chunking strategy allows for sporadic non-shared 
+		citations that may have been inserted to make the resulting text more “genuine”. It can also detect 
+		potential cases of concealed shake&paste plagiarism by allowing an increasing number of non-shared 
+		citations within a chunk, given that a certain number of shared citations have already been included. 
+		Shake&paste plagiarism describes the behavior that text segments (including citations) from different 
+		sources are interwoven.
+	</p>
+	<p>
+		For more information please refer to <a href="http://gipp.com/wp-content/papercite-data/pdf/gipp11c.pdf" target="_blank">this</a> publication.
+	</p>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn btn-inverse" data-dismiss="modal">Close</a>
+</div>

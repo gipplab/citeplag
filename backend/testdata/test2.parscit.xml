@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<algorithms version="110505">
+<algorithm name="SectLabel" version="110505">
+<variant no="0" confidence="0.000000">
+<title confidence="0.944115">
+Accurate Information Extraction from Research Papers
+using Conditional Random Fields
+</title>
+<author confidence="0.988041">
+Fuchun Peng
+</author>
+<affiliation confidence="0.9968075">
+Department of Computer Science
+University of Massachusetts
+</affiliation>
+<address confidence="0.959102">
+Amherst, MA 01003
+</address>
+<email confidence="0.996779">
+fuchun@cs.umass.edu
+</email>
+<sectionHeader confidence="0.990798" genericHeader="abstract">
+Abstract
+</sectionHeader>
+<bodyText confidence="0.999464666666667">
+With the increasing use of research paper
+search engines, such as CiteSeer, for both literature search and hiring decisions, the accuracy of such systems is of paramount importance. This paper employs Conditional Random Fields (CRFs) for the task of extracting
+various common ﬁelds from the headers and
+citation of research papers. The basic theory of CRFs is becoming well-understood, but
+best-practices for applying them to real-world
+data requires additional exploration. This paper
+makes an empirical exploration of several factors, including variations on Gaussian, exponential and hyperbolic-L1 priors for improved
+regularization, and several classes of features
+and Markov order. On a standard benchmark
+data set, we achieve new state-of-the-art performance, reducing error in average F1 by 36%,
+and word error rate by 78% in comparison with
+the previous best SVM results. Accuracy compares even more favorably against HMMs.
+</bodyText>
+<sectionHeader confidence="0.998294" genericHeader="keywords">
+1 Introduction
+</sectionHeader>
+<bodyText confidence="0.9982275">
+Research paper search engines, such as CiteSeer
+(Lawrence et al., 1999) and Cora (McCallum et al.,
+2000), give researchers tremendous power and convenience in their research. They are also becoming increasingly used for recruiting and hiring decisions. Thus the
+information quality of such systems is of signiﬁcant importance. This quality critically depends on an information extraction component that extracts meta-data, such
+as title, author, institution, etc, from paper headers and
+references, because these meta-data are further used in
+many component applications such as ﬁeld-based search,
+author analysis, and citation analysis.
+</bodyText>
+<author confidence="0.980829">
+Andrew McCallum
+</author>
+<affiliation confidence="0.9965485">
+Department of Computer Science
+University of Massachusetts
+</affiliation>
+<address confidence="0.958039">
+Amherst, MA 01003
+</address>
+<email confidence="0.989975">
+mccallum@cs.umass.edu
+</email>
+<bodyText confidence="0.998939666666667">
+Previous work in information extraction from research
+papers has been based on two major machine learning techniques. The ﬁrst is hidden Markov models
+(HMM) (Seymore et al., 1999; Takasu, 2003). An
+HMM learns a generative model over input sequence
+and labeled sequence pairs. While enjoying wide historical success, standard HMM models have difﬁculty
+modeling multiple non-independent features of the observation sequence. The second technique is based
+on discriminatively-trained SVM classiﬁers (Han et al.,
+2003). These SVM classiﬁers can handle many nonindependent features. However, for this sequence labeling problem, Han et al. (2003) work in a two stages process: ﬁrst classifying each line independently to assign it
+label, then adjusting these labels based on an additional
+classiﬁer that examines larger windows of labels. Solving
+the information extraction problem in two steps looses
+the tight interaction between state transitions and observations.
+In this paper, we present results on this research paper
+meta-data extraction task using a Conditional Random
+Field (Lafferty et al., 2001), and explore several practical issues in applying CRFs to information extraction in
+general. The CRF approach draws together the advantages of both ﬁnite state HMM and discriminative SVM
+techniques by allowing use of arbitrary, dependent features and joint inference over entire sequences.
+CRFs have been previously applied to other tasks such
+as name entity extraction (McCallum and Li, 2003), table
+extraction (Pinto et al., 2003) and shallow parsing (Sha
+and Pereira, 2003). The basic theory of CRFs is now
+well-understood, but the best-practices for applying them
+to new, real-world data is still in an early-exploration
+phase. Here we explore two key practical issues: (1) regularization, with an empirical study of Gaussian (Chen
+and Rosenfeld, 2000), exponential (Goodman, 2003), and
+hyperbolic-L1 (Pinto et al., 2003) priors; (2) exploration
+of various families of features, including text, lexicons,
+</bodyText>
+<page confidence="0.997025">
+12
+</page>
+<bodyText confidence="0.995218">
+and layout, as well as proposing a method for the beneﬁcial use of zero-count features without incurring large
+memory penalties.
+We describe a large collection of experimental results
+on two traditional benchmark data sets. Dramatic improvements are obtained in comparison with previous
+SVM and HMM based results.
+counts of lamda (in log scale)
+</bodyText>
+<page confidence="0.867975">
+10
+</page>
+<figure confidence="0.857255166666667">
+8
+6
+4
+2
+2 Conditional Random Fields
+0
+</figure>
+<page confidence="0.910218">
+−6
+</page>
+<bodyText confidence="0.890225">
+Conditional random ﬁelds (CRFs) are undirected graphical models trained to maximize a conditional probability (Lafferty et al., 2001). A common special-case graph
+structure is a linear chain, which corresponds to a ﬁnite
+state machine, and is suitable for sequence labeling. A
+linear-chain CRF with parameters Λ = {λ, ...} deﬁnes
+a conditional probability for a state (or label1 ) sequence
+y = y1 ...yT given an input sequence x = x1 ...xT to be
+</bodyText>
+<figure confidence="0.896737666666667">
+−5
+−4
+−3
+−2
+−1
+lambda
+0
+1
+2
+</figure>
+<page confidence="0.641882">
+3
+</page>
+<figureCaption confidence="0.998825">
+Figure 1: Empirical distribution of λ
+</figureCaption>
+<equation confidence="0.942073315789474">
+{(xi , yi ) : i = 1, ...M } is written
+log PΛ (yi |xi )
+LΛ =
+i
+T
+Pλ (y|x) =
+1
+exp
+Zx
+T
+λk fk (yt−1 , yt , x, t) ,
+t=1
+λk fk (yt−1 , yt , x, t) − log Zxi
+=
+i
+t=1
+k
+(2)
+(1)
+</equation>
+<bodyText confidence="0.999207571428571">
+where Zx is the normalization constant that makes
+the probability of all state sequences sum to one,
+fk (yt−1 , yt , x, t) is a feature function which is often
+binary-valued, but can be real-valued, and λk is a learned
+weight associated with feature fk . The feature functions
+can measure any aspect of a state transition, yt−1 → yt ,
+and the observation sequence, x, centered at the current
+time step, t. For example, one feature function might
+have value 1 when yt−1 is the state T ITLE, yt is the state
+AUTHOR, and xt is a word appearing in a lexicon of people’s ﬁrst names. Large positive values for λk indicate a
+preference for such an event, while large negative values
+make the event unlikely.
+Given such a model as deﬁned in Equ. (1), the most
+probable labeling sequence for an input x,
+</bodyText>
+<equation confidence="0.93372">
+y∗ = arg max PΛ (y|x),
+y
+</equation>
+<bodyText confidence="0.999525714285714">
+can be efﬁciently calculated by dynamic programming
+using the Viterbi algorithm. Calculating the marginal
+probability of states or transitions at each position in
+the sequence by a dynamic-programming-based inference procedure very similar to forward-backward for hidden Markov models.
+The parameters may be estimated by maximum
+likelihood—maximizing the conditional probability of
+a set of label sequences, each given their corresponding input sequences. The log-likelihood of training set
+</bodyText>
+<page confidence="0.937769">
+1
+</page>
+<bodyText confidence="0.996826">
+We consider here only ﬁnite state models in which there is
+a one-to-one correspondence between states and labels; this is
+not, however, strictly necessary.
+</bodyText>
+<equation confidence="0.842094125">
+.
+k
+Maximizing (2) corresponds to satisfying the following equality, wherein the the empirical count of each feature matches its expected count according to the model
+PΛ (y|x).
+fk (yt−1 , yt , xi , t) =
+i
+PΛ (y|x)fk (yt−1 , yt , xi , t)
+i
+</equation>
+<bodyText confidence="0.991944375">
+CRFs share many of the advantageous properties of
+standard maximum entropy models, including their convex likelihood function, which guarantees that the learning procedure converges to the global maximum. Traditional maximum entropy learning algorithms, such as
+GIS and IIS (Pietra et al., 1995), can be used to train
+CRFs, however, it has been found that a quasi-Newton
+gradient-climber, BFGS, converges much faster (Malouf,
+2002; Sha and Pereira, 2003). We use BFGS for optimization. In our experiments, we shall focus instead on
+two other aspects of CRF deployment, namely regularization and selection of different model structure and feature
+types.
+</bodyText>
+<subsectionHeader confidence="0.985516">
+2.1 Regularization in CRFs
+</subsectionHeader>
+<bodyText confidence="0.998688">
+To avoid over-ﬁtting, log-likelihood is often penalized by
+some prior distribution over the parameters. Figure 1
+shows an empirical distribution of parameters, Λ, learned
+from an unpenalized likelihood, including only features
+with non-zero count in the training set. Three prior distributions that have shape similar to this empirical distribution are the Gaussian prior, exponential prior, and
+hyperbolic-L1 prior, each shown in Figure 2. In this paper we provide an empirical study of these three priors.
+</bodyText>
+<page confidence="0.971653">
+0.4
+</page>
+<bodyText confidence="0.965474833333333">
+set, ck = i t fk (yt−1 , yt , x, t). The discounted
+value used here is ckλk 2 where σ is a constant over
+×σ
+all features. In this way, we increase the smoothing
+on the low frequency features more so than the high
+frequency features.
+</bodyText>
+<figure confidence="0.98023895">
+Gaussian varianec=2
+Exponential a=0.5
+Hyperbolic
+0.35
+0.3
+0.25
+0.2
+0.15
+0.1
+0.05
+0
+−10
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+</figure>
+<page confidence="0.6487855">
+8
+10
+</page>
+<figureCaption confidence="0.997522">
+Figure 2: Shapes of prior distributions
+</figureCaption>
+<subsubsectionHeader confidence="0.858175">
+2.1.1 Gaussian prior
+</subsubsectionHeader>
+<bodyText confidence="0.9677765">
+With a Gaussian prior, log-likelihood (2) is penalized
+as follows:
+</bodyText>
+<equation confidence="0.929714111111111">
+log PΛ (yi |xi ) −
+LΛ =
+i
+k
+λ2
+k
+2,
+2σk
+(3)
+2
+where σk is a variance.
+Maximizing (3) corresponds to satisfying
+fk (yt−1 , yt , xi , t) −
+i
+λk
+2 =
+σk
+PΛ (y|x)fk (yt−1 , yt , xi , t)
+</equation>
+<listItem confidence="0.8166085">
+3. Bin-Based: We divide features into classes based
+on frequency. We bin features by frequency in the
+</listItem>
+<bodyText confidence="0.8329806">
+training set, and let the features in the same bin share
+the same variance. The discounted value is set to be
+λk
+ck /N ×σ2 where ck is the count of features, N is
+the bin size, and a is the ceiling function. Alternatively, the variance in each bin may be set independently by cross-validation.
+</bodyText>
+<subsubsectionHeader confidence="0.872178">
+2.1.2 Exponential prior
+</subsubsectionHeader>
+<bodyText confidence="0.936502413793103">
+Whereas the Gaussian prior penalizes according to the
+square of the weights (an L2 penalizer), the intention here
+is to create a smoothly differentiable analogue to penalizing the absolute-value of the weights (an L1 penalizer).
+L1 penalizers often result in more “sparse solutions,” in
+which many features have weight nearly at zero, and thus
+provide a kind of soft feature selection that improves generalization.
+Goodman (2003) proposes an exponential prior,
+speciﬁcally a Laplacian prior, as an alternative to Gaussian prior. Under this prior,
+i
+This adjusted constraint (as well as the adjustments imposed by the other two priors) is intuitively understandable: rather than matching exact empirical feature frequencies, the model is tuned to match discounted feature
+frequencies. Chen and Rosenfeld (2000) discuss this in
+the context of other discounting procedures common in
+language modeling. We call the term subtracted from the
+empirical counts (in this case λk /σ 2 ) a discounted value.
+The variance can be feature dependent. However for
+simplicity, constant variance is often used for all features.
+In this paper, however, we experiment with several alternate versions of Gaussian prior in which the variance is
+feature dependent.
+Although Gaussian (and other) priors are gradually
+overcome by increasing amounts of training data, perhaps not at the right rate. The three methods below all
+provide ways to alter this rate by changing the variance
+of the Gaussian prior dependent on feature counts.
+1. Threshold Cut: In language modeling, e.g, GoodTuring smoothing, only low frequency words are
+smoothed. Here we apply the same idea and only
+smooth those features whose frequencies are lower
+than a threshold (7 in our experiments, following
+standard practice in language modeling).
+2. Divide Count: Here we let the discounted value
+for a feature depend on its frequency in the training
+</bodyText>
+<equation confidence="0.99123525">
+LΛ =
+log PΛ (yi |xi ) −
+i
+αk |λk |
+(4)
+k
+where αk is a parameter in exponential distribution.
+Maximizing (4) would satisfy
+fk (yt−1 , yt , xi , t)−αk =
+i
+PΛ (y|x)fk (yt−1 , yt , xi , t)
+i
+</equation>
+<bodyText confidence="0.993968333333333">
+This corresponds to the absolute smoothing method in
+language modeling. We set the αk = α; i.e. all features
+share the same constant whose value can be determined
+</bodyText>
+<page confidence="0.910284">
+n1
+</page>
+<bodyText confidence="0.999083666666667">
+using absolute discounting α = n1 +2n2 , where n1 and n2
+are the number of features occurring once and twice (Ney
+et al., 1995).
+</bodyText>
+<subsubsectionHeader confidence="0.78856">
+2.1.3 Hyperbolic-L1 prior
+</subsubsectionHeader>
+<bodyText confidence="0.99943375">
+Another L1 penalizer is the hyperbolic-L1 prior, described in (Pinto et al., 2003). The hyperbolic distribution
+has log-linear tails. Consequently the class of hyperbolic
+distribution is an important alternative to the class of normal distributions and has been used for analyzing data
+from various scientiﬁc areas such as ﬁnance, though less
+</bodyText>
+<equation confidence="0.942115173913043">
+frequently used in natural language processing.
+Under a hyperbolic prior,
+LΛ =
+X
+i
+log PΛ (yi |xi ) −
+X
+k
+log(
+eλk + e−λk
+)
+2
+(5)
+which corresponds to satisfying
+X
+fk (yt−1 , yt , xi , t) −
+i
+X
+e|λk  |− e−|λk |
+=
+e|λk  |+ e−|λk |
+PΛ (y|x)fi (yt−1 , yt , xi , t)
+i
+</equation>
+<bodyText confidence="0.997357">
+The hyperbolic prior was also tested with CRFs in McCallum and Li (2003).
+</bodyText>
+<subsectionHeader confidence="0.999656">
+2.2 Exploration of Feature Space
+</subsectionHeader>
+<bodyText confidence="0.999738">
+Wise choice of features is always vital the performance
+of any machine learning solution. Feature induction (McCallum, 2003) has been shown to provide signiﬁcant improvements in CRFs performance. In some experiments
+described below we use feature induction. The focus in
+this section is on three other aspects of the feature space.
+</bodyText>
+<subsubsectionHeader confidence="0.88765">
+2.2.1 State transition features
+</subsubsectionHeader>
+<bodyText confidence="0.951550333333333">
+In CRFs, state transitions are also represented as features. The feature function fk (yt−1 , yt , x, t) in Equ. (1)
+is a general function over states and observations. Different state transition features can be deﬁned to form different Markov-order structures. We deﬁne four different state transitions features corresponding to different
+Markov order for different classes of features. Higher
+order features model dependencies better, but also create
+more data sparse problem and require more memory in
+training.
+</bodyText>
+<listItem confidence="0.908787142857143">
+1. First-order: Here the inputs are examined in the context of the current state only. The feature functions
+are represented as f (yt , x). There are no separate
+parameters or preferences for state transitions at all.
+2. First-order+transitions: Here we add parameters
+corresponding to state transitions. The feature functions used are f (yt , x), f (yt−1 , yt ).
+3. Second-order: Here inputs are examined in the context of the current and previous states. Feature function are represented as f (yt−1 , yt , x).
+4. Third-order: Here inputs are examined in the context of the current, two previous states. Feature function are represented as f (yt−2 , yt−1 , yt , x).
+</listItem>
+<subsubsectionHeader confidence="0.635736">
+2.2.2 Supported features and unsupported features
+</subsubsectionHeader>
+<bodyText confidence="0.99842665">
+Before the use of prior distributions over parameters
+was common in maximum entropy classiﬁers, standard
+practice was to eliminate all features with zero count
+in the training data (the so-called unsupported features).
+However, unsupported, zero-count features can be extremely useful for pushing Viterbi inference away from
+certain paths by assigning such features negative weight.
+The use of a prior allows the incorporation of unsupported features, however, doing so often greatly increases
+the number parameters and thus the memory requirements.
+Below we experiment with models containing and not
+containing unsupported features—both with and without
+regularization by priors, and we argue that non-supported
+features are useful.
+We present here incremental support, a method of introducing some useful unsupported features without exploding the number of parameters with all unsupported
+features. The model is trained for several iterations with
+supported features only. Then inference determines the
+label sequences assigned high probability by the model.
+Incorrect transitions assigned high probability by the
+model are used to selectively add to the model those unsupported features that occur on those transitions, which
+may help improve performance by being assigned negative weight in future training. If desired, several iterations
+of this procedure may be performed.
+</bodyText>
+<subsubsectionHeader confidence="0.536238">
+2.2.3 Local features, layout features and lexicon
+</subsubsectionHeader>
+<bodyText confidence="0.948233285714286">
+features
+One of the advantages of CRFs and maximum entropy
+models in general is that they easily afford the use of arbitrary features of the input. One can encode local spelling
+features, layout features such as positions of line breaks,
+as well as external lexicon features, all in one framework.
+We study all these features in our research paper extraction problem, evaluate their individual contributions, and
+give some guidelines for selecting good features.
+</bodyText>
+<sectionHeader confidence="0.951462" genericHeader="introduction">
+3 Empirical Study
+</sectionHeader>
+<subsectionHeader confidence="0.994328">
+3.1 Hidden Markov Models
+</subsectionHeader>
+<bodyText confidence="0.999084142857143">
+Here we also brieﬂy describe a HMM model we used
+in our experiments. We relax the independence assumption made in standard HMM and allow Markov dependencies among observations, e.g., P (ot |st , ot−1 ). We
+can vary Markov orders in state transition and observation transitions. In our experiments, a model with second
+order state transitions and ﬁrst order observation transitions performs the best. The state transition probabilities
+and emission probabilities are estimated using maximum
+likelihood estimation with absolute smoothing, which
+was found to be effective in previous experiments, including Seymore et al. (1999).
+</bodyText>
+<subsectionHeader confidence="0.99619">
+3.2 Datasets
+</subsectionHeader>
+<bodyText confidence="0.9992922">
+We experiment with two datasets of research paper content. One consists of the headers of research papers. The
+other consists of pre-segmented citations from the reference sections of research papers. These data sets have
+been used as standard benchmarks in several previous
+studies (Seymore et al., 1999; McCallum et al., 2000;
+Han et al., 2003).
+</bodyText>
+<subsubsectionHeader confidence="0.601341">
+3.2.1 Paper header dataset
+</subsubsectionHeader>
+<bodyText confidence="0.9995586">
+The header of a research paper is deﬁned to be all of
+the words from the beginning of the paper up to either
+the ﬁrst section of the paper, usually the introduction,
+or to the end of the ﬁrst page, whichever occurs ﬁrst.
+It contains 15 ﬁelds to be extracted: title, author, afﬁliation, address, note, email, date, abstract, introduction,
+phone, keywords, web, degree, publication number, and
+page (Seymore et al., 1999). The header dataset contains
+935 headers. Following previous research (Seymore et
+al., 1999; McCallum et al., 2000; Han et al., 2003), for
+each trial we randomly select 500 for training and the remaining 435 for testing. We refer this dataset as H.
+</bodyText>
+<subsubsectionHeader confidence="0.876227">
+3.2.2 Paper reference dataset
+</subsubsectionHeader>
+<bodyText confidence="0.9995615">
+The reference dataset was created by the Cora
+project (McCallum et al., 2000). It contains 500 references, we use 350 for training and the rest 150 for testing. References contain 13 ﬁelds: author, title, editor,
+booktitle, date, journal, volume, tech, institution, pages,
+location, publisher, note. We refer this dataset as R.
+</bodyText>
+<subsectionHeader confidence="0.9843">
+3.3 Performance Measures
+</subsectionHeader>
+<bodyText confidence="0.985896">
+To give a comprehensive evaluation, we measure performance using several different metrics. In addition to
+the previously-used word accuracy measure (which overemphasizes accuracy of the abstract ﬁeld), we use perﬁeld F1 measure (both for individual ﬁelds and averaged
+over all ﬁelds—called a “macro average” in the information retrieval literature), and whole instance accuracy for
+measuring overall performance in a way that is sensitive
+to even a single error in any part of header or citation.
+</bodyText>
+<listItem confidence="0.8707425">
+3.3.1 Measuring ﬁeld-speciﬁc performance
+1. Word Accuracy: We deﬁne A as the number of true
+</listItem>
+<bodyText confidence="0.802325333333333">
+positive words, B as the number of false negative
+words, C as the number of false positive words, D
+as the number of true negative words, and A + B +
+</bodyText>
+<construct confidence="0.575405571428571">
+C + D is the total number of words. Word accuracy
+A+D
+is calculated to be A+B+C+D
+2. F1-measure: Precision, recall and F1 measure are
+A
+A
+deﬁned as follows. Precision = A+C Recall = A+B
+</construct>
+<equation confidence="0.968723">
+F1 = 2×P recision×Recall
+P recision+Recall
+</equation>
+<listItem confidence="0.948349666666667">
+3.3.2 Measuring overall performance
+1. Overall word accuracy: Overall word accuracy
+is the percentage of words whose predicted labels
+equal their true labels. Word accuracy favors ﬁelds
+with large number of words, such as the abstract.
+2. Averaged F-measure: Averaged F-measure is computed by averaging the F1-measures over all ﬁelds.
+</listItem>
+<bodyText confidence="0.883776166666667">
+Average F-measure favors labels with small number of words, which complements word accuracy.
+Thus, we consider both word accuracy and average
+F-measure in evaluation.
+3. Whole instance accuracy: An instance here is deﬁned to be a single header or reference. Whole
+instance accuracy is the percentage of instances in
+which every word is correctly labeled.
+</bodyText>
+<subsectionHeader confidence="0.915445">
+3.4 Experimental Results
+</subsectionHeader>
+<bodyText confidence="0.968235461538462">
+We ﬁrst report the overall results by comparing CRFs
+with HMMs, and with the previously best benchmark results obtained by SVMs (Han et al., 2003). We then break
+down the results to analyze various factors individually.
+Table 1 shows the results on dataset H with the best results in bold; (intro and page ﬁelds are not shown, following past practice (Seymore et al., 1999; Han et al.,
+2003)). The results we obtained with CRFs use secondorder state transition features, layout features, as well as
+supported and unsupported features. Feature induction
+is used in experiments on dataset R; (it didn’t improve
+accuracy on H). The results we obtained with the HMM
+model use a second order model for transitions, and a ﬁrst
+order for observations. The results on SVM is obtained
+from (Han et al., 2003) by computing F1 measures from
+the precision and recall numbers they report.
+Overall acc.
+</bodyText>
+<figure confidence="0.925765214285714">
+Instance acc.
+Title
+Author
+Afﬁliation
+Address
+Note
+Email
+Date
+Abstract
+Phone
+Keyword
+Web
+Degree
+Pubnum
+Average F1
+HMM
+93.1%
+4.13%
+acc.
+F1
+98.2 82.2
+98.7 81.0
+98.3 85.1
+99.1 84.8
+97.8 81.4
+99.9 92.5
+99.8 80.6
+97.1 98.0
+99.8 53.8
+98.7 40.6
+99.9 68.6
+99.5 68.8
+99.8 64.2
+75.6
+CRF
+98.3%
+73.3%
+acc.
+F1
+99.7 97.1
+99.8 97.5
+99.7 97.0
+99.7 95.8
+98.8 91.2
+99.9 95.3
+99.9 95.0
+99.6 99.7
+99.9 97.9
+99.7 88.8
+99.9 94.1
+99.8 84.9
+99.9 86.6
+93.9
+SVM
+92.9%
+acc.
+F1
+98.9 96.5
+99.3 97.2
+98.1 93.8
+99.1 94.7
+95.5 81.6
+99.6 91.7
+99.7 90.2
+97.5 93.8
+99.9 92.4
+99.2 88.5
+99.9 92.4
+99.5 70.1
+99.9 89.2
+</figure>
+<page confidence="0.753326">
+89.7
+</page>
+<tableCaption confidence="0.8432395">
+Table 1: Extraction results for paper headers on H
+Table 2 shows the results on dataset R. SVM results
+</tableCaption>
+<bodyText confidence="0.91208">
+are not available for these datasets.
+</bodyText>
+<subsectionHeader confidence="0.787359">
+3.5 Analysis
+</subsectionHeader>
+<bodyText confidence="0.834795">
+3.5.1 Overall performance comparison
+From Table (1, 2), one can see that CRF performs
+signiﬁcantly better than HMMs, which again supports
+the previous ﬁndings (Lafferty et al., 2001; Pinto et al.,
+Overall acc.
+instance acc.
+</bodyText>
+<figure confidence="0.983770371794872">
+Author
+Booktitle
+Date
+Editor
+Institution
+Journal
+Location
+Note
+Pages
+Publisher
+Tech
+Title
+Volume
+Average F1
+HMM
+85.1%
+10%
+acc.
+F1
+96.8
+92.7
+94.4
+0.85
+99.7
+96.9
+98.8
+70.8
+98.5
+72.3
+96.6
+67.7
+99.1
+81.8
+99.2
+50.9
+98.1
+72.9
+99.4
+79.2
+98.8
+74.9
+92.2
+87.2
+98.6
+75.8
+77.6%
+CRF
+95.37%
+77.33%
+acc.
+F1
+99.9
+99.4
+97.7
+93.7
+99.8
+98.9
+99.5
+87.7
+99.7
+94.0
+99.1
+91.3
+99.3
+87.2
+99.7
+80.8
+99.9
+98.6
+99.4
+76.1
+99.4
+86.7
+98.9
+98.3
+99.9
+97.8
+91.5%
+</figure>
+<tableCaption confidence="0.991586">
+Table 2: Extraction results for paper references on R
+</tableCaption>
+<bodyText confidence="0.983794">
+2003). CRFs also perform signiﬁcantly better than SVMbased approach, yielding new state of the art performance
+on this task. CRFs increase the performance on nearly all
+the ﬁelds. The overall word accuracy is improved from
+92.9% to 98.3%, which corresponds to a 78% error rate
+reduction. However, as we can see word accuracy can be
+misleading since HMM model even has a higher word accuracy than SVM, although it performs much worse than
+SVM in most individual ﬁelds except abstract. Interestingly, HMM performs much better on abstract ﬁeld (98%
+versus 93.8% F-measure) which pushes the overall accuracy up. A better comparison can be made by comparing the ﬁeld-based F-measures. Here, in comparison to
+the SVM, CRFs improve the F1 measure from 89.7% to
+93.9%, an error reduction of 36%.
+</bodyText>
+<subsubsectionHeader confidence="0.531575">
+3.5.2 Effects of regularization
+</subsubsectionHeader>
+<bodyText confidence="0.963116461538461">
+The results of different regularization methods are
+summarized in Table (3). Setting Gaussian variance of
+features depending on feature count performs better, from
+90.5% to 91.2%, an error reduction of 7%, when only
+using supported features, and an error reduction of 9%
+when using supported and unsupported features. Results are averaged over 5 random runs, with an average variance of 0.2%. In our experiments we found the
+Gaussian prior to consistently perform better than the
+others. Surprisingly, exponential prior hurts the performance signiﬁcantly. It over penalizes the likelihood (signiﬁcantly increasing cost—deﬁned as negative penalized
+log-likelihood). We hypothesized that the problem could
+be that the choice of constant α is inappropriate. So we
+tried varying α instead of computing it using absolute
+discounting, but found the alternatives to perform worse.
+These results suggest that Gaussian prior is a safer prior
+</bodyText>
+<figure confidence="0.985887395348837">
+Method
+Gaussian inﬁnity
+Gaussian variance = 0.1
+Gaussian variance = 0.5
+Gaussian variance = 5
+Gaussian variance = 10
+Gaussian cut 7
+Gaussian divide count
+Gaussian bin 5
+Gaussian bin 10
+Gaussian bin 15
+Gaussian bin 20
+Hyperbolic
+Exponential
+support feat.
+F1
+90.5
+81.7
+87.2
+90.1
+89.9
+90.1
+90.9
+90.9
+90.2
+91.2
+90.4
+89.4
+80.5
+all features
+F1
+93.3
+91.8
+93.0
+93.7
+93.5
+93.4
+92.8
+93.6
+92.9
+93.9
+93.2
+92.8
+</figure>
+<page confidence="0.844307">
+85.6
+</page>
+<tableCaption confidence="0.998283">
+Table 3: Regularization comparisons: Gaussian inﬁnity is
+</tableCaption>
+<bodyText confidence="0.934484666666667">
+non-regularized, Gaussian variance = X sets variance to
+be X. Gaussian cut 7 refers to the Threshold Cut method,
+Gaussian divide count refers to the Divide Count method,
+Gaussian bin N refers to the Bin-Based method with bin
+size equals N, as described in 2.1.1
+to use in practice.
+3.5.3 Effects of exploring feature space
+State transition features and unsupported features.
+We summarize the comparison of different state transition models using or not using unsupported features in
+</bodyText>
+<tableCaption confidence="0.885092">
+Table 4. The ﬁrst column describes the four different state
+</tableCaption>
+<bodyText confidence="0.989035444444444">
+transition models, the second column contains the overall
+word accuracy of these models using only support features, and the third column contains the result of using
+all features, including unsupported features. Comparing
+the rows, one can see that the second-order model performs the best, but not dramatically better than the ﬁrstorder+transitions and the third order model. However, the
+ﬁrst-order model performs signiﬁcantly worse. The difference does not come from sharing the weights, but from
+ignoring the f (yt−1 , yt ). The ﬁrst order transition feature
+is vital here. We would expect the third order model to
+perform better if enough training data were available.
+Comparing the second and the third columns, we can
+see that using all features including unsupported features,
+consistently performs better than ignoring them. Our
+preliminary experiments with incremental support have
+shown performance in between that of supported-only
+and all features, and are still ongoing.
+Effects of layout features
+To analyze the contribution of different kinds of features, we divide the features into three categories: local
+features, layout features, and external lexicon resources.
+The features we used are summarized in Table 5.
+</bodyText>
+<figure confidence="0.962295583333333">
+ﬁrst-order
+ﬁrst-order+trans
+second-order
+third-order
+support
+89.0
+95.6
+96.0
+95.3
+all
+90.4
+96.5
+</figure>
+<page confidence="0.797375">
+96.1
+</page>
+<tableCaption confidence="0.8984155">
+Table 4: Effects of using unsupported features and state
+transitions on H
+</tableCaption>
+<figure confidence="0.899936770833333">
+Feature name
+Description
+Local features
+INITCAP
+Starts with a capitalized letter
+ALLCAPS
+All characters are capitalized
+CONTAINSDIGITS
+Contains at least one digit
+ALLDIGITS
+All characters are digits
+PHONEORZIP
+Phone number or zip code
+CONTAINSDOTS
+Contains at least one dot
+CONTAINSDASH
+Contains at least one ACRO
+Acronym
+LONELYINITIAL
+Initials such as A.
+SINGLECHAR
+One character only
+CAPLETTER
+One capitalized character
+PUNC
+Punctuation
+URL
+Regular expression for URL
+EMAIL
+Regular expression for e-address
+WORD
+Word itself
+Layout features
+LINE START
+At the beginning of a line
+LINE IN
+In middle of a line
+LINE END
+At the end of a line
+External lexicon features
+BIBTEX AUTHOR
+Match word in author lexicon
+BIBTEX DATE
+Words like Jan. Feb.
+NOTES
+Words like appeared, submitted
+AFFILIATION
+Words like institution, Labs, etc
+</figure>
+<tableCaption confidence="0.898625">
+Table 5: List of features used
+</tableCaption>
+<bodyText confidence="0.9934339">
+The results of using different features are shown in Table 6. The layout feature dramatically increases the performance, raising the F1 measure from 88.8% to 93.9%,
+whole sentence accuracy from 40.1% to 72.4%. Adding
+lexicon features alone improves the performance. However, when combing lexicon features and layout features, the performance is worse than using layout features
+alone.
+The lexicons were gathered from a large collection of
+BibTeX ﬁles, and upon examination had difﬁcult to remove noise, for example words in the author lexicon that
+were also afﬁliations. In previous work, we have gained
+signiﬁcant beneﬁts by dividing each lexicon into sections
+based on point-wise information gain with respect to the
+lexicon’s class.
+</bodyText>
+<subsubsectionHeader confidence="0.747084">
+3.5.4 Error analysis
+</subsubsectionHeader>
+<tableCaption confidence="0.453472">
+Table 7 is the classiﬁcation confusion matrix of header
+</tableCaption>
+<bodyText confidence="0.805927">
+extraction (ﬁeld page is not shown to save space). Most
+</bodyText>
+<figure confidence="0.918409789473684">
+local feature
++ lexicon
++ layout feature
++ layout + lexicon
+Word Acc.
+96.5%
+96.9%
+98.2%
+98.0%
+F1
+88.8%
+89.9%
+93.4%
+93.0%
+Inst. Acc.
+40.1%
+53.1%
+72.4%
+71.7%
+</figure>
+<tableCaption confidence="0.986285">
+Table 6: Results of using different features on H
+</tableCaption>
+<bodyText confidence="0.984186333333333">
+errors happen at the boundaries between two ﬁelds. Especially the transition from author to afﬁliation, from abstract to keyword. The note ﬁeld is the one most confused with others, and upon inspection is actually labeled
+inconsistently in the training data. Other errors could
+be ﬁxed with additional feature engineering—for example, including additional specialized regular expressions
+should make email accuracy nearly perfect. Increasing
+the amount of training data would also be expected to
+help signiﬁcantly, as indicated by consistent nearly perfect accuracy on the training set.
+</bodyText>
+<sectionHeader confidence="0.994794" genericHeader="conclusions">
+4 Conclusions and Future Work
+</sectionHeader>
+<bodyText confidence="0.999858461538462">
+This paper investigates the issues of regularization, feature spaces, and efﬁcient use of unsupported features in
+CRFs, with an application to information extraction from
+research papers.
+For regularization we ﬁnd that the Gaussian prior with
+variance depending on feature frequencies performs better than several other alternatives in the literature. Feature
+engineering is a key component of any machine learning solution—especially in conditionally-trained models with such freedom to choose arbitrary features—and
+plays an even more important role than regularization.
+We obtain new state-of-the-art performance in extracting standard ﬁelds from research papers, with a signiﬁcant error reduction by several metrics. We also suggest
+better evaluation metrics to facilitate future research in
+this task—especially ﬁeld-F1, rather than word accuracy.
+We have provided an empirical exploration of a few
+previously-published priors for conditionally-trained loglinear models. Fundamental advances in regularization
+for CRFs remains a signiﬁcant open research area.
+</bodyText>
+<sectionHeader confidence="0.997535" genericHeader="acknowledgments">
+5 Acknowledgments
+</sectionHeader>
+<bodyText confidence="0.9582185">
+This work was supported in part by the Center for Intelligent Information Retrieval, in part by
+SPAWARSYSCEN-SD grant number N66001-02-18903, in part by the National Science Foundation Cooperative Agreement number ATM-9732665 through a
+subcontract from the University Corporation for Atmospheric Research (UCAR) and in part by The Central Intelligence Agency, the National Security Agency
+and National Science Foundation under NSF grant #IIS0326249. Any opinions, ﬁndings and conclusions or rec-
+</bodyText>
+<figure confidence="0.989765034965034">
+title
+author
+pubnum
+date
+abstract
+afﬁl.
+address
+email
+degree
+note
+phone
+intro
+keyword
+web
+title
+3446
+0
+0
+0
+0
+19
+0
+0
+2
+52
+0
+0
+57
+0
+auth.
+0
+2653
+14
+0
+0
+13
+11
+0
+2
+2
+0
+0
+0
+0
+pubnum
+6
+0
+278
+3
+0
+0
+3
+1
+0
+9
+0
+0
+0
+0
+date
+0
+0
+2
+336
+0
+0
+0
+0
+2
+6
+0
+0
+0
+0
+abs.
+22
+7
+0
+0
+53262
+10
+0
+12
+0
+219
+0
+0
+18
+2
+aff.
+0
+13
+2
+1
+0
+3852
+35
+2
+2
+52
+0
+0
+3
+0
+addr.
+0
+5
+7
+3
+0
+27
+2170
+3
+0
+59
+0
+0
+15
+0
+email
+0
+0
+0
+0
+1
+0
+1
+461
+5
+0
+1
+0
+0
+0
+deg.
+9
+14
+0
+0
+0
+28
+0
+0
+</figure>
+<page confidence="0.603992">
+465
+</page>
+<figure confidence="0.948766736842105">
+5
+0
+0
+0
+0
+note
+25
+41
+39
+18
+0
+34
+21
+2
+95
+4520
+2
+32
+91
+</figure>
+<page confidence="0.793968">
+31
+</page>
+<figure confidence="0.995479033898305">
+ph.
+0
+0
+0
+0
+0
+0
+0
+2
+0
+4
+215
+0
+0
+0
+intro
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+625
+0
+0
+k.w.
+12
+12
+0
+0
+0
+0
+0
+15
+2
+21
+0
+0
+975
+0
+web
+0
+0
+0
+0
+0
+1
+0
+0
+0
+3
+0
+0
+0
+</figure>
+<page confidence="0.996077">
+294
+</page>
+<tableCaption confidence="0.988252">
+Table 7: Confusion matrix on H
+</tableCaption>
+<bodyText confidence="0.7813005">
+ommendations expressed in this material are the author(s)
+and do not necessarily reﬂect those of the sponsor.
+</bodyText>
+<sectionHeader confidence="0.964505" genericHeader="references">
+References
+</sectionHeader>
+<reference confidence="0.999353642857143">
+S. Chen and R. Rosenfeld. 2000. A Survey of Smoothing
+Techniques for ME Models. IEEE Trans. Speech and
+Audio Processing, 8(1), pp. 37–50. January 2000.
+J. Goodman. 2003. Exponential Priors for Maximum
+Entropy Models. MSR Technical report, 2003.
+H. Han, C. Giles, E. Manavoglu, H. Zha, Z. Zhang, and E.
+Fox. 2003. Automatic Document Meta-data Extraction using Support Vector Machines. In Proceedings
+of Joint Conference on Digital Libraries 2003.
+J. Lafferty, A. McCallum and F. Pereira. 2001. Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data. In Proceedings of International Conference on Machine Learning
+2001.
+S. Lawrence, C. L. Giles, and K. Bollacker. 1999. Digital
+Libraries and Autonomous Citation Indexing. IEEE
+Computer, 32(6): 67-71.
+R. Malouf. 2002. A Comparison of Algorithms for Maximum Entropy Parameter Estimation. In Proceedings
+of the Sixth Conference on Natural Language Learning
+(CoNLL)
+A. McCallum. 2003. Efﬁciently Inducing Features
+of Conditional Random Fields. In Proceedings of
+Conference on Uncertainty in Articiﬁcal Intelligence
+(UAI).
+A. McCallum, K. Nigam, J. Rennie, K. Seymore. 2000.
+Automating the Construction of Internet Portals with
+Machine Learning. Information Retrieval Journal,
+volume 3, pages 127-163. Kluwer. 2000.
+A. McCallum and W. Li. 2003. Early Results for Named
+Entity Recognition with Conditional Random Fields,
+Feature Induction and Web-Enhanced Lexicons. In
+Proceedings of Seventh Conference on Natural Language Learning (CoNLL).
+H. Ney, U. Essen, and R. Kneser 1995. On the Estimation of Small Probabilities by Leaving-One-Out. IEEE
+Transactions on Pattern Analysis and Machine Intelligence, 17(12):1202-1212, 1995.
+S. Pietra, V. Pietra, J. Lafferty 1995. Inducing Features Of Random Fields. IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 19, No.
+4.
+D. Pinto, A. McCallum, X. Wei and W. Croft. 2003. Table Extraction Using Conditional Random Fields. In
+Proceedins of the 26th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’03)
+K. Seymore, A. McCallum, R. Rosenfeld. 1999. Learning Hidden Markov Model Structure for Information
+Extraction. In Proceedings of AAAI’99 Workshop on
+Machine Learning for Information Extraction.
+F. Sha and F. Pereira. 2003. Shallow Parsing with Conditional Random Fields. In Proceedings of Human
+Language Technology Conference and North American Chapter of the Association for Computational Linguistics (HLT-NAACL’03)
+A. Takasu. 2003. Bibliographic Attribute Extraction from Erroneous References Based on a Statistical
+Model. In Proceedings of Joint Conference on Digital
+Libraries 2003.
+</reference>
+</variant>
+</algorithm>
+<algorithm name="ParsHed" version="110505">
+<variant no="0" confidence="0.978285">
+<title confidence="0.993712">Accurate Information Extraction from Research Papers using Conditional Random Fields</title>
+<author confidence="0.996666">Fuchun Peng</author>
+<affiliation confidence="0.9999745">Department of Computer Science University of Massachusetts</affiliation>
+<address confidence="0.999945">Amherst, MA 01003</address>
+<email confidence="0.999933">fuchun@cs.umass.edu</email>
+<abstract confidence="0.999529384615385">With the increasing use of research paper search engines, such as CiteSeer, for both literature search and hiring decisions, the accuracy of such systems is of paramount importance. This paper employs Conditional Random Fields (CRFs) for the task of extracting various common ﬁelds from the headers and citation of research papers. The basic theory of CRFs is becoming well-understood, but best-practices for applying them to real-world data requires additional exploration. This paper makes an empirical exploration of several factors, including variations on Gaussian, exponential and hyperbolic-L1 priors for improved regularization, and several classes of features and Markov order. On a standard benchmark data set, we achieve new state-of-the-art performance, reducing error in average F1 by 36%, and word error rate by 78% in comparison with the previous best SVM results. Accuracy compares even more favorably against HMMs.</abstract>
+</variant>
+</algorithm>
+<algorithm name="ParsCit" version="110505">
+<citationList>
+<citation valid="true">
+<authors>
+<author>S Chen</author>
+<author>R Rosenfeld</author>
+</authors>
+<title>A Survey of Smoothing Techniques for ME Models.</title>
+<date>2000</date>
+<journal>IEEE Trans. Speech and Audio Processing,</journal>
+<volume>8</volume>
+<issue>1</issue>
+<pages>37--50</pages>
+<contexts>
+<context position="3761" citStr="Chen and Rosenfeld, 2000" startWordPosition="538" endWordPosition="541">the best-practices for applying them to new, real-world data is still in an early-exploration phase. Here we explore two key practical issues: (1) regularization, with an empirical study of Gaussian (Chen and Rosenfeld, 2000), exponential (Goodman, 2003), and hyperbolic-L1 (Pinto et al., 2003) priors; (2) exploration of various families of features, including text, lexicons, 12 and layout, as well as proposing a method fo</context>
+<context position="9774" citStr="Chen and Rosenfeld (2000)" startWordPosition="1573" endWordPosition="1576">s the adjustments imposed by the other two priors) is intuitively understandable: rather than matching exact empirical feature frequencies, the model is tuned to match discounted feature frequencies. Chen and Rosenfeld (2000) discuss this in the context of other discounting procedures common in language modeling. We call the term subtracted from the empirical counts (in this case λk /σ 2 ) a discounted value. The variance</context>
+</contexts>
+<marker>Chen, Rosenfeld, 2000</marker>
+<rawString>S. Chen and R. Rosenfeld. 2000. A Survey of Smoothing Techniques for ME Models. IEEE Trans. Speech and Audio Processing, 8(1), pp. 37–50. January 2000.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>J Goodman</author>
+</authors>
+<title>Exponential Priors for Maximum Entropy Models.</title>
+<date>2003</date>
+<tech>MSR Technical report,</tech>
+<contexts>
+<context position="3790" citStr="Goodman, 2003" startWordPosition="543" endWordPosition="544">new, real-world data is still in an early-exploration phase. Here we explore two key practical issues: (1) regularization, with an empirical study of Gaussian (Chen and Rosenfeld, 2000), exponential (Goodman, 2003), and hyperbolic-L1 (Pinto et al., 2003) priors; (2) exploration of various families of features, including text, lexicons, 12 and layout, as well as proposing a method for the beneﬁcial use of zero-c</context>
+<context position="9394" citStr="Goodman (2003)" startWordPosition="1520" endWordPosition="1521">1 penalizer). L1 penalizers often result in more “sparse solutions,” in which many features have weight nearly at zero, and thus provide a kind of soft feature selection that improves generalization. Goodman (2003) proposes an exponential prior, speciﬁcally a Laplacian prior, as an alternative to Gaussian prior. Under this prior, i This adjusted constraint (as well as the adjustments imposed by the other two pr</context>
+</contexts>
+<marker>Goodman, 2003</marker>
+<rawString>J. Goodman. 2003. Exponential Priors for Maximum Entropy Models. MSR Technical report, 2003.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>H Han</author>
+<author>C Giles</author>
+<author>E Manavoglu</author>
+<author>H Zha</author>
+<author>Z Zhang</author>
+<author>E Fox</author>
+</authors>
+<title>Automatic Document Meta-data Extraction using Support Vector Machines.</title>
+<date>2003</date>
+<booktitle>In Proceedings of Joint Conference on Digital Libraries</booktitle>
+<contexts>
+<context position="2417" citStr="Han et al., 2003" startWordPosition="336" endWordPosition="339">istorical success, standard HMM models have difﬁculty modeling multiple non-independent features of the observation sequence. The second technique is based on discriminatively-trained SVM classiﬁers (Han et al., 2003). These SVM classiﬁers can handle many nonindependent features. However, for this sequence labeling problem, Han et al. (2003) work in a two stages process: ﬁrst classifying each line independently to</context>
+<context position="16602" citStr="Han et al., 2003" startWordPosition="2674" endWordPosition="2677">pre-segmented citations from the reference sections of research papers. These data sets have been used as standard benchmarks in several previous studies (Seymore et al., 1999; McCallum et al., 2000; Han et al., 2003). 3.2.1 Paper header dataset The header of a research paper is deﬁned to be all of the words from the beginning of the paper up to either the ﬁrst section of the paper, usually the introduction, or to</context>
+<context position="17184" citStr="Han et al., 2003" startWordPosition="2770" endWordPosition="2773">, phone, keywords, web, degree, publication number, and page (Seymore et al., 1999). The header dataset contains 935 headers. Following previous research (Seymore et al., 1999; McCallum et al., 2000; Han et al., 2003), for each trial we randomly select 500 for training and the remaining 435 for testing. We refer this dataset as H. 3.2.2 Paper reference dataset The reference dataset was created by the Cora project </context>
+<context position="19513" citStr="Han et al., 2003" startWordPosition="3145" endWordPosition="3148">ces in which every word is correctly labeled. 3.4 Experimental Results We ﬁrst report the overall results by comparing CRFs with HMMs, and with the previously best benchmark results obtained by SVMs (Han et al., 2003). We then break down the results to analyze various factors individually. Table 1 shows the results on dataset H with the best results in bold; (intro and page ﬁelds are not shown, following past prac</context>
+<context position="20166" citStr="Han et al., 2003" startWordPosition="3255" endWordPosition="3258">aset R; (it didn’t improve accuracy on H). The results we obtained with the HMM model use a second order model for transitions, and a ﬁrst order for observations. The results on SVM is obtained from (Han et al., 2003) by computing F1 measures from the precision and recall numbers they report. Overall acc. Instance acc. Title Author Afﬁliation Address Note Email Date Abstract Phone Keyword Web Degree Pubnum Average</context>
+</contexts>
+<marker>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</marker>
+<rawString>H. Han, C. Giles, E. Manavoglu, H. Zha, Z. Zhang, and E. Fox. 2003. Automatic Document Meta-data Extraction using Support Vector Machines. In Proceedings of Joint Conference on Digital Libraries 2003.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>J Lafferty</author>
+<author>A McCallum</author>
+<author>F Pereira</author>
+</authors>
+<title>Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data. In</title>
+<date>2001</date>
+<booktitle>Proceedings of International Conference on Machine Learning</booktitle>
+<contexts>
+<context position="3004" citStr="Lafferty et al., 2001" startWordPosition="423" endWordPosition="426">two steps looses the tight interaction between state transitions and observations. In this paper, we present results on this research paper meta-data extraction task using a Conditional Random Field (Lafferty et al., 2001), and explore several practical issues in applying CRFs to information extraction in general. The CRF approach draws together the advantages of both ﬁnite state HMM and discriminative SVM techniques b</context>
+<context position="4439" citStr="Lafferty et al., 2001" startWordPosition="641" endWordPosition="644">ased results. counts of lamda (in log scale) 10 8 6 4 2 2 Conditional Random Fields 0 −6 Conditional random ﬁelds (CRFs) are undirected graphical models trained to maximize a conditional probability (Lafferty et al., 2001). A common special-case graph structure is a linear chain, which corresponds to a ﬁnite state machine, and is suitable for sequence labeling. A linear-chain CRF with parameters Λ = {λ, ...} deﬁnes a c</context>
+<context position="21176" citStr="Lafferty et al., 2001" startWordPosition="3436" endWordPosition="3439">ilable for these datasets. 3.5 Analysis 3.5.1 Overall performance comparison From Table (1, 2), one can see that CRF performs signiﬁcantly better than HMMs, which again supports the previous ﬁndings (Lafferty et al., 2001; Pinto et al., Overall acc. instance acc. Author Booktitle Date Editor Institution Journal Location Note Pages Publisher Tech Title Volume Average F1 HMM 85.1% 10% acc. F1 96.8 92.7 94.4 0.85 99.7 96</context>
+</contexts>
+<marker>Lafferty, McCallum, Pereira, 2001</marker>
+<rawString>J. Lafferty, A. McCallum and F. Pereira. 2001. Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data. In Proceedings of International Conference on Machine Learning 2001.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>S Lawrence</author>
+<author>C L Giles</author>
+<author>K Bollacker</author>
+</authors>
+<title>Digital Libraries and Autonomous Citation Indexing.</title>
+<date>1999</date>
+<journal>IEEE Computer,</journal>
+<volume>32</volume>
+<issue>6</issue>
+<pages>67--71</pages>
+<contexts>
+<context position="1221" citStr="Lawrence et al., 1999" startWordPosition="170" endWordPosition="173">y 36%, and word error rate by 78% in comparison with the previous best SVM results. Accuracy compares even more favorably against HMMs. 1 Introduction Research paper search engines, such as CiteSeer (Lawrence et al., 1999) and Cora (McCallum et al., 2000), give researchers tremendous power and convenience in their research. They are also becoming increasingly used for recruiting and hiring decisions. Thus the informati</context>
+</contexts>
+<marker>Lawrence, Giles, Bollacker, 1999</marker>
+<rawString>S. Lawrence, C. L. Giles, and K. Bollacker. 1999. Digital Libraries and Autonomous Citation Indexing. IEEE Computer, 32(6): 67-71.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>R Malouf</author>
+</authors>
+<title>A Comparison of Algorithms for Maximum Entropy Parameter Estimation.</title>
+<date>2002</date>
+<booktitle>In Proceedings of the Sixth Conference on Natural Language Learning (CoNLL)</booktitle>
+<contexts>
+<context position="7129" citStr="Malouf, 2002" startWordPosition="1125" endWordPosition="1126">aximum entropy learning algorithms, such as GIS and IIS (Pietra et al., 1995), can be used to train CRFs, however, it has been found that a quasi-Newton gradient-climber, BFGS, converges much faster (Malouf, 2002; Sha and Pereira, 2003). We use BFGS for optimization. In our experiments, we shall focus instead on two other aspects of CRF deployment, namely regularization and selection of different model struct</context>
+</contexts>
+<marker>Malouf, 2002</marker>
+<rawString>R. Malouf. 2002. A Comparison of Algorithms for Maximum Entropy Parameter Estimation. In Proceedings of the Sixth Conference on Natural Language Learning (CoNLL) A. McCallum. 2003. Efﬁciently Inducing Features of Conditional Random Fields. In Proceedings of Conference on Uncertainty in Articiﬁcal Intelligence (UAI).</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>A McCallum</author>
+<author>K Nigam</author>
+<author>J Rennie</author>
+<author>K Seymore</author>
+</authors>
+<date>2000</date>
+<contexts>
+<context position="1254" citStr="McCallum et al., 2000" startWordPosition="176" endWordPosition="179"> in comparison with the previous best SVM results. Accuracy compares even more favorably against HMMs. 1 Introduction Research paper search engines, such as CiteSeer (Lawrence et al., 1999) and Cora (McCallum et al., 2000), give researchers tremendous power and convenience in their research. They are also becoming increasingly used for recruiting and hiring decisions. Thus the information quality of such systems is of </context>
+<context position="16583" citStr="McCallum et al., 2000" startWordPosition="2670" endWordPosition="2673"> The other consists of pre-segmented citations from the reference sections of research papers. These data sets have been used as standard benchmarks in several previous studies (Seymore et al., 1999; McCallum et al., 2000; Han et al., 2003). 3.2.1 Paper header dataset The header of a research paper is deﬁned to be all of the words from the beginning of the paper up to either the ﬁrst section of the paper, usually the </context>
+<context position="17165" citStr="McCallum et al., 2000" startWordPosition="2766" endWordPosition="2769"> abstract, introduction, phone, keywords, web, degree, publication number, and page (Seymore et al., 1999). The header dataset contains 935 headers. Following previous research (Seymore et al., 1999; McCallum et al., 2000; Han et al., 2003), for each trial we randomly select 500 for training and the remaining 435 for testing. We refer this dataset as H. 3.2.2 Paper reference dataset The reference dataset was created b</context>
+</contexts>
+<marker>McCallum, Nigam, Rennie, Seymore, 2000</marker>
+<rawString>A. McCallum, K. Nigam, J. Rennie, K. Seymore. 2000.</rawString>
+</citation>
+<citation valid="true">
+<title>Automating the Construction of Internet Portals with Machine Learning.</title>
+<date>2000</date>
+<journal>Information Retrieval Journal,</journal>
+<volume>3</volume>
+<pages>127--163</pages>
+<publisher>Kluwer.</publisher>
+<contexts>
+<context position="9774" citStr="(2000)" startWordPosition="1576" endWordPosition="1576">mposed by the other two priors) is intuitively understandable: rather than matching exact empirical feature frequencies, the model is tuned to match discounted feature frequencies. Chen and Rosenfeld (2000) discuss this in the context of other discounting procedures common in language modeling. We call the term subtracted from the empirical counts (in this case λk /σ 2 ) a discounted value. The variance</context>
+</contexts>
+<marker>2000</marker>
+<rawString>Automating the Construction of Internet Portals with Machine Learning. Information Retrieval Journal, volume 3, pages 127-163. Kluwer. 2000.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>A McCallum</author>
+<author>W Li</author>
+</authors>
+<title>Early Results for Named Entity Recognition with Conditional Random Fields, Feature Induction and Web-Enhanced Lexicons.</title>
+<date>2003</date>
+<booktitle>In Proceedings of Seventh Conference on Natural Language Learning (CoNLL).</booktitle>
+<contexts>
+<context position="3398" citStr="McCallum and Li, 2003" startWordPosition="482" endWordPosition="485">criminative SVM techniques by allowing use of arbitrary, dependent features and joint inference over entire sequences. CRFs have been previously applied to other tasks such as name entity extraction (McCallum and Li, 2003), table extraction (Pinto et al., 2003) and shallow parsing (Sha and Pereira, 2003). The basic theory of CRFs is now well-understood, but the best-practices for applying them to new, real-world data i</context>
+<context position="12050" citStr="McCallum and Li (2003)" startWordPosition="1980" endWordPosition="1983"> + e−λk ) 2 (5) which corresponds to satisfying X fk (yt−1 , yt , xi , t) − i X e|λk | − e−|λk | = e|λk | + e−|λk | PΛ (y|x)fi (yt−1 , yt , xi , t) i The hyperbolic prior was also tested with CRFs in McCallum and Li (2003). 2.2 Exploration of Feature Space Wise choice of features is always vital the performance of any machine learning solution. Feature induction (McCallum, 2003) has been shown to provide signiﬁcant imp</context>
+</contexts>
+<marker>McCallum, Li, 2003</marker>
+<rawString>A. McCallum and W. Li. 2003. Early Results for Named Entity Recognition with Conditional Random Fields, Feature Induction and Web-Enhanced Lexicons. In Proceedings of Seventh Conference on Natural Language Learning (CoNLL).</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>H Ney</author>
+<author>U Essen</author>
+<author>R Kneser</author>
+</authors>
+<title>On the Estimation of Small Probabilities by Leaving-One-Out.</title>
+<date>1995</date>
+<journal>IEEE Transactions on Pattern Analysis and Machine Intelligence,</journal>
+<pages>17--12</pages>
+<contexts>
+<context position="11343" citStr="Ney et al., 1995" startWordPosition="1847" endWordPosition="1850">et the αk = α; i.e. all features share the same constant whose value can be determined n1 using absolute discounting α = n1 +2n2 , where n1 and n2 are the number of features occurring once and twice (Ney et al., 1995). 2.1.3 Hyperbolic-L1 prior Another L1 penalizer is the hyperbolic-L1 prior, described in (Pinto et al., 2003). The hyperbolic distribution has log-linear tails. Consequently the class of hyperbolic d</context>
+</contexts>
+<marker>Ney, Essen, Kneser, 1995</marker>
+<rawString>H. Ney, U. Essen, and R. Kneser 1995. On the Estimation of Small Probabilities by Leaving-One-Out. IEEE Transactions on Pattern Analysis and Machine Intelligence, 17(12):1202-1212, 1995.</rawString>
+</citation>
+<citation valid="false">
+<authors>
+<author>S Pietra</author>
+<author>V Pietra</author>
+<author>J Lafferty</author>
+</authors>
+<title>Inducing Features Of Random Fields.</title>
+<date>1995</date>
+<journal>IEEE Transactions on Pattern Analysis and Machine Intelligence,</journal>
+<booktitle>In Proceedins of the 26th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’03)</booktitle>
+<volume>19</volume>
+<contexts>
+<context position="6994" citStr="Pietra et al., 1995" startWordPosition="1102" endWordPosition="1105">models, including their convex likelihood function, which guarantees that the learning procedure converges to the global maximum. Traditional maximum entropy learning algorithms, such as GIS and IIS (Pietra et al., 1995), can be used to train CRFs, however, it has been found that a quasi-Newton gradient-climber, BFGS, converges much faster (Malouf, 2002; Sha and Pereira, 2003). We use BFGS for optimization. In our ex</context>
+</contexts>
+<marker>Pietra, Pietra, Lafferty, 1995</marker>
+<rawString>S. Pietra, V. Pietra, J. Lafferty 1995. Inducing Features Of Random Fields. IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 19, No. 4. D. Pinto, A. McCallum, X. Wei and W. Croft. 2003. Table Extraction Using Conditional Random Fields. In Proceedins of the 26th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’03) K. Seymore, A. McCallum, R. Rosenfeld. 1999. Learning Hidden Markov Model Structure for Information Extraction. In Proceedings of AAAI’99 Workshop on Machine Learning for Information Extraction.</rawString>
+</citation>
+<citation valid="true">
+<authors>
+<author>F Sha</author>
+<author>F Pereira</author>
+</authors>
+<title>Shallow Parsing with Conditional Random Fields.</title>
+<date>2003</date>
+<booktitle>In Proceedings of Human Language Technology Conference and North American Chapter of the Association for Computational Linguistics (HLT-NAACL’03) A. Takasu.</booktitle>
+<contexts>
+<context position="3481" citStr="Sha and Pereira, 2003" startWordPosition="495" endWordPosition="498">nt inference over entire sequences. CRFs have been previously applied to other tasks such as name entity extraction (McCallum and Li, 2003), table extraction (Pinto et al., 2003) and shallow parsing (Sha and Pereira, 2003). The basic theory of CRFs is now well-understood, but the best-practices for applying them to new, real-world data is still in an early-exploration phase. Here we explore two key practical issues: (1</context>
+<context position="7153" citStr="Sha and Pereira, 2003" startWordPosition="1127" endWordPosition="1130"> learning algorithms, such as GIS and IIS (Pietra et al., 1995), can be used to train CRFs, however, it has been found that a quasi-Newton gradient-climber, BFGS, converges much faster (Malouf, 2002; Sha and Pereira, 2003). We use BFGS for optimization. In our experiments, we shall focus instead on two other aspects of CRF deployment, namely regularization and selection of different model structure and feature types. 2</context>
+</contexts>
+<marker>Sha, Pereira, 2003</marker>
+<rawString>F. Sha and F. Pereira. 2003. Shallow Parsing with Conditional Random Fields. In Proceedings of Human Language Technology Conference and North American Chapter of the Association for Computational Linguistics (HLT-NAACL’03) A. Takasu. 2003. Bibliographic Attribute Extraction from Erroneous References Based on a Statistical Model. In Proceedings of Joint Conference on Digital Libraries 2003.</rawString>
+</citation>
+</citationList>
+</algorithm>
+</algorithms>

@@ -1,0 +1,54 @@
+--- D:/Documents/SciPlore/SVN/Projects/CbPD Prototype/encoplot.orig.c	Di  2. Okt 19:35:09 2012
++++ D:/Documents/SciPlore/SVN/Projects/CbPD Prototype/encoplot.c	Di  2. Okt 18:19:51 2012
+@@ -1,14 +1,13 @@
+ #include "stdio.h"
+ #include "stdlib.h"
+ #include "string.h"
+-#include <sys/types.h>
+-#include <sys/stat.h>
+-#include <unistd.h>
++//#include <unistd.h>
++#include <inttypes.h>
+ 
+ 
+ //emulated 128 bit type
+ #if 1
+-#define halfword_t __uint64_t
++#define halfword_t uint64_t
+ typedef struct
+ {
+   halfword_t lo,hi;
+@@ -18,7 +17,7 @@
+ #define readat(x,y,z) {x.lo=halfread(y,z);x.hi=halfread(y,z+sizeof(halfword_t));}
+ #else
+ //typedef __uint128_t word_t;
+- typedef __uint64_t word_t;
++ typedef uint64_t word_t;
+ //typedef __uint32_t word_t;
+ #define halfword_t word_t
+ #define readat(x,y,z) x=halfread(y,z)
+@@ -219,7 +218,15 @@
+ 			{
+ 				cc_all++;
+ 				if(firstrun || !eqword(s1,ls)){cc++;ls=s1;firstrun=0;}
+-				//printf("%d %d %d %lx\n",ix1[i1],ix2[i2],cc,s1);
++				printf("%d\t%d\t%d\t%016llx%016llx\t",ix1[i1],ix2[i2],cc,s1.hi,s1.lo);
++#define replacen(y) (((y) == 0x09 || (y) == 0x0a || (y) == 0x0d) ? 0x20 : (y))
++				for (int x=0; x<8; x++) {
++					printf("%c", replacen((s1.lo>>x*8)&0xff));
++				}
++				for (int x=0; x<8; x++) {
++					printf("%c", replacen((s1.hi>>x*8)&0xff));
++				}
++				printf("\n");
+ 				i1++;
+ 				if(i1<l1)readat(s1,file1,ix1[i1]);
+ 				i2++;
+@@ -240,6 +247,7 @@
+ 	retval->shared_ngrams=cc_all;
+ 	retval->shared_distinct_ngrams=cc;
+ 	if(verbose)printf("ending KV task %d\n",taskid);
++	printf("\n\n");
+ }
+ 
+ 

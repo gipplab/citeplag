@@ -1,0 +1,1325 @@
+{
+   "Author" : [ "Hui Han½ C Lee Giles½", "Zhenyue Zhang", "Edward A Fox" ],
+   "Citation" : [ {
+      "character" : 16689,
+      "count" : 0,
+      "db_citation_id" : 1571189340,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 18294794,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 19639,
+      "count" : 0,
+      "db_citation_id" : 1520313868,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 18294794,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 24177,
+      "count" : 0,
+      "db_citation_id" : 1154747470,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 18294794,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 16220,
+      "count" : 0,
+      "db_citation_id" : 1075012607,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 974462147,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 17854,
+      "count" : 0,
+      "db_citation_id" : 956963638,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 974462147,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 7761,
+      "count" : 0,
+      "db_citation_id" : 1121092123,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1548677509,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 21938,
+      "count" : 0,
+      "db_citation_id" : 173792483,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1548677509,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2840,
+      "count" : 0,
+      "db_citation_id" : 548153399,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 241140584,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 4870,
+      "count" : 0,
+      "db_citation_id" : 135979786,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1644193226,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 14905,
+      "count" : 0,
+      "db_citation_id" : 1999560602,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1691835726,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2221,
+      "count" : 0,
+      "db_citation_id" : 2073940941,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1924642865,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 16220,
+      "count" : 0,
+      "db_citation_id" : 700185914,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1549035785,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5073,
+      "count" : 0,
+      "db_citation_id" : 1294759097,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 16815322,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5390,
+      "count" : 0,
+      "db_citation_id" : 1391861616,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1403671073,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15003,
+      "count" : 0,
+      "db_citation_id" : 1712801417,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1736411500,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5073,
+      "count" : 0,
+      "db_citation_id" : 1859121421,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1177668139,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2840,
+      "count" : 0,
+      "db_citation_id" : 7216623,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 675153853,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2518,
+      "count" : 0,
+      "db_citation_id" : 195403399,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1604331533,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5292,
+      "count" : 0,
+      "db_citation_id" : 1960569037,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 538552785,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15416,
+      "count" : 0,
+      "db_citation_id" : 294725291,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 538552785,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 4774,
+      "count" : 0,
+      "db_citation_id" : 491017651,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 175165217,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 1736,
+      "count" : 0,
+      "db_citation_id" : 720889297,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 953230731,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 3135,
+      "count" : 0,
+      "db_citation_id" : 2031161952,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 953230731,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2221,
+      "count" : 0,
+      "db_citation_id" : 521174457,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 367762189,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2965,
+      "count" : 0,
+      "db_citation_id" : 1940786333,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 367762189,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 1933,
+      "count" : 0,
+      "db_citation_id" : 1429531285,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 983938455,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 4740,
+      "count" : 0,
+      "db_citation_id" : 2134919638,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1081726899,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15508,
+      "count" : 0,
+      "db_citation_id" : 1437581790,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1081726899,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 7870,
+      "count" : 0,
+      "db_citation_id" : 1277701973,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1191177501,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5292,
+      "count" : 0,
+      "db_citation_id" : 840284640,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1020702068,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 1933,
+      "count" : 0,
+      "db_citation_id" : 858408564,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 125396553,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 1755,
+      "count" : 0,
+      "db_citation_id" : 789550193,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1615610923,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 23717,
+      "count" : 0,
+      "db_citation_id" : 263829165,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 385762894,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15894,
+      "count" : 0,
+      "db_citation_id" : 828519305,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 714045763,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5742,
+      "count" : 0,
+      "db_citation_id" : 1889602896,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 574452823,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 7830,
+      "count" : 0,
+      "db_citation_id" : 1567701236,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 574452823,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 8984,
+      "count" : 0,
+      "db_citation_id" : 877808409,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 574452823,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15416,
+      "count" : 0,
+      "db_citation_id" : 113275173,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 574452823,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 25106,
+      "count" : 0,
+      "db_citation_id" : 1145321369,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 574452823,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 5292,
+      "count" : 0,
+      "db_citation_id" : 1051339804,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1910015880,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 15416,
+      "count" : 0,
+      "db_citation_id" : 372638312,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1910015880,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 14905,
+      "count" : 0,
+      "db_citation_id" : 2058430626,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 1720077099,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 2575,
+      "count" : 0,
+      "db_citation_id" : 365433642,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 804992706,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 17081,
+      "count" : 0,
+      "db_citation_id" : 1914880160,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 247355015,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   }, {
+      "character" : 47295,
+      "count" : 0,
+      "db_citation_id" : 3426694,
+      "document_id" : 843730481,
+      "paragraph" : 0,
+      "db_reference_id" : 561946600,
+      "section" : 0,
+      "sentence" : 0,
+      "word" : 0
+   } ],
+   "data" : [ {
+      "type" : "abstract",
+      "value" : "Automatic metadata generation provides scalability and usability for digital libraries and their collections. Machine learning methods offer robust and adaptable automatic metadata extraction. We describe a Support Vector Machine classiﬁcation-based method for metadata extraction from header part of research papers and show that it outperforms other machine learning methods on the same task. The method ﬁrst classiﬁes each line of the header into one or more of 15 classes. An iterative convergence procedure is then used to improve the line classiﬁcation by using the predicted class labels of its neighbor lines in the previous round. Further metadata extraction is done by seeking the best chunk boundaries of each line. We found that discovery and use of the structural patterns of the data and domain based word clustering can improve the metadata extraction performance. An appropriate feature normalization also greatly improves the classiﬁcation performance. Our metadata extraction method was originally designed to improve the metadata extraction quality of the digital libraries Citeseer[17] and EbizSearch[24]. We believe it can be generalized to other digital libraries."
+   }, {
+      "type" : "title",
+      "value" : "Automatic Document Metadata Extraction using Support Vector Machines"
+   } ],
+   "inReferences" : [ ],
+   "reference" : [ {
+      "dbReferenceId" : 18294794,
+      "docReferenceId" : "[1]",
+      "refDocument" : {
+         "Author" : [ ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "The world factbook. http://www.cia.gov/cia/publications/ factbook/,"
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 974462147,
+      "docReferenceId" : "[2]",
+      "refDocument" : {
+         "Author" : [ "L D Baker", "A K McCallum" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Distributional clustering of words for text classiﬁcation."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. of SIGIR-98,"
+         }, {
+            "type" : "pages",
+            "value" : "96--103"
+         }, {
+            "type" : "editor",
+            "value" : "In W. B. Croft, A. Moffat, C. J. van Rijsbergen, R. Wilkinson, and J. Zobel, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1548677509,
+      "docReferenceId" : "[3]",
+      "refDocument" : {
+         "Author" : [ "T Berners-Lee", "J Hendler", "O Lassila" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "The semantic web. Scientiﬁc American,"
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 241140584,
+      "docReferenceId" : "[4]",
+      "refDocument" : {
+         "Author" : [ "T Brody" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Celestial - Open Archives Gateway."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1644193226,
+      "docReferenceId" : "[5]",
+      "refDocument" : {
+         "Author" : [ "H L Chieu", "H T Ng" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "A maximum entropy approach to information extraction from semi-structured and free text."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 18th National Conference on Artiﬁcial Intelligence (AAAI"
+         }, {
+            "type" : "pages",
+            "value" : "786--791"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1691835726,
+      "docReferenceId" : "[6]",
+      "refDocument" : {
+         "Author" : [ "N Cristianini", "J Shawe-Taylor" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "An Introduction to Support Vector Machines and Other Kernel-Based Learning Methods."
+         }, {
+            "type" : "date",
+            "value" : "2000"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1924642865,
+      "docReferenceId" : "[7]",
+      "refDocument" : {
+         "Author" : [ "H de Sompel", "C Lagoze" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "The Open Archives Initiative Protocol for Metadata Harvesting,"
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1549035785,
+      "docReferenceId" : "[8]",
+      "refDocument" : {
+         "Author" : [ "I Dhillon", "S Manella", "R Kumar" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "A divisive information theoretic feature clustering for text classiﬁcation."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "Machine Learning Research (JMLR),"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 16815322,
+      "docReferenceId" : "[9]",
+      "refDocument" : {
+         "Author" : [ "S Dumais", "J Platt", "D Heckerman", "M Sahami" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Inductive learning algorithms and representations for text categorization."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 7th International Conference on Information and Knowledge Management,"
+         }, {
+            "type" : "pages",
+            "value" : "148--155"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1403671073,
+      "docReferenceId" : "[10]",
+      "refDocument" : {
+         "Author" : [ "B Marthi H Pasula" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "B.Milch, S.Russell, and I.Shpitser. Identity uncertainty and citation matching."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. of the Advances in Neural Information Processing Systems (NIPS),"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1736411500,
+      "docReferenceId" : "[11]",
+      "refDocument" : {
+         "Author" : [ "T Joachims" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Making large-scale Support Vector Machine learning practical."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         }, {
+            "type" : "booktitle",
+            "value" : "Advances in Kernel Methods: Support Vector Machines."
+         }, {
+            "type" : "editor",
+            "value" : "In B. Scholkopf, C. Burges, and A. Smola, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1177668139,
+      "docReferenceId" : "[12]",
+      "refDocument" : {
+         "Author" : [ "T Joachims" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "A statistical learning model of text classiﬁcation with Support Vector Machines."
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. SIGIR-01, 24th ACM International Conference on Research and Development in Information Retrieval,"
+         }, {
+            "type" : "pages",
+            "value" : "128--136"
+         }, {
+            "type" : "editor",
+            "value" : "In W. B. Croft, D. J. Harper, D. H. Kraft, and J. Zobel, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 675153853,
+      "docReferenceId" : "[13]",
+      "refDocument" : {
+         "Author" : [ "A Kent" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "OAI Harvester Crawling Status."
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1604331533,
+      "docReferenceId" : "[14]",
+      "refDocument" : {
+         "Author" : [ "D Knox" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "CITIDEL: Making resources available."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 7th Annual Conference on Innovation and Technology in Computer Science Education,"
+         }, {
+            "type" : "pages",
+            "value" : "225--225"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 538552785,
+      "docReferenceId" : "[15]",
+      "refDocument" : {
+         "Author" : [ "T Kudoh", "Y Matsumoto" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Use of support vector learning for chunk identiﬁcation."
+         }, {
+            "type" : "date",
+            "value" : "2000"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. of CoNLL-2000 and LLL2000,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 175165217,
+      "docReferenceId" : "[16]",
+      "refDocument" : {
+         "Author" : [ "J Lafferty", "A McCallum", "F Pereira" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Conditional random ﬁelds: Probabilistic models for segmenting and labeling sequence data. In"
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. 18th International Conf. on Machine Learning,"
+         }, {
+            "type" : "pages",
+            "value" : "282--289"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 953230731,
+      "docReferenceId" : "[17]",
+      "refDocument" : {
+         "Author" : [ "S Lawrence", "C L Giles", "K Bollacker" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Digital Libraries and Autonomous Citation Indexing."
+         }, {
+            "type" : "date",
+            "value" : "1999"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03) 0-7695-1939-3/03 $17.00 ©"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 367762189,
+      "docReferenceId" : "[18]",
+      "refDocument" : {
+         "Author" : [ "X Liu" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Federating heterogeneous Digital Libraries by metadata harvesting."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 983938455,
+      "docReferenceId" : "[19]",
+      "refDocument" : {
+         "Author" : [ "C C Marshall" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Making metadata: A study of metadata creation for a mixed physical-digital collection."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 3rd ACM International Conference on Digital Libraries,"
+         }, {
+            "type" : "pages",
+            "value" : "162--171"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1081726899,
+      "docReferenceId" : "[20]",
+      "refDocument" : {
+         "Author" : [ "A McCallum", "D Freitag", "F Pereira" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Maximum entropy Markov models for information extraction and segmentation."
+         }, {
+            "type" : "date",
+            "value" : "2000"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 17th International Conf. on Machine Learning,"
+         }, {
+            "type" : "pages",
+            "value" : "591--598"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1191177501,
+      "docReferenceId" : "[21]",
+      "refDocument" : {
+         "Author" : [ "A McCallum", "K Nigam", "J Rennie", "K Seymore" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Automating the construction of internet portals with machine learning."
+         }, {
+            "type" : "date",
+            "value" : "2000"
+         }, {
+            "type" : "pages",
+            "value" : "127--163"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1020702068,
+      "docReferenceId" : "[22]",
+      "refDocument" : {
+         "Author" : [ "P Mcnamee", "J Mayﬁeld" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Entity extraction without language-speciﬁc resources."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. of CoNLL-2002,"
+         }, {
+            "type" : "pages",
+            "value" : "183--186"
+         }, {
+            "type" : "editor",
+            "value" : "In D. Roth and A. van den Bosch, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 125396553,
+      "docReferenceId" : "[23]",
+      "refDocument" : {
+         "Author" : [ "A Paepcke", "C-C K Chang", "H Garcia-Molina", "T Winograd" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Interoperability for Digital Libraries worldwide."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1615610923,
+      "docReferenceId" : "[24]",
+      "refDocument" : {
+         "Author" : [ "Y Petinot", "P B Teregowda", "H Han", "C L Giles", "S Lawrence", "A Rangaswamy", "N Pal" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "eBizSearch: An OAI-Compliant Digital Library for eBusiness."
+         }, {
+            "type" : "date",
+            "value" : "2003"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. the ACM/IEEE Joint Conference on Digital Libraries (JCDL),"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 385762894,
+      "docReferenceId" : "[25]",
+      "refDocument" : {
+         "Author" : [ "L Ramshaw", "M Marcus" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Text chunking using transformation-based learning."
+         }, {
+            "type" : "date",
+            "value" : "1995"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. 3rd Workshop on Very Large Corpora,"
+         }, {
+            "type" : "pages",
+            "value" : "82--94"
+         }, {
+            "type" : "editor",
+            "value" : "In D. Yarovsky and K. Church, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 714045763,
+      "docReferenceId" : "[26]",
+      "refDocument" : {
+         "Author" : [ "P Schone", "D Jurafsky" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Knowlege-free induction of inﬂectional morphologies."
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. of the North American chapter of the Association for Computational Linguistics (NAACL-2001),"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 574452823,
+      "docReferenceId" : "[27]",
+      "refDocument" : {
+         "Author" : [ "K Seymore", "A McCallum", "R Rosenfeld" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Learning hidden Markov model structure for information extraction."
+         }, {
+            "type" : "date",
+            "value" : "1999"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. of AAAI 99 Workshop on Machine Learning for Information Extraction,"
+         }, {
+            "type" : "pages",
+            "value" : "37--42"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 2118697790,
+      "docReferenceId" : "[28]",
+      "refDocument" : {
+         "Author" : [ "N Slonim", "N Tishby" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "The power of word clusters for text classiﬁcation."
+         }, {
+            "type" : "date",
+            "value" : "2001"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 23rd European Colloquium on Information Retrieval Research (ECIR),"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1910015880,
+      "docReferenceId" : "[29]",
+      "refDocument" : {
+         "Author" : [ "K Takeuchi", "N Collier" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Use of Support Vector Machines in extended named entity."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. 6th Conference on Natural Language Learning (CoNLL-2002),"
+         }, {
+            "type" : "editor",
+            "value" : "In D. Roth and A. van den Bosch, editors,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 1720077099,
+      "docReferenceId" : "[30]",
+      "refDocument" : {
+         "Author" : [ "V Vapnik" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Statistical Learning Theory."
+         }, {
+            "type" : "date",
+            "value" : "1998"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 804992706,
+      "docReferenceId" : "[31]",
+      "refDocument" : {
+         "Author" : [ "S Weibel" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "The Dublin Core: A simple content description format for electronic resources."
+         }, {
+            "type" : "date",
+            "value" : "1999"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 247355015,
+      "docReferenceId" : "[32]",
+      "refDocument" : {
+         "Author" : [ "Y Yang", "J O Pedersen" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "A comparative study on feature selection in text categorization."
+         }, {
+            "type" : "date",
+            "value" : "1997"
+         }, {
+            "type" : "booktitle",
+            "value" : "Proc. ICML-97, 14th International Conference on Machine Learning,"
+         }, {
+            "type" : "pages",
+            "value" : "412--420"
+         }, {
+            "type" : "editor",
+            "value" : "In D. H. Fisher, editor,"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   }, {
+      "dbReferenceId" : 561946600,
+      "docReferenceId" : "[33]",
+      "refDocument" : {
+         "Author" : [ "H Zha" ],
+         "Citation" : [ ],
+         "data" : [ {
+            "type" : "title",
+            "value" : "Generic summarization and keyphrase extraction using mutual reinforcement principle and sentence clustering."
+         }, {
+            "type" : "date",
+            "value" : "2002"
+         }, {
+            "type" : "booktitle",
+            "value" : "In Proc. 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval,"
+         }, {
+            "type" : "pages",
+            "value" : "113--120"
+         } ],
+         "inReferences" : [ ],
+         "reference" : [ ],
+         "pattern" : [ ],
+         "Text" : {
+            "Text" : {
+               "document_id" : 0
+            }
+         }
+      }
+   } ],
+   "pattern" : [ ],
+   "Text" : {
+      "Text" : {
+         "document_id" : 843730481,
+         "fulltext" : "Automatic Document Metadata Extraction using Support Vector Machines\nHui Han½ C. Lee Giles½ ¾ Eren Manavoglu½ Hongyuan Zha½\n½\nDepartment of Computer Science and Engineering ¾ The School of Information Sciences and Technology\nThe Pennsylvania State University University Park, PA, 16802\nhhan,zha,manavogl @cse.psu.edu giles@ist.psu.edu\nZhenyue Zhang\nDepartment of Mathematics, Zhejiang University\nYu-Quan Campus, Hangzhou 310027, P.R. China\nzyzhang@math.zju.edu.cn\nEdward A. Fox\nDepartment of Computer Science, Virginia Polytechnic Institute and State University\n660 McBryde Hall, M/C 0106, Blacksburg, VA 24061\nfox@vt.edu\n\nAbstract\nAutomatic metadata generation provides scalability and\nusability for digital libraries and their collections. Machine learning methods offer robust and adaptable automatic metadata extraction. We describe a Support Vector\nMachine classiﬁcation-based method for metadata extraction from header part of research papers and show that it\noutperforms other machine learning methods on the same\ntask. The method ﬁrst classiﬁes each line of the header into\none or more of 15 classes. An iterative convergence procedure is then used to improve the line classiﬁcation by using\nthe predicted class labels of its neighbor lines in the previous round. Further metadata extraction is done by seeking\nthe best chunk boundaries of each line. We found that discovery and use of the structural patterns of the data and\ndomain based word clustering can improve the metadata\nextraction performance. An appropriate feature normalization also greatly improves the classiﬁcation performance.\nOur metadata extraction method was originally designed\nto improve the metadata extraction quality of the digital libraries Citeseer[17] and EbizSearch[24]. We believe it can\nbe generalized to other digital libraries.\n\n1 Introduction and related work\nInteroperability is crucial to the effective use of Digital\nLibraries (DL) [19, 23]. The Open Archive Initiatives Protocols for Metadata Harvesting (OAI-PMH) is critical for\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nthe process, facilitating the discovery of content stored in\ndistributed archives [7, 18]. The digital library CITIDEL\n(Computing and Information Technology Interactive Digital Educational Library), part of NSDL (National Science\nDigital Library), uses OAI-PMH to harvest metadata from\nall applicable repositories and provides integrated access\nand links across related collections [14]. Support for the\nDublin Core (DC) metadata standard [31] is a requirement\nfor OAI-PMH compliant archives, while other metadata formats optionally can be transmitted.\nHowever, providing metadata is the responsibility of\neach data provider with the quality of the metadata a significant problem. Many data providers [13, 4] have had significant harvesting problems with XML syntax and encoding\nissues, even leading to unavailability of service [18]. In fact,\nsome digital libraries have no metadata to harvest (some\nsearch engines have little or no metadata), or metadata that\nis not OAI compliant, e.g., CiteSeer [17]. Non-compliant\nmetadata must be either automatically wrapped to work\nwith the OAI protocol, or manually encoded. Building tools\nfor automatic document metadata extraction and representation will therefore signiﬁcantly improve the amount of\nmetadata available, the quality of metadata extracted, and\nthe efﬁciency and speed of the metadata extraction process.\nSeveral methods have been used for automatic metadata\nextraction; regular expressions, rule-based parsers, and machine learning are the most popular of these. In general machine learning methods are robust and adaptable and, theoretically, can be used on any document set. Generating the\nlabeled training data is the rather expensive price that has\n\n\fto be paid for learning systems. Although regular expressions and rule-based systems do not require any training\nand are straightforward to implement, their dependence on\nthe application domain and the need for an expert to set the\nrules or regular expressions causes these methods to have\nlimited use. Machine learning techniques for information\nextraction include symbolic learning, inductive logic programming, grammar induction, Support Vector Machines,\nHidden Markov models, and statistical methods. Hidden\nMarkov models (HMMs) are the most widely used generative learning method for representing and extracting information from sequential data. However, HMMs are based\non the assumption that features of the model they represent are not independent from each other. Thus, HMMs\nhave difﬁculty exploiting regularities of a semi-structured\nreal system. Maximum entropy based Markov models [20]\nand conditional random ﬁelds [16] have been introduced to\ndeal with the problem of independent features.\nRecent work by Chieu [5] suggests that the information extraction task also can be addressed as a classiﬁcation\nproblem. Encouraged by their success in handling high dimensional feature spaces for classiﬁcation problems [12, 9],\nwe investigate Support Vector Machines (SVMs) for metadata extraction. Related work includes Kudoh et al using the\nSVM method for chunk identiﬁcation, Mcnamee et al using\na SVM for named entity extraction [22, 15, 29], and Pasula\net al using relational probability models to solve identity\nuncertainty problems [10].\nThis paper discusses a machine learning method for automatic metadata extraction. The reported extraction results\nare based on experiments conducted on research papers.\nMost of the directly indexable information (e.g., authors’\nnames, afﬁliations, addresses, and the title of the paper) are\ngathered in the header of a research paper. The header [27]\nconsists of all the words from the beginning of the paper up\nto either the ﬁrst section, usually the introduction, or to the\nend of the ﬁrst page, whichever occurs ﬁrst. In the experimental results section we illustrate the dominance of the\nintroduced SVM-based metadata extraction algorithm over\nthe well-known HMM based systems [27]. We also introduce a method for extracting individual names from the list\nof authors within the same framework and present a new\ndocument metadata extraction method using SVM classiﬁcation, combining chunk identiﬁcation. A new feature extraction method and an iterative line classiﬁcation process\nusing contextual information also are presented.\nThe remainder of the paper is organized as follows: section 2 describes the problem and dataset; section 3 presents\nour metadata extraction method, together with the cross validation results on 500 training headers; section 4 presents\nthe experiment result of our metadata extraction algorithm\non the test dataset; section 5 discusses the aspects to be improved and planned future work.\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\n2 Problem deﬁnition and dataset\nThe Dublin Core has been widely used as a metadata\nstandard and deﬁnes 15 elements for resource description:\nTitle, Creator, Subject, Description, Contributor, Publisher,\nDate, Type, Format, Identiﬁer, Source, Relation, References, Is Referenced By, Language, Rights and Coverage.\nHowever, this is only a basic set of metadata elements and\nis used by OAI-PMH for “minimal” interoperability. Extending document metadata through information on both\nauthors (such as afﬁliation, address, and email), and documents (such as publication number and thesis type), would\nprovide greater representation power. It also would help in\nbuilding uniﬁed services for heterogeneous digital libraries,\nwhile at the same time enabling sophisticated querying of\nthe databases and facilitating construction of the semantic\nweb [3]. Seymore et al deﬁned 15 different tags for the\ndocument header [27] to populate the Cora search engine\n[21], 4 of which are the same as those in the Dublin Core.\nTwo of the remaining tags, introduction and end of page, are\nfunctional rather than informative, indicating the end of the\nheader. Leaving out the functional tags, we adopt their format as extended metatags for research papers. We further\npropose to deﬁne afﬁliation as part of the address, instead\nof an exclusive tag. Table 1 is a short explanation of the extended metatags and the mapping to Dublin Core metadata\nelements.\nFigure 1 is an example of meta-tagged document header.\nDocument metadata extraction also can be viewed as labeling the text with the corresponding metatags. Each metatag\ncorresponds to a class. Lines 22 and 25 are multi-class lines\ncontaining chunks of information from multiple classes. We\ndeﬁne a chunk of information as consecutive words that belong to the same class. Line 22 and 25 contain the chunks\nof 5 classes: email, web, afﬁliation, address, and note. All\nthe other lines contain information belonging to one class\nonly and are therefore called single-class lines.\nWe use the labeled dataset provided by Seymore et al\n[27] to test our method of metadata extraction. The dataset\ncontains 935 headers of computer science research papers,\nwith 500 of those belonging to the training set and the remaining 435 headers belonging to the test set. The training\nset includes a total of 10025 lines and 23557 word tokens\nwhereas there are 8904 lines and 20308 word tokens in the\ntest set. These headers are text ﬁles converted from the pdf\nand ps ﬁles. Each line ends with a carriage return and the\nline break marks ·Ä· are provided by the dataset for identiﬁcation.\nThe document headers are semi-structured. We observe\nthat among total 10025 lines from 500 training headers,\nthe majority (9775 lines, 97.51%) are single-class lines and\nonly 250 (2.49%) lines are multi-class lines. Even after\nremoving the abstract section which is mostly single-class\n\n\fTable 1. Extended metatags and their mapping to Dublin Core metadata elements\nExtended\nMetatag\nTitle\nAuthor\n\nDC Element\nTitle\nCreator\n\nAfﬁliation\nAddress\nNote\nEmail\nDate\nAbstract\nIntroduction\nPhone\nKeyword\nWeb\nDegree\nPubnum\nPage\n\nDescription\n\nSubject\n\nExplanation\nTitle of the paper\nThe name(s) of the author(s)\nof the document\nAuthor’s afﬁliation\nAuthor’s address\nPhrases about acknowledgment,\ncopyright, notices, and citations\nAuthor’s email address\nPublication date\nAn account of the content\nIntroduction part in the paper\nAuthor’s phone number\nThe topic of the content of\nthe document\nURL of Author’s webpage\nof the document\nLanguage associated with thesis\ndegree\nPublication number\nof the document\nThe end of the page\n\nlines, multi-class lines still account for only 4.98% of all\nlines. Classifying each line into one or more classes thus\nappears to be more efﬁcient for meta-tagging than classifying each word. Table 2 lists the class distributions of the\nlines from the 500 training headers.\nThe predicted tags for previous and next lines are also\ngood indicators of the class(es) to which a line belongs. For\ninstance, an abstract has consecutive lines uninterrupted by\nlines of other classes, and title lines usually come before\nauthor lines. Making use of such contextual information\namong lines we feel will increase the line classiﬁcation performance.\nWe propose a third algorithm for processing the lines\npredicted to contain chunks of information from multiple\nclasses. Since each chunk has consecutive words, we consider extracting metadata from the multi-class lines as the\nproblem of seeking the optimal chunk boundaries. Recognition of individual author names within multi-author lines\ncan also be considered as the problem of seeking the right\nchunk boundary, in this case between the author names. For\nexample, does the line “Chungki Lee James E. Burns” refer to two authors “Chungki Lee” and “James E. Burns,”\ntwo authors “Chungki Lee James” and “E. Burns,” or one\nauthor “Chungki Lee James E. Burns”?\nBased on the structural patterns of the document headers,\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\n1:<title> Stochastic Interaction and Linear Logic +L+ </title>\n2:<author> Patrick D. Lincoln John C. Mitchell Andre Scedrov\n+L+ </author>\n3: <abstract> Abstract +L+\n4:We present stochastic interactive semantics for prepositional\nlinear +L+\n...\n22:<email>\njcm@cs.stanford.edu\n</email>\n<web>\nhttp://theory.stanford.edu/people/jcm/home.html </web> <afﬁliation> Department of Computer Science, Stanford University,\n</afﬁliation> <address> Stanford, CA 94305.</address> <note>\nSupported in part +L+\n23:by an NSF PYI Award, matching funds from Digital Equipment\nCorporation, the Pow-ell Foundation, and Xerox Corporation;\nand the Wallace F. and Lucille M. Davis Faculty +L+\n24:Scholarship. +L+ </note>\n25:<email>\nandre@cis.upenn.edu\n</email>\n<web>http://www.cis.upenn.edu/ andre\n</web>\n<afﬁliation> Department of Mathematics, University of Pennsylvania,\n</afﬁliation> <address> Philadelphia, PA 19104-6395. </address> <note> Partially supported by +L+\n26:NSF Grants CCR-91-02753 and CCR-94-00907 and by ONR\nGrant N00014-92-J-1916. Sce-drov is an American Mathematical\nSociety Centennial Research Fellow. +L+ </note>\n\nFigure 1. Example 1 labeled document header\nand metadata. Each line starts with the line\nnumber.\n\nwe decompose the metadata extraction problem into two\nsub-problems – (1) line classiﬁcation and (2) chunk identiﬁcation of multi-class and multi-author lines. Accurate line\nclassiﬁcation is a critical step, since it directly affects the\nperformance of the chunk identiﬁcation module.\n\n3 Metadata Extraction Algorithm\nThis section describes two important aspects of our\nwork, SVM classiﬁcation and feature extraction. The metadata extraction algorithm is discussed in detail, together\nwith the corresponding ten-fold cross-validation result on\nthe 500 training headers. Performance is evaluated using\naccuracy, precision, recall, and F measure.\n\n3.1 Support Vector Machine Classiﬁcation\nSupport Vector Machine is well known for its generalization performance and ability in handling high dimension\ndata. Consider a two class classiﬁcation problem. Let (Ü½ ,\nÝ½ ), ... ,(ÜÆ , ÝÆ ) be a two-class training dataset, with Ü\na training feature vector and their labels Ý\n(-1, +1). The\n\n\fTable 2. Class distribution among 10025 total\nlines from 500 training header\nClass No.\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n\nClass Name\nTitle\nAuthor\nAfﬁliation\nAddress\nNote\nEmail\nDate\nAbstract\nIntroduction\nPhone\nKeyword\nWeb\nDegree\nPubnum\nPage\n\nNumber of Lines\n832\n724\n1065\n629\n526\n336\n182\n5007\n326\n61\n142\n38\n169\n116\n166\n\nPercentage\n8.3%\n7.2%\n10.6%\n6.3%\n5.2%\n3.4%\n1.8%\n50.0%\n3.3%\n0.6%\n1.4%\n0.4%\n1.7%\n1.1%\n1.7%\n\nSVM attempts to ﬁnd an optimal separating hyperplane to\nmaximally separate two classes of training samples. The\ncorresponding decision function is called a classiﬁer. The\nµ and it\nkernel function of an SVM is written as ´\ncan be an inner product, Gaussian, polynomial, or any other\nfunction that obeys Mercer’s condition [30, 6].\nWe choose the Gaussian kernel for the SVM and base\nour experiment on the software SVM light [11]. We set the\nparameter gamma (-g), the spread of the Gaussian kernel as\n¼ ½, and all other parameters set by SVM light. We extend\nthe SVM to multi-class classiﬁers in the “One class versus\nall others” approach, i.e., one class is positive and the remaining classes are negative.\n\nÃÜ Ü\n\n3.2 Feature Extraction\nMost of the previous work on information extraction\nuses word-speciﬁc feature representations [27, 15, 29]. Recent research on the topic suggests that line-speciﬁc features\nalso could be useful [20].\nWe make use of both word and line-speciﬁc features to\nrepresent our data. Each line is represented by a set of word\nand line-speciﬁc features.\nWe design a rule-based, context-dependent word clustering method explained below for word-speciﬁc feature\ngeneration, with the rules extracted from various domain\ndatabases and text orthographic properties of words (e.g.\ncapitalization) [26]. Word clustering methods group similar words and use the cluster as a feature. Distributional\nclustering methods have shown signiﬁcant dimensionality\nreduction and accuracy improvement in text classiﬁcation\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\n[2, 28, 8]. While distributional clustering needs to use labeled training data, our rule-based method relies on the\nprior knowledge embedded in domain databases.\nWe collect the following databases to gather apriori\nknowledge of the domain:\n\n¯ Standard on-line dictionary of Linux system\n¯ Bob Baldwin’s collection of 8441 ﬁrst names and\n19613 last names\n¯ Chinese last names\n¯ USA state names and Canada province names\n¯ USA city names\n¯ Country names from the World Fact Book [1], and\n¯ Month names and their abbreviations\nWe also construct domain databases, i.e., word lists from\ntraining data for classes: afﬁliation, address, degree, pubnum, note, abstract, keyword, introduction, and phone.\nWords and bigrams that appear frequently in the lines of\neach class mentioned are selected to enter these word lists.\nFrequency thresholding is used to deﬁne the list size [32].\nThe abstract class word list contains one word “abstract”\nand the afﬁliation class list contains words shown in Table 3.\nWe then cluster words and bigrams based on their membership in the domain databases and their text orthographic\nproperties. The words and bigrams in the same cluster\nare represented by a common feature, which we call wordspeciﬁc feature. For example, an author line “Chungki Lee\nJames E. Burns” is represented as “Cap1NonDictWord: :MayName: :MayName: :SingleCap: :MayName:”, after word clustering.\nSuch word clustering shows signiﬁcant improvement in\nour experiment of classifying lines (details will be given in\nanother paper). A reason is that the word cluster statistics\ngive a more robust estimate than the original sparse word\nstatistics [2, 28].\nWe deﬁne the weight of a word-speciﬁc feature as the\nnumber of times this feature appears in the sample (line).\nThe following is the list of line-speciﬁc features we believe to be useful for line classiﬁcation. In particular, feature\nClinePos is found to be very important in correct classiﬁcation of title lines.\nCsenLen Number of the words the line contains.\nClinePos The position of the line, i.e., line number.\nCDictWordNumPer The percentage of the dictionary words in\nthe line.\nCNonDictWordNumPer The percentage of the non-dictionary\nwords in the line.\nCCap1DictWordNumPer The percentage of the dictionary\nwords with ﬁrst letter capitalized in the line.\nCCap1NonDictWordNumPer The percentage of the non-dict\nwords with ﬁrst letter capitalized in the line.\n\n\fCdigitNumPer The percentage of the numbers in the line.\n\nWe also have a feature for representing the percentage\nof the class-speciﬁc words in a line. CafﬁNumPer is the\npercentage of the afﬁliation words in the line and CaddrNumPer, CdateNumPer, CdegreeNumPer, CphoneNumPer,\nCpubNumPer, CnoteNumPer, and CpageNumPer are the\npercentage of the address words, date words, degree words,\nphone words, publication number words, note words, and\npage number words, respectively. We assign weight to the\nline-speciﬁc features according to their deﬁnition.\nTable 3. Afﬁliation Class Word List\nDF Value\n325\n221\n111\n77\n47\n39\n\nWord\nUniversity\nDepartment\nUniv\nInstitute\nResearch\nSciences\n\nDF Value\n37\n34\n33\n27\n26\n26\n\nWord\nLaboratory\nTechnology\nDept\nSystems\nSchool\nCenter\n\nHowever, our experiments show that SVM doesn’t handle well the case when different features have very different ranges of values. For example, the feature “CsenLen”\ncould have a weight of 40, while the line-speciﬁc feature\nCdictWordNumPer weight is over the range [0, 1]. Features with large scale may dominate the features with small\nweight. Therefore, we use the\n½ to normalize the feature weight and increase the classiﬁcation performance as\nshown in the next section.\n\n3.3 Line Classiﬁcation Algorithms\nThe following is a two-step algorithm for classifying text\nlines into a single class or multiple classes. The two components are independent line classiﬁcation followed by contextual line classiﬁcation.\n3.3.1 Independent line classiﬁcation\nIn the ﬁrst step, feature vectors are generated based on the\nfeature extraction methodology described in the previous\nsection. After removing the features with data frequency\n¿, we get feature vectors with 1100 dimensions\nvalues\non average for ten-fold cross validation. A feature vector is\nlabeled as class if the corresponding line contains words\nbelonging to class . Training feature vector set for class\nis generated by collecting all the feature vectors with label\nas positive samples and all the rest as negative; the same\nprocedure applies to all classes. Note that a feature vector\ncould have multiple labels and thus can belong to multiple\ntraining feature vector sets. 15 classiﬁers are then trained\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nTable 4. Word-speciﬁc feature set\nFeature\n:email:\n:url:\n:singleCap:\n:postcode:\n:abstract:\n:keyword:\n:intro:\n:phone:\n:month:\n:prep:\n:degree:\n\nExplanation\nusing regular expression match\nusing regular expression match\na capital letter like M or M.\nsuch as PA, MI\nabstract\nkey word, key words, keyword, keywords\nintroduction\ntel, fax, telephone\na word in the month list\nat, in, of\na word or bigram in the degree domain\nword list\n:pubnum:\na word or bigram in the publication\nnumber domain word list\n:notenum:\na word or bigram in the note domain\nword list\n:afﬁ:\na word or bigram in the afﬁliation\ndomain word list\n:addr:\na word or bigram in the address domain\nword list\n:city:\na word or bigram in the city name list\n:state:\na word or bigram in the state name list\n:country:\na word or bigram in the country name\nlist\n:mayName:\na word in one of the 3 name lists\n:Cap1DictWord: a dictionary word with ﬁrst\nletter capitalized\n:DictWord:\nsmall case dictionary word\n:NonDictWord:\nsmall case non dictionary word\n:Dig[3]:\na number of three digits\nThe word-speciﬁc feature considers text orthographic properties,\ne.g., BU-cs-93 is converted to :CapWord2-LowerWord2-Digs2:\n\non the 15 labeled feature vector sets. Test lines are classiﬁed into one or more classes if their feature vectors are\nscored positive by the corresponding classiﬁer. This process is called independent line classiﬁcation (also shown in\nFigure 2), since each line is classiﬁed independently.\nTable 5 lists the ten-fold cross-validation results on the\ntraining dataset for the independent line classiﬁcation algorithm. Figure 3 shows the F measure of independent line\nclassiﬁcation before and after normalization using ten-fold\ncross-validation on 500 training headers. Due to space limitations, we are not able to report our results for precision,\nrecall, and accuracy. The effect of normalization is a signiﬁcant improvement in performance. Normalization is especially important in identifying the rare classes, such as\nclass 5 (note), 11 (keywords), and 12 (web). Consider class\n5 “note” as an example, the positive note samples occupy\n5.3% (53 out of 1001.5 averaged for each fold of ten-fold\ncross validation) of all test samples. Without normalization,\n\n\fFmeasure\n1\n0.8\n0.6\n0.4\n0.2\n0\n\nUnnormalized\nNormalized\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\nFigure 3. F measure of the independent line\nclassiﬁcation before and after normalization.\nX axis - class number; Y axis - F measure.\n\ntion predicted in the previous iteration. The procedure converges when the percentage of lines with new class labels is\nlower than a threshold. The threshold value is set to 0.7%\nin our experiments, and is chosen to be 5. Ramshaw et al\nshow the positive effect of a similar iterative algorithm on\ntransformation-based learning for rule-selection [25].\nThe contextual information we use for line classiﬁcation\nif the previous ith closis encoded by the binary features\nif the next ith closest line\nest line belongs to class j and\nbelongs to class j, with ¾ ´½ µ and ¾ ´½ ½ µ. We\nand\nto be 0.5/0, instead of 1/0\nfound that choosing\nachieves better line classiﬁcation performance, based on the\nexperiment on the training dataset. This is because the line\nfeature values are already normalized into the range [0, 1].\nChoosing the midpoint of this range as the weight for up to\n150 (15£10) contextual features is a type of normalization\nand is found to be more effective.\nFigure 4 shows the performance evaluated by the F\nmeasure in each round of the iterative contextual line\nclassiﬁcation. As expected, the performance is stabilized\nwithin the ﬁrst 10 iterations. It also shows that the ﬁrst\ntwo rounds are responsible for most of the performance\nimprovement. This behavior suggests two iteration steps\ncan be used instead of waiting for absolute convergence.\nTable 6 lists the results achieved for each of the 15 classes\nwhen the iterative procedure converges. The small sample\nsizes of the class – degree, note, phone, keyword, and\npublication number – as shown in Table 6 may account\nfor their poor classiﬁcation performance. Seymore et al\nreport the same phenomenon on the class – degree, note\nand publication number – using HMM model [27].\n\nÆ\n\nÈ\n\nFigure 2. Overview of Line Classiﬁcation\nTraining Module.\n\nthe note classiﬁer classiﬁes all testing samples into non“note” classes. Thus, the recall for class 5 “note” is zero\nand the precision is inﬁnite. Normalization appears to increase the importance of features in the class “note”, which\nthen enhances “note” samples for the “note” classiﬁer.\n3.3.2 Iterative contextual line classiﬁcation\nThe second step makes use of the sequential information\namong lines discussed in section 2 to improve the classiﬁlines\ncation of each line. We encode the class labels of\nbefore and after the current line as binary features and\nconcatenate them to the feature vector of line formed in\nstep one, independent line classiﬁcation. A contextual line\nclassiﬁer for each metatag is then trained based on these\nlabeled feature vectors with additional contextual information. Line feature vectors for testing are extended the same\nway. Their neighbor lines’ class labels are those predicted\nby the independent line classiﬁer. Test lines are then reclassiﬁed into one or more classes by the contextual line classiﬁers. This contextual line classiﬁcation is repeated such that\nin each iteration, the feature vector of each line is extended\nby incorporating the neighbor lines’ class label informa-\n\nÄ\n\nÆ\n\nÄ\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nÆ\nÆ\n\nÈ\n\n3.4 Extract metadata from multi-class lines\nAfter classifying each line into one or more classes, we\nnow extract metadata from each multi-class line based on\nthe predicted class labels for this line. As discussed the\nmetadata extraction task from multi-class lines is turned\ninto the chunk identiﬁcation task. Chunk identiﬁcation of\n\n\fFmeasure\n1\n\nTitle\nAuthor\nAffiliation\nAddress\nNote\nEmail\nDate\nAbstract\nIntroduction\nPhone\nKeyword\nWeb\nDegree\nPubNO\nPage\n\n0.95\n\n0.9\n\n0.85\n\n0.8\n\n0.75\n\n0.7\n\n0.65\n\n0.6\n\n0.55\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\nFigure 4. F measure in each round of the iterative contextual line classiﬁcation. X axis iteration round; Y axis - F measure.\n\nÆ\n\nÆ\n\nan -class line is analogous to ﬁnding   ½ chunk boundaries in the line. Punctuation marks and spaces between\nwords are candidate chunk boundaries.\nTable 7 shows that 86% of the multi-class lines in training data are two-class lines. We search for the optimal\nchunk boundary which yields the maximum difference between the two chunks. Independent line classiﬁers are applied to calculate the difference between chunks.\nEvery punctuation mark and space can be a candidate\nchunk boundary for two-class lines. We consider only punctuation marks as candidates if two or more punctuation\nmarks are used in the line; otherwise we try each punctuation mark and space. Assuming that each class has only\none chunk in the line, two-class chunk identiﬁcation is to\nﬁnd the optimal chunk boundary.\n“The Ohio State University, Columbus, OH 43210-1277” is an\nexample of two-class line of afﬁliation and address. Each\ncomma is a candidate chunk boundary.\nWe call the afﬁliation classiﬁer as classiﬁer 1 and the\naddress classiﬁer as classiﬁer 2. The classiﬁers we use here\nare the SVM line classiﬁers trained by single-class lines of\nthe training dataset. We consider each chunk as a short line.\nDeﬁnitions:\n\nÈ½ the classiﬁcation score of chunk P by classiﬁer 1;\nÈ¾ the classiﬁcation score of chunk P by classiﬁer 2;\nÆ½ the classiﬁcation score of chunk N by classiﬁer 1;\nÆ¾ the classiﬁcation score of chunk N by classiﬁer 2;\nÈ½¾ = È½ - È¾ ; Æ¾½ = Æ¾ - Æ½;\nÈÆ½ = È½ - Æ½; ÈÆ¾ = È¾ - Æ¾;\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nTable 5. Independent line classiﬁcation performance.\nClass Name\nTitle\nAuthor\nAfﬁliation\nAddress\nNote\nEmail\nDate\nAbstract\nIntroduction\nPhone\nKeyword\nWeb\nDegree\nPubnum\nPage\n\nPrecision\n89.6%\n94.2%\n93.8%\n93.9%\n82.3%\n97.6%\n97.2%\n96.1%\n98.8%\n93.8%\n95.2%\n100%\n86.0%\n91.7%\n100.0%\n\nRecall\n88.9%\n89.6%\n84.2%\n85.1%\n45.4%\n97.4%\n89.4%\n97.7%\n96.0%\n69.1%\n55.2%\n92.8%\n52.8%\n71.8%\n100.0%\n\nF measure\n89.3%\n91.8%\n88.7%\n89.3%\n58.5%\n97.5%\n93.1%\n96.9%\n97.4%\n79.5%\n69.9%\n96.3%\n65.4%\n80.5%\n100.0%\n\nAccuracy\n98.2%\n98.8%\n97.7%\n98.8%\n96.6%\n99.8%\n99.8%\n96.9%\n99.8%\n99.8%\n99.3%\n99.9%\n98.9%\n99.6%\n100.0%\n\nWe choose the optimal chunk boundary as the punctuation mark or space yielding the maximal ½¾ £ ¾½ .\nChunk P is classiﬁed into class 1 if\n¼, and (1)\n½\n£ ¾ ¼ or (2) ½ £ ¾ ¼ and\n½\n½\n´\n½\n¾ µ, class 2 otherwise.\nThis two-class chunk identiﬁcation algorithm results in\nan accuracy of 75.5% (160 out of 212 two-class lines from\ntraining samples). Accuracy here is deﬁned as the percentage of the lines whose chunk boundaries are correctly predicted versus the total number of two-class lines. (This is\nthe lower boundary of the accuracy.)\n¾ ) chunk identiﬁcation tasks\nMany -class (\nmay be simpliﬁed to two-class chunk identiﬁcation tasks.\nFor instance, using the positions of email and URL in the\nline, we may simplify the three-class chunk identiﬁcation\ntasks as two-class chunk identiﬁcation tasks. The position of the email address in the following three-class line\n“International Computer Science Institute, Berkeley, CA 94704.\n\nÈÆ ÈÆ\nÑ Ü ÈÆ\n\nÆ\n\nÈÆ ÈÆ\n\nÈÆ\n\nÈÆ\n\nÈ\n\nÆ\n\nÈÆ\n\nÆ\n\nemail: aberer@icsi.berkeley.edu. Supported by Schweizerische\nGesellschaft zur Forderung der Informatik und ihrer Anwendungen” is a natural chunk boundary between the other two\n\nclasses.\nWe are exploring more general multi-class chunk identiﬁcation techniques.\n\n3.5 Recognize authors in the multi-author lines\nWe consider the author lines with less than 4 words as\nsingle-author lines and the author lines with 4 or more\nwords as multi-author lines. We further deﬁne a multiauthor line where the authors are separated by spaces only\n\n\fTable 6. Performance (%) of contextual line\nclassiﬁcation iteration algorithm when converges and the F measure increase than that\nof the independent line classiﬁcation\nClass Name\n\nPrecision\n\nRecall\n\nTitle\nAuthor\nAfﬁliation\nAddress\nNote\nEmail\nDate\nAbstract\nIntroduction\nPhone\nKeyword\nWeb\nDegree\nPubnum\nPage\n\n93.9\n97.3\n96.4\n93.6\n86.4\n98.9\n97.2\n98.5\n100.0\n98.3\n96.7\n100.0\n91.4\n97.3\n100.0\n\n95.0\n91.4\n90.3\n86.7\n65.6\n94.0\n89.5\n99.2\n96.4\n62.3\n79.5\n92.8\n80.5\n65.5\n100.0\n\nF measure\n(Increase)\n94.5(5.2)\n94.2(2.4)\n93.3(4.5)\n90.0(0.71)\n74.6(16.0)\n96.4(-1.1)\n93.2(0.1)\n98.8(1.9)\n98.2(0.8)\n76.2(-3.3)\n87.2(17.3)\n96.3(0.0)\n85.6(20.1)\n78.3(-2.2)\n100.0(0.0)\n\nAccuracy\n99.1\n99.2\n98.6\n98.8\n97.6\n99.8\n99.8\n98.8\n99.9\n99.7\n99.7\n99.9\n99.3\n99.6\n100.0\n\nauthor names. It is obvious that the spaces and punctuation marks between words are the candidate chunk boundaries. The problem now becomes classifying each space\nor punctuation mark as chunk boundary or not. We consider only the punctuation mark in the line as the candidate\nchunk boundary if there are two or more punctuation marks\nin the line; otherwise, we examine each space and punctuation mark. The dictionary word “and” is considered as a\npunctuation mark. The spaces next to a punctuation mark\nare ignored.\nWe design the feature vector for each space and punctuation mark using both the raw features of the punctuation\nmark itself such as “,” or “&”, and the contextual features\nlisted in Table 8. We also convert each word of the line into\nÆ ÄÆ Ä\n. Each element of the\na 5-tuple\n5-tuple is deﬁned as follows.\n\nÆ : ½ if the word is in the ﬁrst name list, ¼ otherwise.\nÄÆ : ½ if the word is in the last name list, ¼ otherwise.\nÄ: ½, ¾ or ¼, indicates the word is of one letter, two letters,\nor more than two letters, respectively.\n\n: ½ if the word is capitalized, ¼ otherwise.\n: ½ if the word is a dictionary word, ¼ otherwise.\n\nTable 7. The distribution of the multi-class\nlines in 500 training headers\nN-Class\n2\n3\n4\n5\n\nNumber of Lines\n212\n33\n4\n1\n\nPercentage\n84.8%\n13.2%\n1.6%\n0.4%\n\nas space-separated multi-author line. Similarly, a multiauthor line where the authors are separated by punctuation marks is deﬁned as punctuation-separated multi-author\nline.\nWe extract a total of 326 multi-author lines from the\ntraining dataset as the dataset for our experiment on recognizing authors from the multi-author lines. Among the\n326 multi-author lines, 227(69.6%) lines are punctuationseparated and 99(30.4%) are space-separated. Based on the\ndifferent characteristics punctuation-separated multi-author\nlines and space-separated multi-author lines possess, we\nchoose the following different strategies for either case.\n3.5.1 Chunk identiﬁcation in punctuation-separated\nmulti-author lines\nAs we discussed before, to recognize each name from the\nmulti-author lines is to identify chunk boundaries between\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nWe use the attributes deﬁned in the above tuple to represent the contextual feature (8) in Table 8 in the converted\nformat. The motivation is that if the closest word to a\npunctuation mark appears only on the ﬁrst name list, or\nonly on the last name list, it helps to classify if this punctuation mark is the right chunk boundary. For example,\nif “Leonidas Fegaras, David Maier” satisﬁes this pattern\n“[10010(First name)] [01011(Last name)], [10011(First\nname)] [00010(Last name)]”, it will be reasonable to classify the comma as the right chunk boundary. However, the\nbig overlap between the ﬁrst name list and the last name list\nmakes such feature representation of each word ineffective.\nWe ﬁnd from the stepwise feature selection that the dominating features in classifying chunk boundary are the punctuation marks themselves. Therefore in implementation, we\ndesign simple heuristic rules to make use of the punctuation\nmarks to extract each name from the punctuation-separated\nmulti-author line.\nTable 9 lists the chunk identiﬁcation performance on\npunctuation-separated multi-author lines. The evaluation is\nbased on the percentage of punctuation marks classiﬁed correctly.\n3.5.2 Chunk identiﬁcation in space-separated multiauthor lines\nSpace-separated multi-author lines do not have any explicit information for chunk boundary recognition, unlike\npunctuation-separated lines. The valid patterns for author\n\n\fTable 8. Contextual features for each candidate chunk boundary in punctuationseparated multi-author line\nNo.\n1\n2\n3\n4\n5\n6\n7\n8\n\nFeature\nThe number of total punctuation marks of the\nsame kind in the line\nThe position of this punctuation mark\nThe number of words before this punctuation mark\nThe number of words after this punctuation mark\nThe number of words between the previous\nand the current punctuation mark\nThe number of words between the current\nand the next punctuation mark\nThe ratio of the number of words before and after\nthis punctuation mark\nThe previous and next 5 words in converted\nfeature representation\n\nTable 9. Chunk boundary identiﬁcation performance of punctuation-separated multiauthor lines\nAccuracy\n93.31\n\nPrecision\n82.38\n\nRecall\n96.65\n\nF measure\n88.95\n\nnames are the source of information in this case. [Mary(Full\nName)] [Y.(Name Initial)], for instance, cannot be a valid\nname.\nThe algorithm for extracting names from spaceseparated multi-author lines has four steps. Step 1, generate all potential name sequences for the space-separated\nmulti-author lines based on the valid patterns of names that\nwe deﬁne in Table 10. Step 2, design the feature vector for\neach potential name sequence. We manually label each potential name sequence as ½ or  ½ by checking each name in\nthis sequence from the web. Step 3, train a SVM name sequence classiﬁer by the labeled training samples. Step 4, if\nthe test space-separated multi-author line has only one potential name sequence, it is the predicted name sequence.\nOtherwise, classify each of its potential name sequences.\nThe name sequence with the highest score is predicted as\nthe correct name sequence.\nFor example, the line “Alan Fekete David Gupta Victor\nLuchangco Nancy Lynch Alex Shvartsman” has three potential name sequences (Figure 5). We generate three reasonable sequences, with each name separated by ¥. The\n“1” and ”-1” in front of each name sequence identiﬁes the\nsequence as a positive sample or a negative sample. The\nnumber at the beginning of each sequence is the classiﬁca-\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nTable 10. The valid patterns of a name. “ ”Full Name; “   ” - Full Name with hyphen,\ne.g., Jon-hey; “Á ” - Name Initial; “×” - lower\ncase word\nPattern Class\n1\n\nPatterns\n´\n´\n\n2\n3\n4\n5\n\n µ\n  µ´\n\n,´\n\n  µ´   µ\n  µ´   µ\n\ne.g., Yu-Chee Tseng\n  µÁ , ´   µÁÁ , ´\n´\ne.g., Dhabaleswar K. Panda\nÁ , ÁÁ\ne.g., C. L. Giles\n\nÁ´\n´\n\n  µÁÁÁ\n\n µ\n  µ××\n\ne.g., Th.P. van der Weide\n\ntion score. The ﬁrst sequence achieves the highest score and\nis predicted correctly.\nThe feature vector designed for each name sequence is\nbased on the following features. Let us assume Ä is a line\nthat contains Å names, Ò½ , Ò¾ through ÒÅ . For name Ò\n(½\nÅ ) that has Æ words, we deﬁne the following\nﬁve features.\n\nÓÖÑ\n\nthe form of the Ø word of Ò ,\nÓÖÑ\n¾\n  Á × Ó . “Ó” - others.\nÈ Ó× the position of the Ø word of Ò in the line.\nÆ is equal to ½ if the Ø word of Ò is only in the ﬁrst name\nlist, ¼ otherwise.\nÄÆ is equal to ½ if the Ø word of Ò is only in the last name\nlist, ¼ otherwise.\nÆÓÒ\nis equal to ½ if the Ø word of Ò is a non-dictionary\nword, ¼ otherwise.\n\nThe feature ÓÖÑ has non-numerical values such as\n“F”, “I” or “s”. We enumerate each of these name patterns\nand assign these values as the weights of the corresponding\nfeatures.\nWe generated all the potential name sequences expanded\nfrom the 99 space-separated name sequences as the name\nsequence dataset. We achieve a classiﬁcation accuracy of\n90.9% for ten-fold cross validation. Since we pick the potential sequence with the highest score for each unknown\nname sequence, the accuracy is the ratio of the correct predictions to the total number of name sequences, which is 99\nin this case.\nUsing SVM supervised learning to classify name sequences helps ﬁnd the implicit regularities that could have\nbeen missed by the manual inspection. A regularity discovered from the training data is: hyphenated names such as\nJon-hey are not likely to be the last name.\n\n\fClassiﬁcation Score\n1.6398636\n0.8996393\n0.0061073704\n\nClass label\n1\n-1\n-1\n\nPotential name sequences\nAlan Fekete ¥ David Gupta ¥ Victor Luchangco ¥ Nancy Lynch ¥ Alex Shvartsman\nAlan Fekete ¥ David Gupta ¥ Victor Luchangco Nancy ¥ Lynch Alex Shvartsman\nAlan Fekete ¥ David Gupta Victor ¥ Luchangco Nancy ¥ Lynch Alex Shvartsman\n\nFigure 5. Example of potential name sequences\n\n4 Experimental results\nPerformance is evaluated by precision, recall, F measure,\nand accuracy as described below.\nOverall evaluation: The overall word classiﬁcation accuracy for the header is the percentage of the header words\nthat are tagged with the words’ true labels.\nClass-speciﬁc evaluation: We deﬁne A as the number of\ntrue positive samples predicted as positive, B as the number\nof true positive samples predicted as negative, C as the number of true negative samples predicted as positive and D as\nthe number of true negative samples predicted as negative.\nThe sample may refer to the line in the line classiﬁcation\ntask and refer to the word when evaluating the ﬁnal metadata extraction performance.\n\nÈ Ö × ÓÒ\n\n·\n\nÙÖ Ý\nÑ ×ÙÖ\n\nÊ\n\nÐÐ\n\n·\n\n·\n· · ·\n¾ÈÖ × ÓÒ£Ê ÐÐ\nÈÖ × ÓÒ·Ê ÐÐ\n\nWe apply the metadata extraction method discussed\nearlier, with the parameters chosen from ten-fold crossvalidation on 500 training headers and 435 test headers. Our\nmethod achieves an overall accuracy of 92.9%, better than\n90.1% reported by Seymore et al. Table 11 compares our\nmethod with the HMM method of multi-state L+D model\nfrom Seymore et al on the classiﬁcation performance for\neach class, except two functional classes “introduction” and\n“end of page”. However, we are unable to obtain the classspeciﬁc accuracy method used by Seymore et al at the time\nwe submit this paper. Therefore, we also list class-speciﬁc\nprecision and recall for more effective evaluation.\nWe present below the Example 2 document header with\nits true labels (Figure 6) and predicted labels (Figure 7) by\nour metadata extraction algorithm. We also present the labels (Figure 8) our algorithm predicted for the Example 1\nheader shown in Figure 1 of section 2. The bold fonts indicate the predicted labels different from the true labels. Both\nexamples show the good performance of our algorithm on\nlabeling the single-class lines, and recognizing the individual authors from the multi-author lines. Line 6 in Figure 7\nand line 22 in Figure 8 also show the good performance of\nour two-class chunk identiﬁcation algorithm. The only dif-\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nTable 11. Comparison on the performance(%)\nof metadata extraction using HMM and SVM\nevaluated based on words. - Accuracy; È Precision and Ê - Recall\nClass\nTitle\nAuthor\nAfﬁliation\nAddress\nNote\nEmail\nDate\nAbstract\nPhone\nKeyword\nWeb\nDegree\nPubnum\n\nHMM(A)\n98.3\n93.2\n89.4\n84.1\n84.6\n86.9\n93.0\n98.4\n94.9\n98.5\n41.7\n81.2\n64.2\n\nSVM(A)\n98.9\n99.3\n98.1\n99.1\n95.5\n99.6\n99.7\n97.5\n99.9\n99.2\n99.9\n99.5\n99.9\n\nSVM(P)\n94.1\n96.1\n92.2\n94.9\n88.9\n90.8\n84.0\n91.1\n93.8\n96.9\n79.5\n80.5\n92.2\n\nSVM(R)\n99.1\n98.4\n95.4\n94.5\n75.5\n92.7\n97.5\n96.6\n91.0\n81.5\n96.9\n62.2\n86.3\n\nference between our algorithm’s predictions and the original labels is line 7. Although we count this as a false prediction (in our evaluation), the original label for this line “note”\ncan be argued itself. The line contains two email addresses.\nTherefore it could be labeled as email just as well. This kind\nof uncertainty of labels is rare, though. Figure 8 shows the\ndirect impact the line classiﬁcation has on the chunk identiﬁcation performance. Wrongly classifying the ﬁve-class\nline 22 in Figure 8 as the four-class line, causes the further incorrect chunk identiﬁcation. Wrongly classifying the\nﬁve-class line 25 as a single class line “note”, also disables\nthe further chunk identiﬁcation algorithm. A reason that\nline 25 is wrongly classiﬁed as single-class line, is because\nour contextual line classiﬁcation algorithm in Section 3.3.2\nover weighs the contextual information of the “note” text\nfrom line 22 to line 26.\n\n5 Discussion and future work\nThis paper describes a classiﬁcation-based method using Support Vector Machines (SVM) for metadata extraction. These initial results achieve nominally better results\nthan Hidden Markov Model based methods. This occurs\n\n\f1:<title> THE CORAL USER MANUAL +L+\n2:A Tutorial Introduction to CORAL +L+ </title>\n3:<author> Raghu Ramakrishnan Praveen Seshadri Divesh\nSrivastava +L+ </author>\n4:<author> S. Sudarshan +L+ </author>\n5:<afﬁliation> Computer Sciences Department, +L+\n6:University of Wisconsin-Madison,</afﬁliation><address> WI\n53706, U.S.A. +L+ </address>\n7:<note>The authors’ e-mail addresses are fraghu,divesh,\npraveeng@cs.wisc.edu; sudarsha@research.att.com.+L+</note>\n\nFigure 6. Example 2 document header with\nthe true labels.\n1: chunk(1) - <title> - THE CORAL USER MANUAL\n2: chunk(1) - <title> - A Tutorial Introduction to CORAL\n3: chunk(1) - <author> - Raghu Ramakrishnan\nchunk(2) - <author> - Praveen Seshadri\nchunk(3) - <author> - Divesh Srivastava\n4: chunk(1) - <author> - S. Sudarshan\n5: chunk(1) - <afﬁliation> - Computer Sciences Department,\n6: chunk(1) - <afﬁliation> - University of Wisconsin-Madison\nchunk(2) - <address> - WI 53706, U.S.A.\n7:\nchunk(1) - <email> - The authors’ e-mail addresses are fraghu,divesh,praveeng@cs.wisc.edu;\nsudarsha@research.att.com.\n\n1:chunk(1) - <title> - Stochastic Interaction and Linear Logic\n2:chunk(1) - <author> - Patrick D. Lincoln\nchunk(2) - <author> - John C. Mitchell\nchunk(3) - <author> - Andre Scedrov\n3:chunk(1) - <abstract> - Abstract\n4:chunk(1) - <abstract> - We present stochastic interactive\nsemantics for propositional linear\n...\n22:chunk(1) - <note> - jcm@cs.stanford.edu\nchunk(2) - <web> - http://theory.stanford.edu/people/jcm/home.html)\nchunk(3) - <afﬁliation> - Department of Computer Science, Stanford University\nchunk(4) - <address> - Stanford, CA 94305. Supported in part\n23:chunk(1) - <note> - by an NSF PYI Award , matching funds\nfrom Digital Equipment Corporation, the Pow-ell Foundation,\nand Xerox Corporation; and the Wallace F. and Lucille M. Dav is\nFaculty\n24:chunk(1) - <note> - Scholarship.\n25:chunk(1) - <note> - andre@cis.upenn.edu\nhttp://www.cis.upenn.edu/ andre Department of Mathematics,\nUniversity of Pennsylvania, Philadelphia, PA 19104-6395.\nPartially supported by\n26:chunk(1) - <note> - NSF Grants CCR-91-02 753 and\nCCR-94-00907 and by ONR Grant N0001 4-92-J-1916. Scedrov\nis an American Mathematical Society Centennial Research Fellow.\n\nFigure 8. Example 1 document header labeled\nby SVM metadata extraction algorithm.\n\nFigure 7. Example 2 document header labeled\nby SVM metadata extraction algorithm.\n\nbecause we use apriori information of the structural pattern of the data, feature extraction based on domain speciﬁc\ndatabases, an appropriate normalization technique, and an\niterative correction procedure. In addition, the method we\npropose for extracting individual names from a list of author names has good performance. We believe that our results indicate a promising classiﬁcation-based method for\ninformation extraction.\nThere are some aspects of our method that could still\nbe improved. The line classiﬁcation performance limits the\nfurther multi-class line chunk identiﬁcation performance as\nshown in Figure 8. We will add the functionality to correct\nthe errors caused by the line classiﬁcation algorithm. Some\nchunks such as an integrated name may be broken into two\nlines occasionally. In this case, the multi-class chunk algorithm may make the incorrect decision. We will combine\nsome of the consecutive lines of the same class to minimize\nthe corresponding errors. Currently we assume each line\nhas only one chunk for each class. This is not appropriate\neven though it is rare for a class to have multiple chunks of\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\nthe same class in one line. It is worthwhile to explore more\ngeneral multi-class chunk identiﬁcation techniques.\nIn addition to extracting the taggable metadata from the\nheader part of the research papers, we will apply text summarization techniques, such as Zha’s [33], to extract the implicit metadata subject and description. This will have the\npotential for generating a hierarchical metadata representation of the document. We also will intend to develop a robust and accurate wrapper for bibliographies and to deﬁne\nand extract metatags for metadata as well as for equations\nand ﬁgures.\n\n6 Acknowledgments\nWe acknowledge Cheng Li and Guangyu Chen for useful\ncomments on the ﬁrst draft of the paper. We acknowledge\nthe valuable comments from reviewers. We would like to\nacknowledge the support from NSF NSDL 0121679, partial\nsupport from the Special Funds for Major State Basic Research Projects of China (project G1999032800), and partial support from Lockheed-Martin.\n\n\fReferences\n[1] The world factbook. http://www.cia.gov/cia/publications/\nfactbook/, 2002.\n[2] L. D. Baker and A. K. McCallum. Distributional clustering\nof words for text classiﬁcation. In W. B. Croft, A. Moffat,\nC. J. van Rijsbergen, R. Wilkinson, and J. Zobel, editors,\nProc. of SIGIR-98, pages 96–103, 1998.\n[3] T. Berners-Lee, J. Hendler, and O. Lassila. The semantic\nweb. Scientiﬁc American, 2001.\n[4] T. Brody.\nCelestial - Open Archives Gateway.\nhttp://celestial.eprints.org/, 2002.\n[5] H. L. Chieu and H. T. Ng. A maximum entropy approach\nto information extraction from semi-structured and free text.\nIn Proc. 18th National Conference on Artiﬁcial Intelligence\n(AAAI 2002), pages 786–791, 2002.\n[6] N. Cristianini and J. Shawe-Taylor. An Introduction to Support Vector Machines and Other Kernel-Based Learning\nMethods. Cambridge University Press, 2000.\n[7] H. de Sompel and C. Lagoze. The Open Archives Initiative\nProtocol for Metadata Harvesting, January 2001.\n[8] I. Dhillon, S. Manella, and R. Kumar. A divisive information\ntheoretic feature clustering for text classiﬁcation. Machine\nLearning Research (JMLR), 2002.\n[9] S. Dumais, J. Platt, D. Heckerman, and M. Sahami. Inductive learning algorithms and representations for text categorization. In Proc. 7th International Conference on Information and Knowledge Management, pages 148–155, November 1998.\n[10] H.Pasula, B.Marthi, B.Milch, S.Russell, and I.Shpitser.\nIdentity uncertainty and citation matching. In Proc. of the\nAdvances in Neural Information Processing Systems (NIPS),\n2002.\n[11] T. Joachims. Making large-scale Support Vector Machine learning practical. In B. Scholkopf, C. Burges, and\nA. Smola, editors, Advances in Kernel Methods: Support\nVector Machines. MIT Press, Cambridge, MA, 1998.\n[12] T. Joachims. A statistical learning model of text classiﬁcation with Support Vector Machines. In W. B. Croft, D. J.\nHarper, D. H. Kraft, and J. Zobel, editors, Proc. SIGIR-01,\n24th ACM International Conference on Research and Development in Information Retrieval, pages 128–136, 2001.\n[13] A. Kent.\nOAI Harvester Crawling Status.\nhttp://www.mds.rmit.edu.au/ ajk/oai/interop/summary.htm,\n2001.\n[14] D. Knox. CITIDEL: Making resources available. In Proc.\n7th Annual Conference on Innovation and Technology in\nComputer Science Education, pages 225–225, 2002.\n[15] T. Kudoh and Y. Matsumoto. Use of support vector learning\nfor chunk identiﬁcation. In Proc. of CoNLL-2000 and LLL2000, 2000.\n[16] J. Lafferty, A. McCallum, and F. Pereira. Conditional random ﬁelds: Probabilistic models for segmenting and labeling sequence data. In Proc. 18th International Conf. on Machine Learning, pages 282–289, 2001.\n[17] S. Lawrence, C. L. Giles, and K. Bollacker. Digital Libraries and Autonomous Citation Indexing. IEEE Computer,\n32(6):67–71, 1999.\n\nProceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)\n0-7695-1939-3/03 $17.00 © 2003 IEEE\n\n[18] X. Liu. Federating heterogeneous Digital Libraries by metadata harvesting. Ph.D. Dissertation, Old Dominion University, December 2002.\n[19] C. C. Marshall. Making metadata: A study of metadata creation for a mixed physical-digital collection. In Proc. 3rd\nACM International Conference on Digital Libraries, pages\n162–171, June 1998.\n[20] A. McCallum, D. Freitag, and F. Pereira. Maximum entropy Markov models for information extraction and segmentation. In Proc. 17th International Conf. on Machine\nLearning, pages 591–598, 2000.\n[21] A. McCallum, K. Nigam, J. Rennie, and K. Seymore. Automating the construction of internet portals with machine\nlearning. Information Retrieval Journal Volume 3, pages\n127–163, 2000.\n[22] P. Mcnamee and J. Mayﬁeld. Entity extraction without\nlanguage-speciﬁc resources. In D. Roth and A. van den\nBosch, editors, Proc. of CoNLL-2002, pages 183–186, 2002.\n[23] A. Paepcke, C.-C. K. Chang, H. Garcia-Molina, and\nT. Winograd. Interoperability for Digital Libraries worldwide. Communications of the ACM, 41(4):33–43, 1998.\n[24] Y. Petinot, P. B. Teregowda, H. Han, C. L. Giles,\nS. Lawrence, A. Rangaswamy, and N. Pal. eBizSearch: An\nOAI-Compliant Digital Library for eBusiness. In Proc. the\nACM/IEEE Joint Conference on Digital Libraries (JCDL),\n2003. In this proceeding.\n[25] L. Ramshaw and M. Marcus.\nText chunking using\ntransformation-based learning.\nIn D. Yarovsky and\nK. Church, editors, Proc. 3rd Workshop on Very Large Corpora, pages 82–94, 1995.\n[26] P. Schone and D. Jurafsky. Knowlege-free induction of inﬂectional morphologies. In Proc. of the North American\nchapter of the Association for Computational Linguistics\n(NAACL-2001), 2001.\n[27] K. Seymore, A. McCallum, and R. Rosenfeld. Learning hidden Markov model structure for information extraction. In\nProc. of AAAI 99 Workshop on Machine Learning for Information Extraction, pages 37–42, 1999.\n[28] N. Slonim and N. Tishby. The power of word clusters for\ntext classiﬁcation. In Proc. 23rd European Colloquium on\nInformation Retrieval Research (ECIR), 2001.\n[29] K. Takeuchi and N. Collier. Use of Support Vector Machines\nin extended named entity. In D. Roth and A. van den Bosch,\neditors, Proc. 6th Conference on Natural Language Learning (CoNLL-2002), 2002.\n[30] V. Vapnik. Statistical Learning Theory. Springer Verlag,\nNew York, 1998.\n[31] S. Weibel. The Dublin Core: A simple content description format for electronic resources. NFAIS Newsletter,\n40(7):117–119, 1999.\n[32] Y. Yang and J. O. Pedersen. A comparative study on feature selection in text categorization. In D. H. Fisher, editor,\nProc. ICML-97, 14th International Conference on Machine\nLearning, pages 412–420, 1997.\n[33] H. Zha. Generic summarization and keyphrase extraction\nusing mutual reinforcement principle and sentence clustering. In Proc. 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, pages 113–120, August 11-15 2002.\n\n\f\n"
+      }
+   }
+}

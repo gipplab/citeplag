@@ -1,0 +1,12 @@
+.nav-tabs { margin-bottom: 0; }
+.tab-content {
+	overflow: hidden; background-color: #fefefe;
+	border: 1px solid #ddd; border-top: 0;
+}
+
+.modal { left: 40%; width: 60%; }
+
+.tab-content legend, .tab-content input, .tab-content button { margin-left: 10px; margin-right: 10px; }
+
+.progress .bar { text-align: left; color: #555555; }
+.legend, .well legend { font-family: 'Telex', sans-serif; font-size: 20px; color: #317eac; }

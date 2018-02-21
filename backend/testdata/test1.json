@@ -1,0 +1,1470 @@
+{
+   "document" : {
+      "documentId" : 1511762423,
+      "author" : [ {
+         "id" : 792747689,
+         "firstname" : "Hui Han½ C Lee",
+         "lastname" : "Giles½"
+      }, {
+         "id" : 869512973,
+         "firstname" : "Zhenyue",
+         "lastname" : "Zhang"
+      }, {
+         "id" : 278319376,
+         "firstname" : "Edward A",
+         "lastname" : "Fox"
+      } ],
+      "citation" : [ ],
+      "data" : [ {
+         "type" : "abstract",
+         "value" : "Automatic metadata generation provides scalability and usability for digital libraries and their collections. Machine learning methods offer robust and adaptable automatic metadata extraction. We describe a Support Vector Machine classiﬁcation-based method for metadata extraction from header part of research papers and show that it outperforms other machine learning methods on the same task. The method ﬁrst classiﬁes each line of the header into one or more of 15 classes. An iterative convergence procedure is then used to improve the line classiﬁcation by using the predicted class labels of its neighbor lines in the previous round. Further metadata extraction is done by seeking the best chunk boundaries of each line. We found that discovery and use of the structural patterns of the data and domain based word clustering can improve the metadata extraction performance. An appropriate feature normalization also greatly improves the classiﬁcation performance. Our metadata extraction method was originally designed to improve the metadata extraction quality of the digital libraries Citeseer[17] and EbizSearch[24]. We believe it can be generalized to other digital libraries."
+      }, {
+         "type" : "title",
+         "value" : "Automatic Document Metadata Extraction using Support Vector Machines"
+      } ],
+      "inReferences" : [ ],
+      "reference" : [ {
+         "dbReferenceId" : 1229554982,
+         "docReferenceId" : "[1]",
+         "citation" : [ {
+            "character" : 16689,
+            "count" : 0,
+            "dbCitationId" : 1132176105,
+            "docReferenceId" : "[1]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 19639,
+            "count" : 0,
+            "dbCitationId" : 1778684315,
+            "docReferenceId" : "[1]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 24177,
+            "count" : 0,
+            "dbCitationId" : 1374915965,
+            "docReferenceId" : "[1]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 494369266,
+            "author" : [ ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "The world factbook. http://www.cia.gov/cia/publications/ factbook/,"
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1569609934,
+         "docReferenceId" : "[2]",
+         "citation" : [ {
+            "character" : 16220,
+            "count" : 0,
+            "dbCitationId" : 745040990,
+            "docReferenceId" : "[2]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 17854,
+            "count" : 0,
+            "dbCitationId" : 2074256920,
+            "docReferenceId" : "[2]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1288582035,
+            "author" : [ {
+               "id" : 1973165897,
+               "firstname" : "L D",
+               "lastname" : "Baker"
+            }, {
+               "id" : 1556753905,
+               "firstname" : "A K",
+               "lastname" : "McCallum"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Distributional clustering of words for text classiﬁcation."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. of SIGIR-98,"
+            }, {
+               "type" : "pages",
+               "value" : "96--103"
+            }, {
+               "type" : "editor",
+               "value" : "In W. B. Croft, A. Moffat, C. J. van Rijsbergen, R. Wilkinson, and J. Zobel, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 2043276784,
+         "docReferenceId" : "[3]",
+         "citation" : [ {
+            "character" : 7761,
+            "count" : 0,
+            "dbCitationId" : 941909511,
+            "docReferenceId" : "[3]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 21938,
+            "count" : 0,
+            "dbCitationId" : 1571189340,
+            "docReferenceId" : "[3]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1934012689,
+            "author" : [ {
+               "id" : 638783031,
+               "firstname" : "T",
+               "lastname" : "Berners-Lee"
+            }, {
+               "id" : 755650664,
+               "firstname" : "J",
+               "lastname" : "Hendler"
+            }, {
+               "id" : 2421490,
+               "firstname" : "O",
+               "lastname" : "Lassila"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "The semantic web. Scientiﬁc American,"
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1031010351,
+         "docReferenceId" : "[4]",
+         "citation" : [ {
+            "character" : 2840,
+            "count" : 0,
+            "dbCitationId" : 145421614,
+            "docReferenceId" : "[4]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1520313868,
+            "author" : [ {
+               "id" : 1154747470,
+               "firstname" : "T",
+               "lastname" : "Brody"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Celestial - Open Archives Gateway."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 956963638,
+         "docReferenceId" : "[5]",
+         "citation" : [ {
+            "character" : 4870,
+            "count" : 0,
+            "dbCitationId" : 1182831483,
+            "docReferenceId" : "[5]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 264676212,
+            "author" : [ {
+               "id" : 974462147,
+               "firstname" : "H L",
+               "lastname" : "Chieu"
+            }, {
+               "id" : 1075012607,
+               "firstname" : "H T",
+               "lastname" : "Ng"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "A maximum entropy approach to information extraction from semi-structured and free text."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 18th National Conference on Artiﬁcial Intelligence (AAAI"
+            }, {
+               "type" : "pages",
+               "value" : "786--791"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1548677509,
+         "docReferenceId" : "[6]",
+         "citation" : [ {
+            "character" : 14905,
+            "count" : 0,
+            "dbCitationId" : 1121092123,
+            "docReferenceId" : "[6]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 592614502,
+            "author" : [ {
+               "id" : 42780328,
+               "firstname" : "N",
+               "lastname" : "Cristianini"
+            }, {
+               "id" : 1749434598,
+               "firstname" : "J",
+               "lastname" : "Shawe-Taylor"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "An Introduction to Support Vector Machines and Other Kernel-Based Learning Methods."
+            }, {
+               "type" : "date",
+               "value" : "2000"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 241140584,
+         "docReferenceId" : "[7]",
+         "citation" : [ {
+            "character" : 2221,
+            "count" : 0,
+            "dbCitationId" : 548153399,
+            "docReferenceId" : "[7]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 173792483,
+            "author" : [ {
+               "id" : 352501861,
+               "firstname" : "H de",
+               "lastname" : "Sompel"
+            }, {
+               "id" : 1738879401,
+               "firstname" : "C",
+               "lastname" : "Lagoze"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "The Open Archives Initiative Protocol for Metadata Harvesting,"
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 998094667,
+         "docReferenceId" : "[8]",
+         "citation" : [ {
+            "character" : 16220,
+            "count" : 0,
+            "dbCitationId" : 982301552,
+            "docReferenceId" : "[8]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 109331363,
+            "author" : [ {
+               "id" : 1532401335,
+               "firstname" : "I",
+               "lastname" : "Dhillon"
+            }, {
+               "id" : 297858874,
+               "firstname" : "S",
+               "lastname" : "Manella"
+            }, {
+               "id" : 329714161,
+               "firstname" : "R",
+               "lastname" : "Kumar"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "A divisive information theoretic feature clustering for text classiﬁcation."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "Machine Learning Research (JMLR),"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1191295788,
+         "docReferenceId" : "[9]",
+         "citation" : [ {
+            "character" : 5073,
+            "count" : 0,
+            "dbCitationId" : 1118267935,
+            "docReferenceId" : "[9]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1835389975,
+            "author" : [ {
+               "id" : 944204317,
+               "firstname" : "S",
+               "lastname" : "Dumais"
+            }, {
+               "id" : 1485288136,
+               "firstname" : "J",
+               "lastname" : "Platt"
+            }, {
+               "id" : 887789024,
+               "firstname" : "D",
+               "lastname" : "Heckerman"
+            }, {
+               "id" : 353747012,
+               "firstname" : "M",
+               "lastname" : "Sahami"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Inductive learning algorithms and representations for text categorization."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 7th International Conference on Information and Knowledge Management,"
+            }, {
+               "type" : "pages",
+               "value" : "148--155"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 700185914,
+         "docReferenceId" : "[10]",
+         "citation" : [ {
+            "character" : 5390,
+            "count" : 0,
+            "dbCitationId" : 1961754685,
+            "docReferenceId" : "[10]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 2099788648,
+            "author" : [ {
+               "id" : 1549035785,
+               "firstname" : "B Marthi H",
+               "lastname" : "Pasula"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "B.Milch, S.Russell, and I.Shpitser. Identity uncertainty and citation matching."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. of the Advances in Neural Information Processing Systems (NIPS),"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1776056845,
+         "docReferenceId" : "[11]",
+         "citation" : [ {
+            "character" : 15003,
+            "count" : 0,
+            "dbCitationId" : 164700615,
+            "docReferenceId" : "[11]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 894558404,
+            "author" : [ {
+               "id" : 310083381,
+               "firstname" : "T",
+               "lastname" : "Joachims"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Making large-scale Support Vector Machine learning practical."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            }, {
+               "type" : "booktitle",
+               "value" : "Advances in Kernel Methods: Support Vector Machines."
+            }, {
+               "type" : "editor",
+               "value" : "In B. Scholkopf, C. Burges, and A. Smola, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 564348228,
+         "docReferenceId" : "[12]",
+         "citation" : [ {
+            "character" : 5073,
+            "count" : 0,
+            "dbCitationId" : 1712882844,
+            "docReferenceId" : "[12]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 16815322,
+            "author" : [ {
+               "id" : 1294759097,
+               "firstname" : "T",
+               "lastname" : "Joachims"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "A statistical learning model of text classiﬁcation with Support Vector Machines."
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. SIGIR-01, 24th ACM International Conference on Research and Development in Information Retrieval,"
+            }, {
+               "type" : "pages",
+               "value" : "128--136"
+            }, {
+               "type" : "editor",
+               "value" : "In W. B. Croft, D. J. Harper, D. H. Kraft, and J. Zobel, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 478813341,
+         "docReferenceId" : "[13]",
+         "citation" : [ {
+            "character" : 2840,
+            "count" : 0,
+            "dbCitationId" : 794596878,
+            "docReferenceId" : "[13]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1403671073,
+            "author" : [ {
+               "id" : 1391861616,
+               "firstname" : "A",
+               "lastname" : "Kent"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "OAI Harvester Crawling Status."
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 35127484,
+         "docReferenceId" : "[14]",
+         "citation" : [ {
+            "character" : 2518,
+            "count" : 0,
+            "dbCitationId" : 1859121421,
+            "docReferenceId" : "[14]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1736411500,
+            "author" : [ {
+               "id" : 1712801417,
+               "firstname" : "D",
+               "lastname" : "Knox"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "CITIDEL: Making resources available."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 7th Annual Conference on Innovation and Technology in Computer Science Education,"
+            }, {
+               "type" : "pages",
+               "value" : "225--225"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 7216623,
+         "docReferenceId" : "[15]",
+         "citation" : [ {
+            "character" : 5292,
+            "count" : 0,
+            "dbCitationId" : 1030698529,
+            "docReferenceId" : "[15]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 15416,
+            "count" : 0,
+            "dbCitationId" : 1347080201,
+            "docReferenceId" : "[15]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 366658897,
+            "author" : [ {
+               "id" : 1305498636,
+               "firstname" : "T",
+               "lastname" : "Kudoh"
+            }, {
+               "id" : 675153853,
+               "firstname" : "Y",
+               "lastname" : "Matsumoto"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Use of support vector learning for chunk identiﬁcation."
+            }, {
+               "type" : "date",
+               "value" : "2000"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. of CoNLL-2000 and LLL2000,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 557056471,
+         "docReferenceId" : "[16]",
+         "citation" : [ {
+            "character" : 4774,
+            "count" : 0,
+            "dbCitationId" : 1350675855,
+            "docReferenceId" : "[16]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1604331533,
+            "author" : [ {
+               "id" : 195403399,
+               "firstname" : "J",
+               "lastname" : "Lafferty"
+            }, {
+               "id" : 642430730,
+               "firstname" : "A",
+               "lastname" : "McCallum"
+            }, {
+               "id" : 1932985641,
+               "firstname" : "F",
+               "lastname" : "Pereira"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Conditional random ﬁelds: Probabilistic models for segmenting and labeling sequence data. In"
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. 18th International Conf. on Machine Learning,"
+            }, {
+               "type" : "pages",
+               "value" : "282--289"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1949205729,
+         "docReferenceId" : "[17]",
+         "citation" : [ {
+            "character" : 1736,
+            "count" : 0,
+            "dbCitationId" : 437652318,
+            "docReferenceId" : "[17]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 3135,
+            "count" : 0,
+            "dbCitationId" : 491017651,
+            "docReferenceId" : "[17]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1906946195,
+            "author" : [ {
+               "id" : 998751537,
+               "firstname" : "S",
+               "lastname" : "Lawrence"
+            }, {
+               "id" : 1284897407,
+               "firstname" : "C L",
+               "lastname" : "Giles"
+            }, {
+               "id" : 175165217,
+               "firstname" : "K",
+               "lastname" : "Bollacker"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Digital Libraries and Autonomous Citation Indexing."
+            }, {
+               "type" : "date",
+               "value" : "1999"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03) 0-7695-1939-3/03 $17.00 ©"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 831727673,
+         "docReferenceId" : "[18]",
+         "citation" : [ {
+            "character" : 2221,
+            "count" : 0,
+            "dbCitationId" : 875941788,
+            "docReferenceId" : "[18]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 2965,
+            "count" : 0,
+            "dbCitationId" : 953230731,
+            "docReferenceId" : "[18]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1901488583,
+            "author" : [ {
+               "id" : 1614463474,
+               "firstname" : "X",
+               "lastname" : "Liu"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Federating heterogeneous Digital Libraries by metadata harvesting."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1338874552,
+         "docReferenceId" : "[19]",
+         "citation" : [ {
+            "character" : 1933,
+            "count" : 0,
+            "dbCitationId" : 1130942198,
+            "docReferenceId" : "[19]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 720889297,
+            "author" : [ {
+               "id" : 2031161952,
+               "firstname" : "C C",
+               "lastname" : "Marshall"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Making metadata: A study of metadata creation for a mixed physical-digital collection."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 3rd ACM International Conference on Digital Libraries,"
+            }, {
+               "type" : "pages",
+               "value" : "162--171"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1076547490,
+         "docReferenceId" : "[20]",
+         "citation" : [ {
+            "character" : 4740,
+            "count" : 0,
+            "dbCitationId" : 983938455,
+            "docReferenceId" : "[20]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 15508,
+            "count" : 0,
+            "dbCitationId" : 1429531285,
+            "docReferenceId" : "[20]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 367762189,
+            "author" : [ {
+               "id" : 521174457,
+               "firstname" : "A",
+               "lastname" : "McCallum"
+            }, {
+               "id" : 1940786333,
+               "firstname" : "D",
+               "lastname" : "Freitag"
+            }, {
+               "id" : 666784448,
+               "firstname" : "F",
+               "lastname" : "Pereira"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Maximum entropy Markov models for information extraction and segmentation."
+            }, {
+               "type" : "date",
+               "value" : "2000"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 17th International Conf. on Machine Learning,"
+            }, {
+               "type" : "pages",
+               "value" : "591--598"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 549632235,
+         "docReferenceId" : "[21]",
+         "citation" : [ {
+            "character" : 7870,
+            "count" : 0,
+            "dbCitationId" : 1341807898,
+            "docReferenceId" : "[21]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 85264359,
+            "author" : [ {
+               "id" : 666489164,
+               "firstname" : "A",
+               "lastname" : "McCallum"
+            }, {
+               "id" : 408676596,
+               "firstname" : "K",
+               "lastname" : "Nigam"
+            }, {
+               "id" : 1738880663,
+               "firstname" : "J",
+               "lastname" : "Rennie"
+            }, {
+               "id" : 262351018,
+               "firstname" : "K",
+               "lastname" : "Seymore"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Automating the construction of internet portals with machine learning."
+            }, {
+               "type" : "date",
+               "value" : "2000"
+            }, {
+               "type" : "pages",
+               "value" : "127--163"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 931205141,
+         "docReferenceId" : "[22]",
+         "citation" : [ {
+            "character" : 5292,
+            "count" : 0,
+            "dbCitationId" : 2051469098,
+            "docReferenceId" : "[22]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1039564539,
+            "author" : [ {
+               "id" : 34254981,
+               "firstname" : "P",
+               "lastname" : "Mcnamee"
+            }, {
+               "id" : 197848271,
+               "firstname" : "J",
+               "lastname" : "Mayﬁeld"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Entity extraction without language-speciﬁc resources."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. of CoNLL-2002,"
+            }, {
+               "type" : "pages",
+               "value" : "183--186"
+            }, {
+               "type" : "editor",
+               "value" : "In D. Roth and A. van den Bosch, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1020702068,
+         "docReferenceId" : "[23]",
+         "citation" : [ {
+            "character" : 1933,
+            "count" : 0,
+            "dbCitationId" : 840284640,
+            "docReferenceId" : "[23]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1191177501,
+            "author" : [ {
+               "id" : 1277701973,
+               "firstname" : "A",
+               "lastname" : "Paepcke"
+            }, {
+               "id" : 1648073858,
+               "firstname" : "C-C K",
+               "lastname" : "Chang"
+            }, {
+               "id" : 933252400,
+               "firstname" : "H",
+               "lastname" : "Garcia-Molina"
+            }, {
+               "id" : 2100012759,
+               "firstname" : "T",
+               "lastname" : "Winograd"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Interoperability for Digital Libraries worldwide."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 457902047,
+         "docReferenceId" : "[24]",
+         "citation" : [ {
+            "character" : 1755,
+            "count" : 0,
+            "dbCitationId" : 1525796728,
+            "docReferenceId" : "[24]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 811481808,
+            "author" : [ {
+               "id" : 2053588606,
+               "firstname" : "Y",
+               "lastname" : "Petinot"
+            }, {
+               "id" : 306526458,
+               "firstname" : "P B",
+               "lastname" : "Teregowda"
+            }, {
+               "id" : 858408564,
+               "firstname" : "H",
+               "lastname" : "Han"
+            }, {
+               "id" : 477594602,
+               "firstname" : "C L",
+               "lastname" : "Giles"
+            }, {
+               "id" : 1786086975,
+               "firstname" : "S",
+               "lastname" : "Lawrence"
+            }, {
+               "id" : 1237371059,
+               "firstname" : "A",
+               "lastname" : "Rangaswamy"
+            }, {
+               "id" : 263751065,
+               "firstname" : "N",
+               "lastname" : "Pal"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "eBizSearch: An OAI-Compliant Digital Library for eBusiness."
+            }, {
+               "type" : "date",
+               "value" : "2003"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. the ACM/IEEE Joint Conference on Digital Libraries (JCDL),"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1257496134,
+         "docReferenceId" : "[25]",
+         "citation" : [ {
+            "character" : 23717,
+            "count" : 0,
+            "dbCitationId" : 1350954011,
+            "docReferenceId" : "[25]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 963378669,
+            "author" : [ {
+               "id" : 1626075150,
+               "firstname" : "L",
+               "lastname" : "Ramshaw"
+            }, {
+               "id" : 568154328,
+               "firstname" : "M",
+               "lastname" : "Marcus"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Text chunking using transformation-based learning."
+            }, {
+               "type" : "date",
+               "value" : "1995"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. 3rd Workshop on Very Large Corpora,"
+            }, {
+               "type" : "pages",
+               "value" : "82--94"
+            }, {
+               "type" : "editor",
+               "value" : "In D. Yarovsky and K. Church, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 789550193,
+         "docReferenceId" : "[26]",
+         "citation" : [ {
+            "character" : 15894,
+            "count" : 0,
+            "dbCitationId" : 668638938,
+            "docReferenceId" : "[26]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 139463146,
+            "author" : [ {
+               "id" : 1052435945,
+               "firstname" : "P",
+               "lastname" : "Schone"
+            }, {
+               "id" : 1615610923,
+               "firstname" : "D",
+               "lastname" : "Jurafsky"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Knowlege-free induction of inﬂectional morphologies."
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. of the North American chapter of the Association for Computational Linguistics (NAACL-2001),"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1770528747,
+         "docReferenceId" : "[27]",
+         "citation" : [ {
+            "character" : 5742,
+            "count" : 0,
+            "dbCitationId" : 1743237997,
+            "docReferenceId" : "[27]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 7830,
+            "count" : 0,
+            "dbCitationId" : 481619558,
+            "docReferenceId" : "[27]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 8984,
+            "count" : 0,
+            "dbCitationId" : 714045763,
+            "docReferenceId" : "[27]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 15416,
+            "count" : 0,
+            "dbCitationId" : 828519305,
+            "docReferenceId" : "[27]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 25106,
+            "count" : 0,
+            "dbCitationId" : 639991987,
+            "docReferenceId" : "[27]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 32706215,
+            "author" : [ {
+               "id" : 2085025520,
+               "firstname" : "K",
+               "lastname" : "Seymore"
+            }, {
+               "id" : 385762894,
+               "firstname" : "A",
+               "lastname" : "McCallum"
+            }, {
+               "id" : 263829165,
+               "firstname" : "R",
+               "lastname" : "Rosenfeld"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Learning hidden Markov model structure for information extraction."
+            }, {
+               "type" : "date",
+               "value" : "1999"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. of AAAI 99 Workshop on Machine Learning for Information Extraction,"
+            }, {
+               "type" : "pages",
+               "value" : "37--42"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 574452823,
+         "docReferenceId" : "[28]",
+         "citation" : [ ],
+         "refDocument" : {
+            "documentId" : 1747221333,
+            "author" : [ {
+               "id" : 857554653,
+               "firstname" : "N",
+               "lastname" : "Slonim"
+            }, {
+               "id" : 1158297954,
+               "firstname" : "N",
+               "lastname" : "Tishby"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "The power of word clusters for text classiﬁcation."
+            }, {
+               "type" : "date",
+               "value" : "2001"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 23rd European Colloquium on Information Retrieval Research (ECIR),"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 113275173,
+         "docReferenceId" : "[29]",
+         "citation" : [ {
+            "character" : 5292,
+            "count" : 0,
+            "dbCitationId" : 1145321369,
+            "docReferenceId" : "[29]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         }, {
+            "character" : 15416,
+            "count" : 0,
+            "dbCitationId" : 1520320722,
+            "docReferenceId" : "[29]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1889602896,
+            "author" : [ {
+               "id" : 1567701236,
+               "firstname" : "K",
+               "lastname" : "Takeuchi"
+            }, {
+               "id" : 877808409,
+               "firstname" : "N",
+               "lastname" : "Collier"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Use of Support Vector Machines in extended named entity."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. 6th Conference on Natural Language Learning (CoNLL-2002),"
+            }, {
+               "type" : "editor",
+               "value" : "In D. Roth and A. van den Bosch, editors,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 2118697790,
+         "docReferenceId" : "[30]",
+         "citation" : [ {
+            "character" : 14905,
+            "count" : 0,
+            "dbCitationId" : 1527405623,
+            "docReferenceId" : "[30]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 1269942648,
+            "author" : [ {
+               "id" : 86117403,
+               "firstname" : "V",
+               "lastname" : "Vapnik"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Statistical Learning Theory."
+            }, {
+               "type" : "date",
+               "value" : "1998"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1910015880,
+         "docReferenceId" : "[31]",
+         "citation" : [ {
+            "character" : 2575,
+            "count" : 0,
+            "dbCitationId" : 1051339804,
+            "docReferenceId" : "[31]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 86789523,
+            "author" : [ {
+               "id" : 530116748,
+               "firstname" : "S",
+               "lastname" : "Weibel"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "The Dublin Core: A simple content description format for electronic resources."
+            }, {
+               "type" : "date",
+               "value" : "1999"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 1267429957,
+         "docReferenceId" : "[32]",
+         "citation" : [ {
+            "character" : 17081,
+            "count" : 0,
+            "dbCitationId" : 804992706,
+            "docReferenceId" : "[32]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 372638312,
+            "author" : [ {
+               "id" : 2058430626,
+               "firstname" : "Y",
+               "lastname" : "Yang"
+            }, {
+               "id" : 81978012,
+               "firstname" : "J O",
+               "lastname" : "Pedersen"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "A comparative study on feature selection in text categorization."
+            }, {
+               "type" : "date",
+               "value" : "1997"
+            }, {
+               "type" : "booktitle",
+               "value" : "Proc. ICML-97, 14th International Conference on Machine Learning,"
+            }, {
+               "type" : "pages",
+               "value" : "412--420"
+            }, {
+               "type" : "editor",
+               "value" : "In D. H. Fisher, editor,"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      }, {
+         "dbReferenceId" : 2108360054,
+         "docReferenceId" : "[33]",
+         "citation" : [ {
+            "character" : 47295,
+            "count" : 0,
+            "dbCitationId" : 1727252078,
+            "docReferenceId" : "[33]",
+            "paragraph" : 0,
+            "section" : 0,
+            "sentence" : 0,
+            "word" : 0
+         } ],
+         "refDocument" : {
+            "documentId" : 365433642,
+            "author" : [ {
+               "id" : 39990674,
+               "firstname" : "H",
+               "lastname" : "Zha"
+            } ],
+            "citation" : [ ],
+            "data" : [ {
+               "type" : "title",
+               "value" : "Generic summarization and keyphrase extraction using mutual reinforcement principle and sentence clustering."
+            }, {
+               "type" : "date",
+               "value" : "2002"
+            }, {
+               "type" : "booktitle",
+               "value" : "In Proc. 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval,"
+            }, {
+               "type" : "pages",
+               "value" : "113--120"
+            } ],
+            "inReferences" : [ ],
+            "reference" : [ ],
+            "pattern" : [ ]
+         }
+      } ],
+      "pattern" : [ ]
+   }
+}

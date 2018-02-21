@@ -1,0 +1,91 @@
+[1] The world factbook. http://www.cia.gov/cia/publications/
+factbook/, 2002.
+[2] L. D. Baker and A. K. McCallum. Distributional clustering
+of words for text classiﬁcation. In W. B. Croft, A. Moffat,
+C. J. van Rijsbergen, R. Wilkinson, and J. Zobel, editors,
+Proc. of SIGIR-98, pages 96–103, 1998.
+[3] T. Berners-Lee, J. Hendler, and O. Lassila. The semantic
+web. Scientiﬁc American, 2001.
+[4] T. Brody.
+Celestial - Open Archives Gateway.
+http://celestial.eprints.org/, 2002.
+[5] H. L. Chieu and H. T. Ng. A maximum entropy approach
+to information extraction from semi-structured and free text.
+In Proc. 18th National Conference on Artiﬁcial Intelligence
+(AAAI 2002), pages 786–791, 2002.
+[6] N. Cristianini and J. Shawe-Taylor. An Introduction to Support Vector Machines and Other Kernel-Based Learning
+Methods. Cambridge University Press, 2000.
+[7] H. de Sompel and C. Lagoze. The Open Archives Initiative
+Protocol for Metadata Harvesting, January 2001.
+[8] I. Dhillon, S. Manella, and R. Kumar. A divisive information
+theoretic feature clustering for text classiﬁcation. Machine
+Learning Research (JMLR), 2002.
+[9] S. Dumais, J. Platt, D. Heckerman, and M. Sahami. Inductive learning algorithms and representations for text categorization. In Proc. 7th International Conference on Information and Knowledge Management, pages 148–155, November 1998.
+[10] H.Pasula, B.Marthi, B.Milch, S.Russell, and I.Shpitser.
+Identity uncertainty and citation matching. In Proc. of the
+Advances in Neural Information Processing Systems (NIPS),
+2002.
+[11] T. Joachims. Making large-scale Support Vector Machine learning practical. In B. Scholkopf, C. Burges, and
+A. Smola, editors, Advances in Kernel Methods: Support
+Vector Machines. MIT Press, Cambridge, MA, 1998.
+[12] T. Joachims. A statistical learning model of text classiﬁcation with Support Vector Machines. In W. B. Croft, D. J.
+Harper, D. H. Kraft, and J. Zobel, editors, Proc. SIGIR-01,
+24th ACM International Conference on Research and Development in Information Retrieval, pages 128–136, 2001.
+[13] A. Kent.
+OAI Harvester Crawling Status.
+http://www.mds.rmit.edu.au/ ajk/oai/interop/summary.htm,
+2001.
+[14] D. Knox. CITIDEL: Making resources available. In Proc.
+7th Annual Conference on Innovation and Technology in
+Computer Science Education, pages 225–225, 2002.
+[15] T. Kudoh and Y. Matsumoto. Use of support vector learning
+for chunk identiﬁcation. In Proc. of CoNLL-2000 and LLL2000, 2000.
+[16] J. Lafferty, A. McCallum, and F. Pereira. Conditional random ﬁelds: Probabilistic models for segmenting and labeling sequence data. In Proc. 18th International Conf. on Machine Learning, pages 282–289, 2001.
+[17] S. Lawrence, C. L. Giles, and K. Bollacker. Digital Libraries and Autonomous Citation Indexing. IEEE Computer,
+32(6):67–71, 1999.
+Proceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03)
+0-7695-1939-3/03 $17.00 © 2003 IEEE
+[18] X. Liu. Federating heterogeneous Digital Libraries by metadata harvesting. Ph.D. Dissertation, Old Dominion University, December 2002.
+[19] C. C. Marshall. Making metadata: A study of metadata creation for a mixed physical-digital collection. In Proc. 3rd
+ACM International Conference on Digital Libraries, pages
+162–171, June 1998.
+[20] A. McCallum, D. Freitag, and F. Pereira. Maximum entropy Markov models for information extraction and segmentation. In Proc. 17th International Conf. on Machine
+Learning, pages 591–598, 2000.
+[21] A. McCallum, K. Nigam, J. Rennie, and K. Seymore. Automating the construction of internet portals with machine
+learning. Information Retrieval Journal Volume 3, pages
+127–163, 2000.
+[22] P. Mcnamee and J. Mayﬁeld. Entity extraction without
+language-speciﬁc resources. In D. Roth and A. van den
+Bosch, editors, Proc. of CoNLL-2002, pages 183–186, 2002.
+[23] A. Paepcke, C.-C. K. Chang, H. Garcia-Molina, and
+T. Winograd. Interoperability for Digital Libraries worldwide. Communications of the ACM, 41(4):33–43, 1998.
+[24] Y. Petinot, P. B. Teregowda, H. Han, C. L. Giles,
+S. Lawrence, A. Rangaswamy, and N. Pal. eBizSearch: An
+OAI-Compliant Digital Library for eBusiness. In Proc. the
+ACM/IEEE Joint Conference on Digital Libraries (JCDL),
+2003. In this proceeding.
+[25] L. Ramshaw and M. Marcus.
+Text chunking using
+transformation-based learning.
+In D. Yarovsky and
+K. Church, editors, Proc. 3rd Workshop on Very Large Corpora, pages 82–94, 1995.
+[26] P. Schone and D. Jurafsky. Knowlege-free induction of inﬂectional morphologies. In Proc. of the North American
+chapter of the Association for Computational Linguistics
+(NAACL-2001), 2001.
+[27] K. Seymore, A. McCallum, and R. Rosenfeld. Learning hidden Markov model structure for information extraction. In
+Proc. of AAAI 99 Workshop on Machine Learning for Information Extraction, pages 37–42, 1999.
+[28] N. Slonim and N. Tishby. The power of word clusters for
+text classiﬁcation. In Proc. 23rd European Colloquium on
+Information Retrieval Research (ECIR), 2001.
+[29] K. Takeuchi and N. Collier. Use of Support Vector Machines
+in extended named entity. In D. Roth and A. van den Bosch,
+editors, Proc. 6th Conference on Natural Language Learning (CoNLL-2002), 2002.
+[30] V. Vapnik. Statistical Learning Theory. Springer Verlag,
+New York, 1998.
+[31] S. Weibel. The Dublin Core: A simple content description format for electronic resources. NFAIS Newsletter,
+40(7):117–119, 1999.
+[32] Y. Yang and J. O. Pedersen. A comparative study on feature selection in text categorization. In D. H. Fisher, editor,
+Proc. ICML-97, 14th International Conference on Machine
+Learning, pages 412–420, 1997.
+[33] H. Zha. Generic summarization and keyphrase extraction
+using mutual reinforcement principle and sentence clustering. In Proc. 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, pages 113–120, August 11-15 2002.

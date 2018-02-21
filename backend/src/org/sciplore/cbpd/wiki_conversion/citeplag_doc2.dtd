@@ -1,0 +1,63 @@
+
+<!ELEMENT article ( front, body?, back? ) ><!ATTLIST article article-type NMTOKEN #REQUIRED >
+<!ATTLIST article xml:lang NMTOKEN #REQUIRED >
+
+<!ELEMENT front ( journal-meta, article-meta ) >
+<!ELEMENT journal-meta ( journal-id, issn ) >
+<!ELEMENT issn ( #PCDATA ) >
+<!ELEMENT journal-id ( #PCDATA ) >
+<!ELEMENT article-meta ( article-id*, article-categories?, title-group, contrib-group*, pub-date+) >
+<!ELEMENT article-id ( #PCDATA ) >
+<!ELEMENT article-categories ( subj-group* ) >
+<!ELEMENT subj-group ( subject+ ) >
+<!ELEMENT subject ( #PCDATA ) >
+<!ELEMENT title-group ( article-title ) >
+<!ELEMENT article-title ( #PCDATA ) >
+<!ELEMENT contrib-group ( contrib+ ) >
+<!ELEMENT contrib ( name* ) ><!ATTLIST contrib contrib-type ( author | editor | contributor) #IMPLIED> <!-- P: default Wert: author -->
+<!ELEMENT name ( surname, given-names? ) >
+<!ELEMENT surname ( #PCDATA ) >
+<!ELEMENT given-names ( #PCDATA ) >
+<!ELEMENT pub-date ( year ) ><!ATTLIST pub-date pub-type (epub | ppub | epub-ppub | epreprint | eretracted | pretracted) #IMPLIED >
+<!ELEMENT year ( #PCDATA ) >
+
+
+<!ELEMENT body ( #PCDATA | sec )* >
+<!ELEMENT sec ( title, p* ) ><!ATTLIST sec sec-type (cases | conclusions | discussion | intro | materials | methods | results | subjects | supplementary-material) #IMPLIED >
+<!ELEMENT title ( #PCDATA ) >
+<!ELEMENT p ( #PCDATA | fig | table-wrap | xref )* >
+<!ELEMENT fig ( caption?, graphic* ) ><!ATTLIST fig id ID #REQUIRED > 
+<!ELEMENT caption ( title?, (p)* ) >
+<!ELEMENT graphic ( object-id* ) ><!ATTLIST graphic xlink:href NMTOKEN #REQUIRED >
+<!ATTLIST graphic xmlns:xlink CDATA #REQUIRED >
+<!ELEMENT object-id ( #PCDATA ) >
+<!ELEMENT table-wrap ( caption?, table*, table-wrap-foot* ) ><!ATTLIST table-wrap id ID #REQUIRED>
+<!ELEMENT table ( tbody+) >
+<!ELEMENT tbody ( tr+ ) >
+<!ELEMENT tr ( td | th )+ >
+<!ELEMENT td ( #PCDATA | hr | xref )* ><!ATTLIST td align NMTOKEN #IMPLIED >
+<!ATTLIST td colspan NMTOKEN #IMPLIED >
+<!ELEMENT hr  ( #PCDATA ) >
+<!ELEMENT xref ( #PCDATA ) ><!ATTLIST xref ref-type NMTOKEN #REQUIRED> 
+<!ATTLIST xref rid IDREFS #REQUIRED> 
+<!ELEMENT th ( #PCDATA ) ><!ATTLIST th align NMTOKEN #IMPLIED >
+<!ATTLIST th colspan NMTOKEN #IMPLIED >
+<!ATTLIST th rowspan NMTOKEN #IMPLIED >
+<!ELEMENT table-wrap-foot ( fn-group+ ) >
+<!ELEMENT fn-group ( fn+ ) >
+<!ELEMENT fn ( p+ ) ><!ATTLIST fn id ID #REQUIRED> 
+
+
+<!ELEMENT back ( ref-list | fn-group )* >
+<!ELEMENT ref-list ( ref* ) >
+<!ELEMENT ref ( element-citation+ ) ><!ATTLIST ref id ID #REQUIRED> 
+<!ELEMENT element-citation ( person-group| publisher-name| article-title| source| chapter-title| year| volume| fpage| lpage| comment| object-id| uri )* ><!ATTLIST element-citation publication-type (book| letter | review | journal | patent | report | standard | working-paper) #IMPLIED >
+<!ELEMENT person-group ( name* ) ><!ATTLIST person-group person-group-type ( author | editor | translator | inventor | assignee ) #IMPLIED><!-- P: default Wert: author -->
+<!ELEMENT publisher-name ( #PCDATA ) >
+<!ELEMENT source ( #PCDATA ) >
+<!ELEMENT chapter-title ( #PCDATA ) >
+<!ELEMENT volume ( #PCDATA ) >
+<!ELEMENT fpage ( #PCDATA ) >
+<!ELEMENT lpage  ( #PCDATA ) >
+<!ELEMENT comment ( #PCDATA ) >
+<!ELEMENT uri ( #PCDATA ) >

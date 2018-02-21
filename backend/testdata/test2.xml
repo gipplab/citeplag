@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document documentId="281701283">
+   <author id="939597125">
+      <firstname>Fuchun</firstname>
+      <lastname>Peng</lastname>
+   </author>
+   <data type="abstract">With the increasing use of research paper search engines, such as CiteSeer, for both literature search and hiring decisions, the accuracy of such systems is of paramount importance. This paper employs Conditional Random Fields (CRFs) for the task of extracting various common ﬁelds from the headers and citation of research papers. The basic theory of CRFs is becoming well-understood, but best-practices for applying them to real-world data requires additional exploration. This paper makes an empirical exploration of several factors, including variations on Gaussian, exponential and hyperbolic-L1 priors for improved regularization, and several classes of features and Markov order. On a standard benchmark data set, we achieve new state-of-the-art performance, reducing error in average F1 by 36%, and word error rate by 78% in comparison with the previous best SVM results. Accuracy compares even more favorably against HMMs.</data>
+   <data type="title">Accurate Information Extraction from Research Papers using Conditional Random Fields</data>
+   <reference dbReferenceId="1326360968" docReferenceId="Chen, Rosenfeld, 2000">
+      <citation>
+         <character>3761</character>
+         <count>0</count>
+         <dbCitationId>1738863073</dbCitationId>
+         <docReferenceId>Chen, Rosenfeld, 2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>9774</character>
+         <count>0</count>
+         <dbCitationId>2114199535</dbCitationId>
+         <docReferenceId>Chen, Rosenfeld, 2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="497106867">
+         <author id="1512055795">
+            <firstname>S</firstname>
+            <lastname>Chen</lastname>
+         </author>
+         <author id="1947751614">
+            <firstname>R</firstname>
+            <lastname>Rosenfeld</lastname>
+         </author>
+         <data type="title">A Survey of Smoothing Techniques for ME Models.</data>
+         <data type="date">2000</data>
+         <data type="pages">37--50</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="1778684315" docReferenceId="Goodman, 2003">
+      <citation>
+         <character>3790</character>
+         <count>0</count>
+         <dbCitationId>1374915965</dbCitationId>
+         <docReferenceId>Goodman, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>9394</character>
+         <count>0</count>
+         <dbCitationId>1288582035</dbCitationId>
+         <docReferenceId>Goodman, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="1087161483">
+         <author id="1132176105">
+            <firstname>J</firstname>
+            <lastname>Goodman</lastname>
+         </author>
+         <data type="title">Exponential Priors for Maximum Entropy Models.</data>
+         <data type="date">2003</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="2043276784" docReferenceId="Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003">
+      <citation>
+         <character>2417</character>
+         <count>0</count>
+         <dbCitationId>941909511</dbCitationId>
+         <docReferenceId>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>16602</character>
+         <count>0</count>
+         <dbCitationId>1571189340</dbCitationId>
+         <docReferenceId>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>17184</character>
+         <count>0</count>
+         <dbCitationId>1520313868</dbCitationId>
+         <docReferenceId>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>19513</character>
+         <count>0</count>
+         <dbCitationId>1154747470</dbCitationId>
+         <docReferenceId>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>20166</character>
+         <count>0</count>
+         <dbCitationId>1031010351</dbCitationId>
+         <docReferenceId>Han, Giles, Manavoglu, Zha, Zhang, Fox, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="1973165897">
+         <author id="745040990">
+            <firstname>H</firstname>
+            <lastname>Han</lastname>
+         </author>
+         <author id="2074256920">
+            <firstname>C</firstname>
+            <lastname>Giles</lastname>
+         </author>
+         <author id="1934012689">
+            <firstname>E</firstname>
+            <lastname>Manavoglu</lastname>
+         </author>
+         <author id="638783031">
+            <firstname>H</firstname>
+            <lastname>Zha</lastname>
+         </author>
+         <author id="755650664">
+            <firstname>Z</firstname>
+            <lastname>Zhang</lastname>
+         </author>
+         <author id="2421490">
+            <firstname>E</firstname>
+            <lastname>Fox</lastname>
+         </author>
+         <data type="title">Automatic Document Meta-data Extraction using Support Vector Machines.</data>
+         <data type="date">2003</data>
+         <data type="booktitle">In Proceedings of Joint Conference on Digital Libraries</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="956963638" docReferenceId="Lafferty, McCallum, Pereira, 2001">
+      <citation>
+         <character>3004</character>
+         <count>0</count>
+         <dbCitationId>1182831483</dbCitationId>
+         <docReferenceId>Lafferty, McCallum, Pereira, 2001</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>4439</character>
+         <count>0</count>
+         <dbCitationId>592614502</dbCitationId>
+         <docReferenceId>Lafferty, McCallum, Pereira, 2001</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>21176</character>
+         <count>0</count>
+         <dbCitationId>42780328</dbCitationId>
+         <docReferenceId>Lafferty, McCallum, Pereira, 2001</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="145421614">
+         <author id="264676212">
+            <firstname>J</firstname>
+            <lastname>Lafferty</lastname>
+         </author>
+         <author id="974462147">
+            <firstname>A</firstname>
+            <lastname>McCallum</lastname>
+         </author>
+         <author id="1075012607">
+            <firstname>F</firstname>
+            <lastname>Pereira</lastname>
+         </author>
+         <data type="title">Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data. In</data>
+         <data type="date">2001</data>
+         <data type="booktitle">Proceedings of International Conference on Machine Learning</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="352501861" docReferenceId="Lawrence, Giles, Bollacker, 1999">
+      <citation>
+         <character>1221</character>
+         <count>0</count>
+         <dbCitationId>1738879401</dbCitationId>
+         <docReferenceId>Lawrence, Giles, Bollacker, 1999</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="1749434598">
+         <author id="1548677509">
+            <firstname>S</firstname>
+            <lastname>Lawrence</lastname>
+         </author>
+         <author id="1121092123">
+            <firstname>C L</firstname>
+            <lastname>Giles</lastname>
+         </author>
+         <author id="173792483">
+            <firstname>K</firstname>
+            <lastname>Bollacker</lastname>
+         </author>
+         <data type="title">Digital Libraries and Autonomous Citation Indexing.</data>
+         <data type="date">1999</data>
+         <data type="pages">67--71</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="109331363" docReferenceId="Malouf, 2002">
+      <citation>
+         <character>7129</character>
+         <count>0</count>
+         <dbCitationId>1433699756</dbCitationId>
+         <docReferenceId>Malouf, 2002</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="241140584">
+         <author id="548153399">
+            <firstname>R</firstname>
+            <lastname>Malouf</lastname>
+         </author>
+         <data type="title">A Comparison of Algorithms for Maximum Entropy Parameter Estimation.</data>
+         <data type="date">2002</data>
+         <data type="booktitle">In Proceedings of the Sixth Conference on Natural Language Learning (CoNLL)</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="297858874" docReferenceId="McCallum, Nigam, Rennie, Seymore, 2000">
+      <citation>
+         <character>1254</character>
+         <count>0</count>
+         <dbCitationId>329714161</dbCitationId>
+         <docReferenceId>McCallum, Nigam, Rennie, Seymore, 2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>16583</character>
+         <count>0</count>
+         <dbCitationId>998094667</dbCitationId>
+         <docReferenceId>McCallum, Nigam, Rennie, Seymore, 2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>17165</character>
+         <count>0</count>
+         <dbCitationId>982301552</dbCitationId>
+         <docReferenceId>McCallum, Nigam, Rennie, Seymore, 2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="1425279752">
+         <author id="1487271235">
+            <firstname>A</firstname>
+            <lastname>McCallum</lastname>
+         </author>
+         <author id="2005479212">
+            <firstname>K</firstname>
+            <lastname>Nigam</lastname>
+         </author>
+         <author id="1333276419">
+            <firstname>J</firstname>
+            <lastname>Rennie</lastname>
+         </author>
+         <author id="1532401335">
+            <firstname>K</firstname>
+            <lastname>Seymore</lastname>
+         </author>
+         <data type="date">2000</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="944204317" docReferenceId="2000">
+      <citation>
+         <character>9774</character>
+         <count>0</count>
+         <dbCitationId>1485288136</dbCitationId>
+         <docReferenceId>2000</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="1835389975">
+         <data type="title">Automating the Construction of Internet Portals with Machine Learning.</data>
+         <data type="date">2000</data>
+         <data type="pages">127--163</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="1118267935" docReferenceId="McCallum, Li, 2003">
+      <citation>
+         <character>3398</character>
+         <count>0</count>
+         <dbCitationId>2099788648</dbCitationId>
+         <docReferenceId>McCallum, Li, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>12050</character>
+         <count>0</count>
+         <dbCitationId>1549035785</dbCitationId>
+         <docReferenceId>McCallum, Li, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="887789024">
+         <author id="353747012">
+            <firstname>A</firstname>
+            <lastname>McCallum</lastname>
+         </author>
+         <author id="1191295788">
+            <firstname>W</firstname>
+            <lastname>Li</lastname>
+         </author>
+         <data type="title">Early Results for Named Entity Recognition with Conditional Random Fields, Feature Induction and Web-Enhanced Lexicons.</data>
+         <data type="date">2003</data>
+         <data type="booktitle">In Proceedings of Seventh Conference on Natural Language Learning (CoNLL).</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="1776056845" docReferenceId="Ney, Essen, Kneser, 1995">
+      <citation>
+         <character>11343</character>
+         <count>0</count>
+         <dbCitationId>164700615</dbCitationId>
+         <docReferenceId>Ney, Essen, Kneser, 1995</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="700185914">
+         <author id="1961754685">
+            <firstname>H</firstname>
+            <lastname>Ney</lastname>
+         </author>
+         <author id="894558404">
+            <firstname>U</firstname>
+            <lastname>Essen</lastname>
+         </author>
+         <author id="310083381">
+            <firstname>R</firstname>
+            <lastname>Kneser</lastname>
+         </author>
+         <data type="title">On the Estimation of Small Probabilities by Leaving-One-Out.</data>
+         <data type="date">1995</data>
+         <data type="pages">17--12</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="1403671073" docReferenceId="Pietra, Pietra, Lafferty, 1995">
+      <citation>
+         <character>6994</character>
+         <count>0</count>
+         <dbCitationId>1391861616</dbCitationId>
+         <docReferenceId>Pietra, Pietra, Lafferty, 1995</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="16815322">
+         <author id="1294759097">
+            <firstname>S</firstname>
+            <lastname>Pietra</lastname>
+         </author>
+         <author id="564348228">
+            <firstname>V</firstname>
+            <lastname>Pietra</lastname>
+         </author>
+         <author id="1712882844">
+            <firstname>J</firstname>
+            <lastname>Lafferty</lastname>
+         </author>
+         <data type="title">Inducing Features Of Random Fields.</data>
+         <data type="date">1995</data>
+         <data type="booktitle">In Proceedins of the 26th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’03)</data>
+      </refDocument>
+   </reference>
+   <reference dbReferenceId="1712801417" docReferenceId="Sha, Pereira, 2003">
+      <citation>
+         <character>3481</character>
+         <count>0</count>
+         <dbCitationId>35127484</dbCitationId>
+         <docReferenceId>Sha, Pereira, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <citation>
+         <character>7153</character>
+         <count>0</count>
+         <dbCitationId>1977104310</dbCitationId>
+         <docReferenceId>Sha, Pereira, 2003</docReferenceId>
+         <paragraph>0</paragraph>
+         <section>0</section>
+         <sentence>0</sentence>
+         <word>0</word>
+      </citation>
+      <refDocument documentId="478813341">
+         <author id="794596878">
+            <firstname>F</firstname>
+            <lastname>Sha</lastname>
+         </author>
+         <author id="1736411500">
+            <firstname>F</firstname>
+            <lastname>Pereira</lastname>
+         </author>
+         <data type="title">Shallow Parsing with Conditional Random Fields.</data>
+         <data type="date">2003</data>
+         <data type="booktitle">In Proceedings of Human Language Technology Conference and North American Chapter of the Association for Computational Linguistics (HLT-NAACL’03) A. Takasu.</data>
+      </refDocument>
+   </reference>
+</document>

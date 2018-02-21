@@ -1,0 +1,23 @@
+<h3><%= (documentData.title ? documentData.title : documentData.title_key) %></h3>
+<%
+	var authorsArray = [];
+	for (var i in authors) {
+		authorsArray.push( authors[i].Author.fullname )
+	}
+%>
+<p>
+	<% if ( !documentData.hasOwnProperty( 'year' ) && !documentData.hasOwnProperty( 'month' ) && !documentData.hasOwnProperty( 'title' ) && authorsArray.length == 0 ) { %>
+		We have no further information for this citation.
+	<% } else { %>
+		<span class="muted">Published <%= cbpdp.helpers.getFormattedTime( documentData.year, documentData.month ) %> by </span><%= authorsArray.join(', ') %>
+	<% } %>
+</p>
+<ul>
+<% if ( documentData.pubmed ) { %>
+	<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/<%= documentData.pubmed %>" target="_blank">Show Document in PubMed</a></li>
+<% } %>
+
+<% if ( documentData.pmc ) { %>
+	<li><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC<%= documentData.pmc %>" target="_blank">Show Document in PubMed Central</a></li>
+<% } %>	
+</ul>

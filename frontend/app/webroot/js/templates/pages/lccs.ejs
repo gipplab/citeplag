@@ -1,0 +1,30 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Longest Common Citation Sequence (LCCS)</h3>
+</div>
+<div class="modal-body">
+	<p>
+		The Longest Common Citation Sequence is the maximum number of citations that match in both 
+		documents in the same order, but can be interrupted by non-matching citations. Each document pair has 
+		either exactly one or no LCCS.
+	</p>
+	<p>
+		The following figure illustrates the LCCS measure:
+	</p>
+	<div class="centered figure">
+		<img src="<%= cbpdp.WWW_ROOT %>img/LCCS.png" class="img-modal figure">
+	</div>
+	<p>
+		LCCS can identify potential cases of plagiarism in which sections of the text have been copied without
+		changes, or only slight alterations in the order of citations. This can be the case for copy&paste 
+		plagiarism concealed by basic rewording, e.g. through synonym replacements. If significant reordering 
+		within plagiarized text segments took place (shake&paste plagiarism), or a different citation style is
+		applied that permutes the sequence of citations, the LCS approach is not suitable.
+	</p>
+	<p>
+		For more information please refer to <a href="http://gipp.com/wp-content/papercite-data/pdf/gipp11c.pdf" target="_blank">this</a> publication.
+	</p>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn btn-inverse" data-dismiss="modal">Close</a>
+</div>

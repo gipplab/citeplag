@@ -1,0 +1,35 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Bibliographic Coupling Strength (BC)</h3>
+</div>
+<div class="modal-body">
+	<p>
+		Bibliographic coupling denotes the number of references two documents have in common in their 
+		bibliographies.
+	</p>
+	<div class="centered figure">
+		<!-- <img src="http://upload.wikimedia.org/wikipedia/en/4/47/Visualization_of_bibliographic_coupling.png" class="img-modal"> -->
+		<img src="<%= cbpdp.WWW_ROOT %>img/bibliographic_coupling.svg" class="figure">
+		<p class="figure-description">Schematic depiction of Bibliographic Coupling</p>
+	</div>
+	<p>
+		In the figure, Doc A and Doc B are two documents, which cite the same three documents [1], [2], and [3]. 
+		Thus, Doc A and Doc B have 3 references in common within their respective references lists and hence a
+		“coupling strength” of 3.
+	</p>
+	<p>
+		BC is a single value and a raw measure of global document similarity, since it considers only the 
+		reference lists found in academic texts but does not take into account the position or order of the citations 
+		within the full texts of the document.
+	</p>
+	<p>
+		Solely considering bibliographic coupling strength is not a sufficient indicator for potential plagiarism and 
+		does not allow pinpointing to potentially plagiarized text segments.
+	</p>
+	<p>
+		For more information please refer to <a href="http://gipp.com/wp-content/papercite-data/pdf/gipp11c.pdf" target="_blank">this</a> publication.
+	</p>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn btn-inverse" data-dismiss="modal">Close</a>
+</div>

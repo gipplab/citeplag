@@ -1,0 +1,83 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Help</h3>
+</div>
+<div class="modal-body">
+		<p>
+			CitePlag is a web-based tool to assist users in efficiently examining academic
+			documents for suspicious text and citation similarities, which may point to
+			potential plagiarism. The algorithms used by CitePlag are based on the </br><a href="http://www.isg.uni-konstanz.de/projects/citeplag/" target="_blank">Citation-based Plagiarism Detection</a> concept, a novel approach developed by the <a href="http://www.isg.uni-konstanz.de" target="_blank">Information Science Group at the University of Konstanz</a>.
+		</p>
+		
+		<div class="accordion" id="accordion-help">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#collapseOne">
+					 How do I navigate CitePlag?
+					</a>
+				</div>
+				<div id="collapseOne" class="accordion-body collapse">
+					<div class="accordion-inner">
+						<p>
+							CitePlag provides a customizable side-by-side visualization <span class="badge badge-important">1</span> of text and citation
+							similarities to detect potential plagiarism. The suspicious document appears on the
+							left and the potential source document is displayed on the right. The visualization
+							of text and citation similarities is customizable to the user’s preferences under the
+							settings tab <span class="badge badge-important">2</span> .
+						</p>
+						<p>
+							A scrollable central document browser <span class="badge badge-important">3</span> allows for quick interactive document
+							navigation. The browser schematically compares the two documents using
+							the CbPD algorithm selected <span class="badge badge-important">4</span>
+							and draws connecting lines between matching citations. Document sections highlighted in darker red represent stronger citation-
+							based document similarities.
+						</p>
+						<p>
+							In a collapsible cluster side tab <span class="badge badge-important">5</span> additional documents with high similarity
+							scores can be selected for comparison with the suspicious document and a list
+							of recommendations for semantically similar articles is given. The cluster view 
+							tab also allows the user to set weighting coefficients for the individual CbPD
+							algorithms, thus forming a hybrid CbPD algorithm with customized emphasis.
+						</p>
+						<div class="centered">
+							<img src="<%= cbpdp.WWW_ROOT %>img/help_screenshot.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#collapseTwo">
+					 Algorithm details
+					</a>
+				</div>
+				<div id="collapseTwo" class="accordion-body collapse">
+					<div class="accordion-inner">
+						<ul class="unstyled">
+							<li>
+								<a href="<%= cbpdp.WWW_ROOT %>js/templates/pages/bc.ejs" data-modal="modal">Bibliographic Coupling Strength (BC)</a>
+							</li>
+							<li>
+								<a href="<%= cbpdp.WWW_ROOT %>js/templates/pages/cc.ejs" data-modal="modal">Citation Chunking (CC)</a>
+							</li>
+							<li>
+								<a href="<%= cbpdp.WWW_ROOT %>js/templates/pages/gct.ejs" data-modal="modal">Greedy Citation Tiling (GCT)</a>
+							</li>
+							<li>
+								<a href="<%= cbpdp.WWW_ROOT %>js/templates/pages/lccs.ejs" data-modal="modal">Longest Common Citation Sequence (LCCS)</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4>Note</h4>
+		<p>
+			To demonstrate the unique characteristics of the CbPD approach a plagiarized text
+			excerpt from the dissertation of K.T. zu Guttenberg is used as the default text.
+		</p>
+	</div>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn btn-inverse" data-dismiss="modal">Close</a>
+</div>

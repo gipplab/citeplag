@@ -1,0 +1,23 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h3><%= pattern.Pattern.pattern_id %></h3>
+</div>
+<div class="modal-body">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Pattern Member Id</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% for (var i in pattern.CitationpatternMember) { %>
+			<tr>
+				<td><%= i %></td>
+				<td><%= pattern.CitationpatternMember[i].pattern_member_id %></td>
+			</tr>
+		<% } %>
+		</tbody>
+	</table>
+</div>
+<div class="modal-footer"></div>

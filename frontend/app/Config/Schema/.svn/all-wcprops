@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema
+END
+db_acl.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/db_acl.sql
+END
+sessions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/sessions.sql
+END
+i18n.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/i18n.php
+END
+db_acl.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/db_acl.php
+END
+sessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/sessions.php
+END
+i18n.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/htw2012-cbpd/!svn/ver/96/trunk/web/app/Config/Schema/i18n.sql
+END

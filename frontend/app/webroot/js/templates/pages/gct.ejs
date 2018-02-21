@@ -1,0 +1,34 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Greedy Citation Tiling (GCT)</h3>
+</div>
+<div class="modal-body">
+	<p>
+		The Greedy Citation Tiling algorithm identifies all individually longest citation patterns that consist entirely 
+		of matching citations in the exact same order.
+	</p>
+	<p>
+		Individually longest patterns refer to sequences of matching citations in the same order that cannot be 
+		extended to the left or right without encountering a citation that is not shared by both documents under 
+		comparison. Such individual longest matches are called citation tiles.
+	</p>
+	<p>
+		The figure below illustrates the formation of citation tiles, which are numbered with I, II and III.
+	</p>
+	<div class="centered figure">
+		<img src="<%= cbpdp.WWW_ROOT %>img/GCT.png" class="img-modal figure">
+		<p class="figure-description">Citation tile formation</p>
+	</div>
+	<p>
+		We designed the GCT algorithm primarily to identify shake&paste plagiarism, which may have been 
+		paraphrased. Shake&paste plagiarism describes the behavior that text segments (including citations) 
+		from different sources are interwoven. Finding many or long matching citation tiles provides a strong 
+		indication for potential plagiarism.
+	</p>
+	<p>
+		For more information please refer to <a href="http://gipp.com/wp-content/papercite-data/pdf/gipp11c.pdf" target="_blank">this</a> publication.
+	</p>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn btn-inverse" data-dismiss="modal">Close</a>
+</div>

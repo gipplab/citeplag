@@ -1,0 +1,422 @@
+/** GENERAL **/
+
+html, body { height: 100%; }
+
+.centered { text-align: center; }
+.figure {margin-top: 25px; margin-bottom: 25px;}
+	.figure .figure-description{font-size: 10px; font-weight: bold;}
+
+#navigation .navbar-inner {
+	background-image: -moz-linear-gradient(top, #1C4587, #2A508E);
+	background-image: -ms-linear-gradient(top, #1C4587, #2A508E);
+	background-image: -o-linear-gradient(top, #1C4587, #2A508E);
+	background-image: -webkit-linear-gradient(top, #1C4587, #2A508E);
+	background-image: linear-gradient(top, #1C4587, #2A508E);
+}
+
+.navbar-inverse .nav > li > a { color: #DDDDDD }
+.navbar-inverse .nav .active > a {
+	background-image: -moz-linear-gradient(top, #2A508E, #1C4587);
+	background-image: -ms-linear-gradient(top, #2A508E, #1C4587);
+	background-image: -o-linear-gradient(top, #2A508E, #1C4587);
+	background-image: -webkit-linear-gradient(top, #2A508E, #1C4587);
+	background-image: linear-gradient(top, #2A508E, #1C4587);
+}
+
+.modal-header { border-bottom-width: 1px; color: #1C4587; }
+.img-modal {width: 300px;}
+
+/** bootstrap colors which are useful for alerts, infos and other feedback to the user */
+.blue { background-color: #3A87AD; }
+.green { background-color: #468847; }
+.red { background-color: #B94A48; }
+.orange { background-color: #F89406; }
+.grey { background-color: #EEE; }
+.black { background-color: #333; }
+
+/** color scheme which can be reused for all information that belong to text or citation plagiarism */
+/* http://www.colorschemer.com/schemes/viewscheme.php?id=5904 */
+
+/*
+	rgba(255, 127, 176, 0) #FF7FB0
+	rgba(255, 156, 126, 0) #FF9C7E
+	rgba(255, 189, 126, 0) #FFBD7E
+	rgba(255, 215, 126, 0) #FFD77E
+	rgba(255, 241, 126, 0) #FFF17E
+	rgba(243, 255, 126, 0) #F3FF7E
+	rgba(202, 245, 98, 0) #CAF562
+	rgba(98, 245, 200, 0) #62F5C8
+	rgba(127, 202, 255, 0) #7FCAFF
+	rgba(127, 151, 255, 0) #7F97FF
+	rgba(167, 127, 255, 0) #A77FFF
+	rgba(231, 127, 255, 0) #E77FFF
+*/
+
+
+.document .h0 { background-color: rgba(0, 0, 128, 0.3); } 
+.document .h1 { background-color: rgba(255, 128, 0, 0.3); } 
+.document .h2 { background-color: rgba(0, 128, 0, 0.3); } 
+.document .h3 { background-color: rgba(255, 0, 255, 0.3); } 
+.document .h4 { background-color: rgba(0, 0, 255, 0.3); } 
+.document .h5 { background-color: rgba(255, 0, 0, 0.3);  }
+.document .h6 { background-color: rgba(0, 255, 0, 0.3); } 
+.document .h7 { background-color: rgba(128, 0, 255, 0.3); } 
+.document .h8 { background-color: rgba(0, 128, 128, 0.3); } 
+.document .h9 { background-color: rgba(128, 0, 128, 0.3); }
+.document .h10 { background-color: rgba(0, 255, 255, 0.3); } 
+.document .h11 { background-color: rgba(255, 255, 0, 0.3); }
+.document .h12 { background-color: rgba(128, 0, 0, 0.3); }
+.document .h13 { background-color: rgba(128, 128, 0, 0.3); }
+
+.document .h0:hover, .document .h0.hover { background-color: rgba(0, 0, 128, 0.8); }
+.document .h1:hover, .document .h1.hover { background-color: rgba(255, 128, 0, 0.8); }
+.document .h2:hover, .document .h2.hover { background-color: rgba(0, 128, 0, 0.8); }
+.document .h3:hover, .document .h3.hover { background-color: rgba(255, 0, 255, 0.8); }
+.document .h4:hover, .document .h4.hover { background-color: rgba(0, 0, 255, 0.8); }
+.document .h5:hover, .document .h5.hover { background-color: rgba(255, 0, 0, 0.8); }
+.document .h6:hover, .document .h6.hover { background-color: rgba(0, 255, 0, 0.8); }
+.document .h7:hover, .document .h7.hover { background-color: rgba(128, 0, 255, 0.8); }
+.document .h8:hover, .document .h8.hover { background-color: rgba(0, 128, 128, 0.8); }
+.document .h9:hover, .document .h9.hover { background-color: rgba(128, 0, 128, 0.8); }
+.document .h10:hover, .document .h10.hover { background-color: rgba(0, 255, 255, 0.8); }
+.document .h11:hover, .document .h11.hover { background-color: rgba(255, 255, 0, 0.8); }
+.document .h12:hover, .document .h12.hover { background-color: rgba(128, 0, 0, 0.8); }
+.document .h13:hover, .document .h13.hover { background-color: rgba(128, 128, 0, 0.8); }
+
+.document-browser .h0 { background-color: rgba(0, 0, 128, 0.8); } 
+.document-browser .h1 { background-color: rgba(255, 128, 0, 0.8); } 
+.document-browser .h2 { background-color: rgba(0, 128, 0, 0.8); } 
+.document-browser .h3 { background-color: rgba(255, 0, 255, 0.8); } 
+.document-browser .h4 { background-color: rgba(0, 0, 255, 0.8); } 
+.document-browser .h5 { background-color: rgba(255, 0, 0, 0.8);  }
+.document-browser .h6 { background-color: rgba(0, 255, 0, 0.8); } 
+.document-browser .h7 { background-color: rgba(128, 0, 255, 0.8); } 
+.document-browser .h8 { background-color: rgba(0, 128, 128, 0.8); } 
+.document-browser .h9 { background-color: rgba(128, 0, 128, 0.8); }
+.document-browser .h10 { background-color: rgba(0, 255, 255, 0.8); } 
+.document-browser .h11 { background-color: rgba(255, 255, 0, 0.8); }
+.document-browser .h12 { background-color: rgba(128, 0, 0, 0.8); }
+.document-browser .h13 { background-color: rgba(128, 128, 0, 0.8); }
+
+.document-browser .h0:hover, .document-browser .h0.hover { background-color: rgba(0, 0, 128, 0.8); }
+.document-browser .h1:hover, .document-browser .h1.hover { background-color: rgba(255, 128, 0, 0.8); }
+.document-browser .h2:hover, .document-browser .h2.hover { background-color: rgba(0, 128, 0, 0.8); }
+.document-browser .h3:hover, .document-browser .h3.hover { background-color: rgba(255, 0, 255, 0.8); }
+.document-browser .h4:hover, .document-browser .h4.hover { background-color: rgba(0, 0, 255, 0.8); }
+.document-browser .h5:hover, .document-browser .h5.hover { background-color: rgba(255, 0, 0, 0.8); }
+.document-browser .h6:hover, .document-browser .h6.hover { background-color: rgba(0, 255, 0, 0.8); }
+.document-browser .h7:hover, .document-browser .h7.hover { background-color: rgba(128, 0, 255, 0.8); }
+.document-browser .h8:hover, .document-browser .h8.hover { background-color: rgba(0, 128, 128, 0.8); }
+.document-browser .h9:hover, .document-browser .h9.hover { background-color: rgba(128, 0, 128, 0.8); }
+.document-browser .h10:hover, .document-browser .h10.hover { background-color: rgba(0, 255, 255, 0.8); }
+.document-browser .h11:hover, .document-browser .h11.hover { background-color: rgba(255, 255, 0, 0.8); }
+.document-browser .h12:hover, .document-browser .h12.hover { background-color: rgba(128, 0, 0, 0.8); }
+.document-browser .h13:hover, .document-browser .h13.hover { background-color: rgba(128, 128, 0, 0.8); }
+
+/*.document mark.textmatch {background: rgba(255, 0, 0, 0.15);}*/
+/*.document mark.textmatch.hover, .document mark:hover { background: rgba(255, 0, 0, 0.5); }*/
+
+/** basic animation class that provides a simple ease-in-out, which can be used by additional translate, translate3d, transform, rotate, scale */
+.animation {
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out; /* ab IE 10 -> nur unter win 8 z.Z. */
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+/** LAYOUT AND VIEWPORT **/
+
+	/** black top bar with navigation elements */
+	#navigation { position: relative; z-index: 20; }
+	.settings-panel, .statistics-panel, .documents-panel, .help-panel { 
+		position: absolute; left: 4%; bottom: 0; z-index: 20;
+		border-top-left-radius: 0; border-top-right-radius: 0;
+	}
+
+		/** the toggleable sub sections */
+		#navigation .well { bottom: -61px; }
+		#navigation .well.collapsed {
+			-moz-transform: translateY(100%);
+			-ms-transform: translateY(100%);
+			-o-transform: translateY(100%);
+			-webkit-transform: translateY(100%);
+			transform: translateY(100%);
+		}
+		
+		#navigation .btn-close { display: block; margin: 5px auto; }
+		
+		/** Document Cluster */
+		#btnClusterToggle { margin-left: -15px; margin-bottom: 10px; margin-top: -10px; }
+		.cluster-panel {
+		  	z-index: 20; margin-right: 0%; top: 51px; right: -425px; position: fixed;
+		  	border-bottom-left-radius: 4px;
+		}
+
+		.cluster-panel tr.active {
+			background-color: #000000;
+			background-image: -o-linear-gradient(top, #ddd, #efefef);
+			background-image: -moz-linear-gradient(top, #ddd, #efefef);
+			background-image: -ms-linear-gradient(top, #ddd, #efefef);
+			background-image: -webkit-linear-gradient(top, #ddd, #efefef);
+			background-image: linear-gradient(to bottom, #ddd, #efefef);
+		}
+		
+		.cluster-panel tr:hover{ background-color: #eeeeee; }
+		
+		span.cluster-percentages { position: absolute; margin-left: 70px; }
+		span.cluster-percentages.small { margin-left: 77px; }
+		
+		#cluster-documents a { display: block; width: 100%; height: 40px;  }
+
+		.cluster-panel.collapsed {
+			-moz-transform: translate3d(-425px, 0px, 0);
+			-ms-transform: translate3d(-425px, 0px, 0);
+			-o-transform: translate3d(-425px, 0px, 0);
+			-webkit-transform: translate3d(-425px, 0px, 0);
+			transform: translate3d(-425px, 0px, 0);
+		}
+		
+		.button-box { margin-top: 65px; margin-left: -36px; }
+		.btn-saved-emphasis { margin-top: 4px; }
+		
+		#btnEmphasisSave { margin-right: 5px; margin-bottom: 10px;}
+		#btnEmphasisAddSave, #btnEmphasisEditSave { margin-right: 10px; margin-bottom: 10px; }
+		#ReportEmphasisId { margin-left: 30px;}
+		
+		#logo { padding: 5px 10px; }
+
+#hint { position: absolute; z-index: 10; top: 10px; right: 0; display: block; }
+
+#wrapper {
+	position: relative; top: 51px;
+	height: 100%;
+	height: -moz-calc(100% - 51px);
+	height: -ms-calc(100% - 51px); /* ab IE 9 */
+	height: -o-calc(100% - 51px);
+	height: -webkit-calc(100% - 51px);
+	height: calc(100% - 51px);
+}	
+	.document-wrapper { height: 100%; width: 100%; }
+		.document { height: 100%; z-index: 0; }
+			.document article { float: left; height: 100%; width: 40%; overflow: auto; word-wrap: break-word; }
+			.document article.right { direction: rtl; }
+			.document.mask-text	{ color: black;}			
+				.document article .content { position: relative; height: auto; padding: 20px 20px 500px 20px; }
+				.document article.right .content { direction: ltr; }
+					.document h1 { font-size: 24px; line-height: 30px; }
+					.document h2 { font-size: 20px; line-height: 30px; }
+					.document h3 { font-size: 16px; line-height: 20px; }
+					.document h4 { font-size: 14px; line-height: 20px; }
+					.document h5 { font-size: 14px; line-height: 20px; color: #999; }
+					.document h6 { font-size: 14px; line-height: 20px; color: #999; font-style: italic; }
+
+					.document cite.highlight { color : #333; }
+					.document cite:not(.match):hover, .document cite:not(.match).hover { background-color: #BBB; }
+					.document cite:hover, .document cite.hover { border-style:solid; border-color: #000000; border-width: 1px; margin: 0 1px; }
+					.document cite, .document mark { cursor: pointer; border-radius: 3px; }
+					.document article cite { cursor: pointer; display: inline-block; line-height: 18px; padding: 0 7px; margin: 0 2px; background-color: #DDD; }
+					.document.settings-highlight-text-hide mark { background-color: #FFF; }
+
+					.document.settings-highlight-citation-hide article cite { background-color: #FFF; color: #333; }
+					.document.settings-highlight-matchingcitation-show article cite:not(.match) { background-color: #FFF !important; }
+					
+					.document.settings-documentbrowser-invisible .document-browser { display: none; }
+					.document.settings-documentbrowser-invisible article { width: 50%; }
+					
+#powerTip cite.highlight { color : #333; }
+#powerTip cite:not(.match):hover, #powerTip cite:not(.match).hover { background-color: #BBB; }
+#powerTip cite, #powerTip mark { border-radius: 3px; background-color: rgba(255, 255, 0, .8); }
+#powerTip cite { display: inline-block; line-height: 18px; padding: 0 7px; margin: 0 2px; background-color: #DDD; }
+
+/** DOCUMENT SECTION **/
+
+.document-browser {
+	float: left; height: 100%; width: 20%; overflow-y: hidden; background: url( '../img/document_browser_bg.jpg' ) repeat 0 0 #AAA;
+	-moz-box-shadow: inset 0 0 12px #333; -moz-user-select: none;
+	-ms-box-shadow: inset 0 0 12px #333; /* ab IE 9 */ -ms-user-select: none;
+	-o-box-shadow: inset 0 0 12px #333; -o-user-select: none;
+	-webkit-box-shadow: inset 0 0 12px #333; -webkit-user-select: none;  
+	box-shadow: inner 0 0 12px #333; user-select: none;
+}
+
+	.document-browser canvas { display: block; position: absolute; width: 18%; height: 100%; top: 0; margin: 0 1%; }
+	.settings-documentbrowser-hide-connections .document-browser canvas { display: none; }
+
+	.document-browser .spacer-bg-top {
+		position: absolute; width: 100%; height: 80px;
+		background-image: url( '../img/document_browser_default_text_top.png' ); background-size: 100% auto; background-repeat: no-repeat; background-color: transparent;
+	}
+	
+	.document-browser .spacer-bg-body {
+		position: absolute; width: 100%; height: 100%; top: 40px;
+		background-image: url( '../img/document_browser_default_text_body.png' ); background-size: 100% auto; background-position: 0 80px; background-repeat: repeat-y;  background-color: transparent;
+	}
+
+	.document-browser aside {
+		position: relative; overflow: visible; height: 100%; width: 40%; float: left; margin: 0% 5%;
+		background-color: rgba(255,255,255,0.8);
+		display: -moz-flex; -moz-flex-direction: column;
+		display: -webkit-flex; -webkit-flex-direction: column;
+	  	display: flex; flex-direction: column;
+		
+	}
+	.document-browser > .row { height: 100%; }
+		.algorithm-selection { position: absolute; z-index: 5; width: 20%; top: 0; left: 40%; text-align: center; }
+		.algorithm-selection .active.low { box-shadow: inset 0 0 16px #468847; }
+		.algorithm-selection .active.medium { box-shadow: inset 0 0 16px #F89406; }
+		.algorithm-selection .active.high { box-shadow: inset 0 0 16px #B94A48; }
+		.document-browser .overlay-viewport { background: #666; opacity: 0.5; width: 100%; position: absolute; z-index: 1; }
+		.document-browser .overlay-viewport.overlay-viewport-moving { z-index: 15; }
+		.document-browser section {
+			position: relative; border-bottom: 1px dotted #444; min-height: 1px;
+			-moz-flex: 1;
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.document-browser section:last-child { border-bottom: 0; }
+		
+			.document-browser section .sequence:hover { background: #BBB; }
+				.document-browser cite { position: absolute; z-index: 1; display: block; text-indent: -99999px; overflow: hidden; height: 5px; width: 5px; border-radius: 5px; border: 1px solid #555; background-color: #ccc; }
+				.document-browser cite:hover, .document-browser cite.hover { border-color: #222; border-width: 2px; height: 7px; width: 7px; border-radius: 7px; }
+				.document-browser.factor3 cite { height: 3px; }
+				.document-browser.factor1 cite { height: 1px; }
+
+	.document-wrapper .mask { display: block; position: absolute; opacity: 1; height: 100%; width: 40%; overflow: hidden; z-index: -1; }
+		.document-wrapper .mask.mask-left {}
+		.document-wrapper .mask.mask-right { margin-left: 60%; }
+		.document-wrapper .mask.no-browser { width: 48%; }
+		.document-wrapper .mask.mask-right.no-browser { margin-left: 50%; }
+		.document-wrapper .mask.gradient {
+			opacity: 0; z-index: 5;
+			background-image: linear-gradient(top, rgba(255,255,255,0.9) 180px, rgba(255,255,255,0) 200px, rgba(255,255,255,0.9) 500px);
+			background-image: -moz-linear-gradient(top, rgba(255,255,255,0.9) 180px, rgba(255,255,255,0) 200px, rgba(255,255,255,0.9) 500px);
+			background-image: -ms-linear-gradient(top, rgba(255,255,255,0.9) 180px, rgba(255,255,255,0) 200px, rgba(255,255,255,0.9) 500px); /* ab IE 10 */
+			background-image: -o-linear-gradient(top, rgba(255,255,255,0.9) 180px, rgba(255,255,255,0) 200px, rgba(255,255,255,0.9) 500px);
+			background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.9) 180px, rgba(255,255,255,0) 200px, rgba(255,255,255,0.9) 500px);
+		}
+	#ajaxloader { display: none; }
+		#ajaxloader .progress { position: absolute; left: 42.5%; top: 50%; width: 15%; z-index: 10000; }
+		#ajaxloader .ajaxload-img { position: absolute; background-color: #ffffff; opacity:0.5; width: 100%; height: 100%; z-index: 9999; }
+		
+/** Overrides**/
+.popover { width: 400px; }
+
+#ReportUploadForm .controls { margin-left: 0px; }
+
+#ReportSelectForm label { padding-top: 0; width: 220px; }
+#ReportSelectForm .controls { margin-left: 240px; }
+
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 	.settings-panel, .statistics-panel, .documents-panel, .help-panel { max-height: 150px; overflow-y: scroll;}}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { .settings-panel, .statistics-panel, .documents-panel, .help-panel { max-height: 150px; overflow-y: scroll;}}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+.span2 {
+	width: 200px;
+}
+
+fn {
+	color: #999999;
+	font-size: .8em;
+}
+
+#powerTip {
+	font-size: 0.8em;
+	z-index: 50;
+	max-width: 300px;
+	white-space: normal;
+}
+
+#powerTip h3 {
+	font-size: 1.2em;
+}
+
+#powerTip h1, #powerTip h2, #powerTip h3, #powerTip h4, #powerTip h5, #powerTip h6 {
+	line-height: 1.2em;
+}
+
+#powerTip * {
+	margin: 0px;
+}
+
+#powerTip ul {
+	list-style-type: none;
+}
+
+.document article .fncitations cite {
+	vertical-align: super;
+	line-height: 1em;
+	font-size: .7em;
+	padding: 0 3px;
+}
+
+.footnote {
+	vertical-align: super;
+	font-size: .7em;
+	color: #0000ff;
+	cursor: pointer;
+}
+
+.annotator-wrapper {
+	position: static;
+}
+
+/*start page*/
+.title{
+ color: #317EAC;
+ font-weight: bold;
+ text-rendering: optimizelegibility;
+ font-size: 40px;
+ line-height: 50px;
+ margin: 50px 0;
+}
+.controls-startpage{
+margin: 50px auto;
+text-align:center; 
+display:table; 
+}
+
+.btn-startpage{
+display: table-cell;
+width: 150px;
+height: 150px;
+font-size: 160%;
+line-height: 1.2;
+font-weight: bold;
+}
+
+.spacer-startpage{
+display: table-cell;
+width: 150px;
+}
+
+.description-title{
+    color: #317EAC;
+    font-weight: bold;
+	font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+}
+.description{
+	color: #999999;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+.beta {
+    color: #FFA500;
+    font-size: 20px;
+    vertical-align: top;
+	}
+

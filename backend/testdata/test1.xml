@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document documentId="1499505393">
+    <author id="1361623484">
+        <firstname>Hui Han½ C Lee</firstname>
+        <lastname>Giles½</lastname>
+    </author>
+    <author id="1163726839">
+        <firstname>Zhenyue</firstname>
+        <lastname>Zhang</lastname>
+    </author>
+    <author id="1623409844">
+        <firstname>Edward A</firstname>
+        <lastname>Fox</lastname>
+    </author>
+    <data type="abstract">Automatic metadata generation provides scalability and usability for digital libraries and their collections. Machine learning methods offer robust and adaptable automatic metadata extraction. We describe a Support Vector Machine classiﬁcation-based method for metadata extraction from header part of research papers and show that it outperforms other machine learning methods on the same task. The method ﬁrst classiﬁes each line of the header into one or more of 15 classes. An iterative convergence procedure is then used to improve the line classiﬁcation by using the predicted class labels of its neighbor lines in the previous round. Further metadata extraction is done by seeking the best chunk boundaries of each line. We found that discovery and use of the structural patterns of the data and domain based word clustering can improve the metadata extraction performance. An appropriate feature normalization also greatly improves the classiﬁcation performance. Our metadata extraction method was originally designed to improve the metadata extraction quality of the digital libraries Citeseer[17] and EbizSearch[24]. We believe it can be generalized to other digital libraries.</data>
+    <data type="title">Automatic Document Metadata Extraction using Support Vector Machines</data>
+    <reference dbReferenceId="1268533316" docReferenceId="[1]">
+        <citation>
+            <character>16689</character>
+            <count>0</count>
+            <dbCitationId>2114199535</dbCitationId>
+            <docReferenceId>[1]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>19639</character>
+            <count>0</count>
+            <dbCitationId>1087161483</dbCitationId>
+            <docReferenceId>[1]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>24177</character>
+            <count>0</count>
+            <dbCitationId>1132176105</dbCitationId>
+            <docReferenceId>[1]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="869512973">
+            <data type="title">The world factbook. http://www.cia.gov/cia/publications/ factbook/,</data>
+            <data type="date">2002</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1973165897" docReferenceId="[2]">
+        <citation>
+            <character>16220</character>
+            <count>0</count>
+            <dbCitationId>1556753905</dbCitationId>
+            <docReferenceId>[2]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>17854</character>
+            <count>0</count>
+            <dbCitationId>1569609934</dbCitationId>
+            <docReferenceId>[2]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1778684315">
+            <author id="1374915965">
+                <firstname>L D</firstname>
+                <lastname>Baker</lastname>
+            </author>
+            <author id="1288582035">
+                <firstname>A K</firstname>
+                <lastname>McCallum</lastname>
+            </author>
+            <data type="title">Distributional clustering of words for text classiﬁcation.</data>
+            <data type="date">1998</data>
+            <data type="booktitle">Proc. of SIGIR-98,</data>
+            <data type="pages">96--103</data>
+            <data type="editor">In W. B. Croft, A. Moffat, C. J. van Rijsbergen, R. Wilkinson, and J. Zobel, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="755650664" docReferenceId="[3]">
+        <citation>
+            <character>7761</character>
+            <count>0</count>
+            <dbCitationId>2421490</dbCitationId>
+            <docReferenceId>[3]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>21938</character>
+            <count>0</count>
+            <dbCitationId>2043276784</dbCitationId>
+            <docReferenceId>[3]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="745040990">
+            <author id="2074256920">
+                <firstname>T</firstname>
+                <lastname>Berners-Lee</lastname>
+            </author>
+            <author id="1934012689">
+                <firstname>J</firstname>
+                <lastname>Hendler</lastname>
+            </author>
+            <author id="638783031">
+                <firstname>O</firstname>
+                <lastname>Lassila</lastname>
+            </author>
+            <data type="title">The semantic web. Scientiﬁc American,</data>
+            <data type="date">2001</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1520313868" docReferenceId="[4]">
+        <citation>
+            <character>2840</character>
+            <count>0</count>
+            <dbCitationId>1154747470</dbCitationId>
+            <docReferenceId>[4]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="941909511">
+            <author id="1571189340">
+                <firstname>T</firstname>
+                <lastname>Brody</lastname>
+            </author>
+            <data type="title">Celestial - Open Archives Gateway.</data>
+            <data type="date">2002</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="974462147" docReferenceId="[5]">
+        <citation>
+            <character>4870</character>
+            <count>0</count>
+            <dbCitationId>1075012607</dbCitationId>
+            <docReferenceId>[5]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1031010351">
+            <author id="145421614">
+                <firstname>H L</firstname>
+                <lastname>Chieu</lastname>
+            </author>
+            <author id="264676212">
+                <firstname>H T</firstname>
+                <lastname>Ng</lastname>
+            </author>
+            <data type="title">A maximum entropy approach to information extraction from semi-structured and free text.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">In Proc. 18th National Conference on Artiﬁcial Intelligence (AAAI</data>
+            <data type="pages">786--791</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="42780328" docReferenceId="[6]">
+        <citation>
+            <character>14905</character>
+            <count>0</count>
+            <dbCitationId>1749434598</dbCitationId>
+            <docReferenceId>[6]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="956963638">
+            <author id="1182831483">
+                <firstname>N</firstname>
+                <lastname>Cristianini</lastname>
+            </author>
+            <author id="592614502">
+                <firstname>J</firstname>
+                <lastname>Shawe-Taylor</lastname>
+            </author>
+            <data type="title">An Introduction to Support Vector Machines and Other Kernel-Based Learning Methods.</data>
+            <data type="date">2000</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="352501861" docReferenceId="[7]">
+        <citation>
+            <character>2221</character>
+            <count>0</count>
+            <dbCitationId>1738879401</dbCitationId>
+            <docReferenceId>[7]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1548677509">
+            <author id="1121092123">
+                <firstname>H de</firstname>
+                <lastname>Sompel</lastname>
+            </author>
+            <author id="173792483">
+                <firstname>C</firstname>
+                <lastname>Lagoze</lastname>
+            </author>
+            <data type="title">The Open Archives Initiative Protocol for Metadata Harvesting,</data>
+            <data type="date">2001</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="2005479212" docReferenceId="[8]">
+        <citation>
+            <character>16220</character>
+            <count>0</count>
+            <dbCitationId>1333276419</dbCitationId>
+            <docReferenceId>[8]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="241140584">
+            <author id="2013857329">
+                <firstname>I</firstname>
+                <lastname>Dhillon</lastname>
+            </author>
+            <author id="410368136">
+                <firstname>S</firstname>
+                <lastname>Manella</lastname>
+            </author>
+            <author id="1487271235">
+                <firstname>R</firstname>
+                <lastname>Kumar</lastname>
+            </author>
+            <data type="title">A divisive information theoretic feature clustering for text classiﬁcation.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">Machine Learning Research (JMLR),</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1835389975" docReferenceId="[9]">
+        <citation>
+            <character>5073</character>
+            <count>0</count>
+            <dbCitationId>944204317</dbCitationId>
+            <docReferenceId>[9]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1532401335">
+            <author id="297858874">
+                <firstname>S</firstname>
+                <lastname>Dumais</lastname>
+            </author>
+            <author id="329714161">
+                <firstname>J</firstname>
+                <lastname>Platt</lastname>
+            </author>
+            <author id="998094667">
+                <firstname>D</firstname>
+                <lastname>Heckerman</lastname>
+            </author>
+            <author id="982301552">
+                <firstname>M</firstname>
+                <lastname>Sahami</lastname>
+            </author>
+            <data type="title">Inductive learning algorithms and representations for text categorization.</data>
+            <data type="date">1998</data>
+            <data type="booktitle">In Proc. 7th International Conference on Information and Knowledge Management,</data>
+            <data type="pages">148--155</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="353747012" docReferenceId="[10]">
+        <citation>
+            <character>5390</character>
+            <count>0</count>
+            <dbCitationId>1191295788</dbCitationId>
+            <docReferenceId>[10]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1485288136">
+            <author id="887789024">
+                <firstname>B Marthi H</firstname>
+                <lastname>Pasula</lastname>
+            </author>
+            <data type="title">B.Milch, S.Russell, and I.Shpitser. Identity uncertainty and citation matching.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">In Proc. of the Advances in Neural Information Processing Systems (NIPS),</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1549035785" docReferenceId="[11]">
+        <citation>
+            <character>15003</character>
+            <count>0</count>
+            <dbCitationId>700185914</dbCitationId>
+            <docReferenceId>[11]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1118267935">
+            <author id="2099788648">
+                <firstname>T</firstname>
+                <lastname>Joachims</lastname>
+            </author>
+            <data type="title">Making large-scale Support Vector Machine learning practical.</data>
+            <data type="date">1998</data>
+            <data type="booktitle">Advances in Kernel Methods: Support Vector Machines.</data>
+            <data type="editor">In B. Scholkopf, C. Burges, and A. Smola, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="310083381" docReferenceId="[12]">
+        <citation>
+            <character>5073</character>
+            <count>0</count>
+            <dbCitationId>1776056845</dbCitationId>
+            <docReferenceId>[12]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1961754685">
+            <author id="894558404">
+                <firstname>T</firstname>
+                <lastname>Joachims</lastname>
+            </author>
+            <data type="title">A statistical learning model of text classiﬁcation with Support Vector Machines.</data>
+            <data type="date">2001</data>
+            <data type="booktitle">Proc. SIGIR-01, 24th ACM International Conference on Research and Development in Information Retrieval,</data>
+            <data type="pages">128--136</data>
+            <data type="editor">In W. B. Croft, D. J. Harper, D. H. Kraft, and J. Zobel, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1294759097" docReferenceId="[13]">
+        <citation>
+            <character>2840</character>
+            <count>0</count>
+            <dbCitationId>564348228</dbCitationId>
+            <docReferenceId>[13]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="164700615">
+            <author id="16815322">
+                <firstname>A</firstname>
+                <lastname>Kent</lastname>
+            </author>
+            <data type="title">OAI Harvester Crawling Status.</data>
+            <data type="date">2001</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1391861616" docReferenceId="[14]">
+        <citation>
+            <character>2518</character>
+            <count>0</count>
+            <dbCitationId>1736411500</dbCitationId>
+            <docReferenceId>[14]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1712882844">
+            <author id="1403671073">
+                <firstname>D</firstname>
+                <lastname>Knox</lastname>
+            </author>
+            <data type="title">CITIDEL: Making resources available.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">In Proc. 7th Annual Conference on Innovation and Technology in Computer Science Education,</data>
+            <data type="pages">225--225</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1177668139" docReferenceId="[15]">
+        <citation>
+            <character>5292</character>
+            <count>0</count>
+            <dbCitationId>1859121421</dbCitationId>
+            <docReferenceId>[15]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>15416</character>
+            <count>0</count>
+            <dbCitationId>366658897</dbCitationId>
+            <docReferenceId>[15]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1712801417">
+            <author id="35127484">
+                <firstname>T</firstname>
+                <lastname>Kudoh</lastname>
+            </author>
+            <author id="1977104310">
+                <firstname>Y</firstname>
+                <lastname>Matsumoto</lastname>
+            </author>
+            <data type="title">Use of support vector learning for chunk identiﬁcation.</data>
+            <data type="date">2000</data>
+            <data type="booktitle">In Proc. of CoNLL-2000 and LLL2000,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1347080201" docReferenceId="[16]">
+        <citation>
+            <character>4774</character>
+            <count>0</count>
+            <dbCitationId>557056471</dbCitationId>
+            <docReferenceId>[16]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1305498636">
+            <author id="675153853">
+                <firstname>J</firstname>
+                <lastname>Lafferty</lastname>
+            </author>
+            <author id="7216623">
+                <firstname>A</firstname>
+                <lastname>McCallum</lastname>
+            </author>
+            <author id="1030698529">
+                <firstname>F</firstname>
+                <lastname>Pereira</lastname>
+            </author>
+            <data type="title">Conditional random ﬁelds: Probabilistic models for segmenting and labeling sequence data. In</data>
+            <data type="date">2001</data>
+            <data type="booktitle">Proc. 18th International Conf. on Machine Learning,</data>
+            <data type="pages">282--289</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="294725291" docReferenceId="[17]">
+        <citation>
+            <character>1736</character>
+            <count>0</count>
+            <dbCitationId>1350675855</dbCitationId>
+            <docReferenceId>[17]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>3135</character>
+            <count>0</count>
+            <dbCitationId>1906946195</dbCitationId>
+            <docReferenceId>[17]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1566890824">
+            <author id="142115807">
+                <firstname>S</firstname>
+                <lastname>Lawrence</lastname>
+            </author>
+            <author id="538552785">
+                <firstname>C L</firstname>
+                <lastname>Giles</lastname>
+            </author>
+            <author id="1960569037">
+                <firstname>K</firstname>
+                <lastname>Bollacker</lastname>
+            </author>
+            <data type="title">Digital Libraries and Autonomous Citation Indexing.</data>
+            <data type="date">1999</data>
+            <data type="booktitle">Proceedings of the 2003 Joint Conference on Digital Libraries (JCDL’03) 0-7695-1939-3/03 $17.00 ©</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="175165217" docReferenceId="[18]">
+        <citation>
+            <character>2221</character>
+            <count>0</count>
+            <dbCitationId>1949205729</dbCitationId>
+            <docReferenceId>[18]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>2965</character>
+            <count>0</count>
+            <dbCitationId>437652318</dbCitationId>
+            <docReferenceId>[18]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="998751537">
+            <author id="1284897407">
+                <firstname>X</firstname>
+                <lastname>Liu</lastname>
+            </author>
+            <data type="title">Federating heterogeneous Digital Libraries by metadata harvesting.</data>
+            <data type="date">2002</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1614463474" docReferenceId="[19]">
+        <citation>
+            <character>1933</character>
+            <count>0</count>
+            <dbCitationId>831727673</dbCitationId>
+            <docReferenceId>[19]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="491017651">
+            <author id="1901488583">
+                <firstname>C C</firstname>
+                <lastname>Marshall</lastname>
+            </author>
+            <data type="title">Making metadata: A study of metadata creation for a mixed physical-digital collection.</data>
+            <data type="date">1998</data>
+            <data type="booktitle">In Proc. 3rd ACM International Conference on Digital Libraries,</data>
+            <data type="pages">162--171</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1338874552" docReferenceId="[20]">
+        <citation>
+            <character>4740</character>
+            <count>0</count>
+            <dbCitationId>1130942198</dbCitationId>
+            <docReferenceId>[20]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>15508</character>
+            <count>0</count>
+            <dbCitationId>367762189</dbCitationId>
+            <docReferenceId>[20]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="875941788">
+            <author id="953230731">
+                <firstname>A</firstname>
+                <lastname>McCallum</lastname>
+            </author>
+            <author id="720889297">
+                <firstname>D</firstname>
+                <lastname>Freitag</lastname>
+            </author>
+            <author id="2031161952">
+                <firstname>F</firstname>
+                <lastname>Pereira</lastname>
+            </author>
+            <data type="title">Maximum entropy Markov models for information extraction and segmentation.</data>
+            <data type="date">2000</data>
+            <data type="booktitle">In Proc. 17th International Conf. on Machine Learning,</data>
+            <data type="pages">591--598</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="723353050" docReferenceId="[21]">
+        <citation>
+            <character>7870</character>
+            <count>0</count>
+            <dbCitationId>489785683</dbCitationId>
+            <docReferenceId>[21]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="521174457">
+            <author id="1940786333">
+                <firstname>A</firstname>
+                <lastname>McCallum</lastname>
+            </author>
+            <author id="666784448">
+                <firstname>K</firstname>
+                <lastname>Nigam</lastname>
+            </author>
+            <author id="76053296">
+                <firstname>J</firstname>
+                <lastname>Rennie</lastname>
+            </author>
+            <author id="474975907">
+                <firstname>K</firstname>
+                <lastname>Seymore</lastname>
+            </author>
+            <data type="title">Automating the construction of internet portals with machine learning.</data>
+            <data type="date">2000</data>
+            <data type="pages">127--163</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="262351018" docReferenceId="[22]">
+        <citation>
+            <character>5292</character>
+            <count>0</count>
+            <dbCitationId>549632235</dbCitationId>
+            <docReferenceId>[22]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="523155230">
+            <author id="871899792">
+                <firstname>P</firstname>
+                <lastname>Mcnamee</lastname>
+            </author>
+            <author id="1738880663">
+                <firstname>J</firstname>
+                <lastname>Mayﬁeld</lastname>
+            </author>
+            <data type="title">Entity extraction without language-speciﬁc resources.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">Proc. of CoNLL-2002,</data>
+            <data type="pages">183--186</data>
+            <data type="editor">In D. Roth and A. van den Bosch, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="2051469098" docReferenceId="[23]">
+        <citation>
+            <character>1933</character>
+            <count>0</count>
+            <dbCitationId>1191177501</dbCitationId>
+            <docReferenceId>[23]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1341807898">
+            <author id="1039564539">
+                <firstname>A</firstname>
+                <lastname>Paepcke</lastname>
+            </author>
+            <author id="34254981">
+                <firstname>C-C K</firstname>
+                <lastname>Chang</lastname>
+            </author>
+            <author id="197848271">
+                <firstname>H</firstname>
+                <lastname>Garcia-Molina</lastname>
+            </author>
+            <author id="931205141">
+                <firstname>T</firstname>
+                <lastname>Winograd</lastname>
+            </author>
+            <data type="title">Interoperability for Digital Libraries worldwide.</data>
+            <data type="date">1998</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="125396553" docReferenceId="[24]">
+        <citation>
+            <character>1755</character>
+            <count>0</count>
+            <dbCitationId>858408564</dbCitationId>
+            <docReferenceId>[24]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1277701973">
+            <author id="1648073858">
+                <firstname>Y</firstname>
+                <lastname>Petinot</lastname>
+            </author>
+            <author id="933252400">
+                <firstname>P B</firstname>
+                <lastname>Teregowda</lastname>
+            </author>
+            <author id="811481808">
+                <firstname>H</firstname>
+                <lastname>Han</lastname>
+            </author>
+            <author id="2053588606">
+                <firstname>C L</firstname>
+                <lastname>Giles</lastname>
+            </author>
+            <author id="306526458">
+                <firstname>S</firstname>
+                <lastname>Lawrence</lastname>
+            </author>
+            <author id="2124394100">
+                <firstname>A</firstname>
+                <lastname>Rangaswamy</lastname>
+            </author>
+            <author id="628523678">
+                <firstname>N</firstname>
+                <lastname>Pal</lastname>
+            </author>
+            <data type="title">eBizSearch: An OAI-Compliant Digital Library for eBusiness.</data>
+            <data type="date">2003</data>
+            <data type="booktitle">In Proc. the ACM/IEEE Joint Conference on Digital Libraries (JCDL),</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="263751065" docReferenceId="[25]">
+        <citation>
+            <character>23717</character>
+            <count>0</count>
+            <dbCitationId>457902047</dbCitationId>
+            <docReferenceId>[25]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="477594602">
+            <author id="1786086975">
+                <firstname>L</firstname>
+                <lastname>Ramshaw</lastname>
+            </author>
+            <author id="1237371059">
+                <firstname>M</firstname>
+                <lastname>Marcus</lastname>
+            </author>
+            <data type="title">Text chunking using transformation-based learning.</data>
+            <data type="date">1995</data>
+            <data type="booktitle">Proc. 3rd Workshop on Very Large Corpora,</data>
+            <data type="pages">82--94</data>
+            <data type="editor">In D. Yarovsky and K. Church, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="568154328" docReferenceId="[26]">
+        <citation>
+            <character>15894</character>
+            <count>0</count>
+            <dbCitationId>1257496134</dbCitationId>
+            <docReferenceId>[26]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1525796728">
+            <author id="963378669">
+                <firstname>P</firstname>
+                <lastname>Schone</lastname>
+            </author>
+            <author id="1626075150">
+                <firstname>D</firstname>
+                <lastname>Jurafsky</lastname>
+            </author>
+            <data type="title">Knowlege-free induction of inﬂectional morphologies.</data>
+            <data type="date">2001</data>
+            <data type="booktitle">In Proc. of the North American chapter of the Association for Computational Linguistics (NAACL-2001),</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="789550193" docReferenceId="[27]">
+        <citation>
+            <character>5742</character>
+            <count>0</count>
+            <dbCitationId>668638938</dbCitationId>
+            <docReferenceId>[27]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>7830</character>
+            <count>0</count>
+            <dbCitationId>32706215</dbCitationId>
+            <docReferenceId>[27]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>8984</character>
+            <count>0</count>
+            <dbCitationId>2085025520</dbCitationId>
+            <docReferenceId>[27]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>15416</character>
+            <count>0</count>
+            <dbCitationId>385762894</dbCitationId>
+            <docReferenceId>[27]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>25106</character>
+            <count>0</count>
+            <dbCitationId>263829165</dbCitationId>
+            <docReferenceId>[27]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1350954011">
+            <author id="139463146">
+                <firstname>K</firstname>
+                <lastname>Seymore</lastname>
+            </author>
+            <author id="1052435945">
+                <firstname>A</firstname>
+                <lastname>McCallum</lastname>
+            </author>
+            <author id="1615610923">
+                <firstname>R</firstname>
+                <lastname>Rosenfeld</lastname>
+            </author>
+            <data type="title">Learning hidden Markov model structure for information extraction.</data>
+            <data type="date">1999</data>
+            <data type="booktitle">In Proc. of AAAI 99 Workshop on Machine Learning for Information Extraction,</data>
+            <data type="pages">37--42</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="714045763" docReferenceId="[28]">
+        <refDocument documentId="1770528747">
+            <author id="1743237997">
+                <firstname>N</firstname>
+                <lastname>Slonim</lastname>
+            </author>
+            <author id="481619558">
+                <firstname>N</firstname>
+                <lastname>Tishby</lastname>
+            </author>
+            <data type="title">The power of word clusters for text classiﬁcation.</data>
+            <data type="date">2001</data>
+            <data type="booktitle">In Proc. 23rd European Colloquium on Information Retrieval Research (ECIR),</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="857554653" docReferenceId="[29]">
+        <citation>
+            <character>5292</character>
+            <count>0</count>
+            <dbCitationId>1158297954</dbCitationId>
+            <docReferenceId>[29]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <citation>
+            <character>15416</character>
+            <count>0</count>
+            <dbCitationId>574452823</dbCitationId>
+            <docReferenceId>[29]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="828519305">
+            <author id="639991987">
+                <firstname>K</firstname>
+                <lastname>Takeuchi</lastname>
+            </author>
+            <author id="1747221333">
+                <firstname>N</firstname>
+                <lastname>Collier</lastname>
+            </author>
+            <data type="title">Use of Support Vector Machines in extended named entity.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">Proc. 6th Conference on Natural Language Learning (CoNLL-2002),</data>
+            <data type="editor">In D. Roth and A. van den Bosch, editors,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="877808409" docReferenceId="[30]">
+        <citation>
+            <character>14905</character>
+            <count>0</count>
+            <dbCitationId>113275173</dbCitationId>
+            <docReferenceId>[30]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1889602896">
+            <author id="1567701236">
+                <firstname>V</firstname>
+                <lastname>Vapnik</lastname>
+            </author>
+            <data type="title">Statistical Learning Theory.</data>
+            <data type="date">1998</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1269942648" docReferenceId="[31]">
+        <citation>
+            <character>2575</character>
+            <count>0</count>
+            <dbCitationId>86117403</dbCitationId>
+            <docReferenceId>[31]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="1145321369">
+            <author id="1520320722">
+                <firstname>S</firstname>
+                <lastname>Weibel</lastname>
+            </author>
+            <data type="title">The Dublin Core: A simple content description format for electronic resources.</data>
+            <data type="date">1999</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1051339804" docReferenceId="[32]">
+        <citation>
+            <character>17081</character>
+            <count>0</count>
+            <dbCitationId>372638312</dbCitationId>
+            <docReferenceId>[32]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="2118697790">
+            <author id="530116748">
+                <firstname>Y</firstname>
+                <lastname>Yang</lastname>
+            </author>
+            <author id="1910015880">
+                <firstname>J O</firstname>
+                <lastname>Pedersen</lastname>
+            </author>
+            <data type="title">A comparative study on feature selection in text categorization.</data>
+            <data type="date">1997</data>
+            <data type="booktitle">Proc. ICML-97, 14th International Conference on Machine Learning,</data>
+            <data type="pages">412--420</data>
+            <data type="editor">In D. H. Fisher, editor,</data>
+        </refDocument>
+    </reference>
+    <reference dbReferenceId="1720077099" docReferenceId="[33]">
+        <citation>
+            <character>47295</character>
+            <count>0</count>
+            <dbCitationId>2058430626</dbCitationId>
+            <docReferenceId>[33]</docReferenceId>
+            <paragraph>0</paragraph>
+            <section>0</section>
+            <sentence>0</sentence>
+            <word>0</word>
+        </citation>
+        <refDocument documentId="869795132">
+            <author id="725598395">
+                <firstname>H</firstname>
+                <lastname>Zha</lastname>
+            </author>
+            <data type="title">Generic summarization and keyphrase extraction using mutual reinforcement principle and sentence clustering.</data>
+            <data type="date">2002</data>
+            <data type="booktitle">In Proc. 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval,</data>
+            <data type="pages">113--120</data>
+        </refDocument>
+    </reference>
+</document>
