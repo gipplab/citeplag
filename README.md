@@ -14,7 +14,7 @@ The backend code includes adapter classes to include the functionality of Encopl
 
 If you are interested in details on the detection algorithms or the CitePlag system, we suggest taking a look at the [doctoral thesis of Bela Gipp](http://sciplore.org/pub/thesisbelagipp).
 
-#Please cite as:#
+# Please cite as: #
 
 N. Meuschke, B. Gipp, and C. Breitinger. CitePlag: A Citation-based Plagiarism Detection System Prototype. In Proceedings of the 5th International Plagiarism Conference, Newcastle upon Tyne, UK, July 16-18 2012.
 
