@@ -1,4 +1,5 @@
 # Overview #
+[![DOI](https://zenodo.org/badge/122351707.svg)](https://zenodo.org/badge/latestdoi/122351707)
 
 The CitePlag backend is mainly written in Java and operates on a MySQL database. The schema and documentation of the database is included in the *doc/database_doc directory* of the repository.
 
