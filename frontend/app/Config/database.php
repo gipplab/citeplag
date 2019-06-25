@@ -60,17 +60,30 @@
 
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'your_user',
-		'password' => 'your_password',
-		'database' => 'citeplag',
-		'prefix' => 'citeplag_',
-		'encoding' => 'utf8',
-	);
-	
+    // Local test data
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => '127.0.0.1',
+        'login' => 'citeplag',
+        'password' => '2uCqd5XBBurhVcGH',
+        'database' => 'cbpd_prod',
+        'prefix' => 'citeplag_',
+        'encoding' => 'utf8',
+    );
+
+//    Citeplag default
+//    public $default = array(
+//        'datasource' => 'Database/Mysql',
+//        'persistent' => false,
+//        'host' => 'localhost',
+//        'login' => 'your_user',
+//        'password' => 'your_password',
+//        'database' => 'citeplag',
+//        'prefix' => 'citeplag_',
+//        'encoding' => 'utf8',
+//    );
+
 	// public $default = array(
 	// 	'datasource' => 'Database/Mysql',
 	// 	'persistent' => false,

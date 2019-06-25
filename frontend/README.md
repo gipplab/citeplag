@@ -1,5 +1,11 @@
-CakePHP
-=======
+
+# CitePlag Frontend
+
+## DB Configuration
+
+Configuration is found in `./app/Config/database.php` and should be adjusted to your environment.
+
+# CakePHP
 
 [![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
 

@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  # Citeplag frontend
+  citeplag_frontend:
+    container_name: citeplag_frontend
+    build: .
+    ports:
+      - 8080:80
+    networks:
+      - citeplag
+    links:
+      - citeplag_database
+    labels:
+      - traefik.enable=false
+  # Citeplag database (Dump must be inserted manually on initialization)
+  citeplag_database:
+    container_name: citeplag_database
+    image: mariadb:10.4-bionic
+    restart: always
+    environment:
+      MYSQL_DATABASE: cbpd_prod
+      MYSQL_USER: citeplag
+      MYSQL_PASSWORD: 2uCqd5XBBurhVcGH
+      MYSQL_ROOT_PASSWORD: secret
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    volumes:
+      - citeplag-database:/var/lib/mysql
+      - <host_path>:/db_dump # please configure your db dump path or delete this prop
+    labels:
+      - traefik.enable=false
+    networks:
+      - citeplag
+
+networks:
+  citeplag:
