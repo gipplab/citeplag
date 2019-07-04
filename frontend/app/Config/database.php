@@ -60,11 +60,11 @@
 
 class DATABASE_CONFIG {
 
-    // Local test data
+    // Local test data in a docker environment
     public $default = array(
         'datasource' => 'Database/Mysql',
         'persistent' => false,
-        'host' => '127.0.0.1',
+        'host' => 'citeplag_database',
         'login' => 'citeplag',
         'password' => '2uCqd5XBBurhVcGH',
         'database' => 'cbpd_prod',

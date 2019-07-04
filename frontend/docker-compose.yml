@@ -4,15 +4,14 @@ services:
   # Citeplag frontend
   citeplag_frontend:
     container_name: citeplag_frontend
-    build: .
+    #build: .
+    image: aggipp/citeplag-frontend:latest
     ports:
       - 8080:80
     networks:
       - citeplag
     links:
       - citeplag_database
-    labels:
-      - traefik.enable=false
   # Citeplag database (Dump must be inserted manually on initialization)
   citeplag_database:
     container_name: citeplag_database
@@ -24,11 +23,9 @@ services:
       MYSQL_PASSWORD: 2uCqd5XBBurhVcGH
       MYSQL_ROOT_PASSWORD: secret
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
-    volumes:
-      - citeplag-database:/var/lib/mysql
-      - <host_path>:/db_dump # please configure your db dump path or delete this prop
-    labels:
-      - traefik.enable=false
+    #volumes:
+     # - citeplag-database:/var/lib/mysql
+      #- <host_path>:/db_dump # please configure your db dump path or delete this prop
     networks:
       - citeplag
 

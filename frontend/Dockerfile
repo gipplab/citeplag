@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y nginx supervisor curl
 
 # Configure nginx
 COPY config/citeplag.conf /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/sites-enabled/default
 
 # Configure PHP-FPM
 COPY config/fpm-pool.conf /usr/local/etc/php-fpm.d/www.conf
