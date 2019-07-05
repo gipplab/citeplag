@@ -26,6 +26,7 @@ RUN rm /etc/nginx/sites-enabled/default
 # Configure PHP-FPM
 COPY config/fpm-pool.conf /usr/local/etc/php-fpm.d/www.conf
 #COPY config/php.ini /etc/php7/conf.d/zzz_custom.ini
+COPY config/zzz_custom_php.ini /usr/local/etc/php/conf.d/custom_php.ini
 
 # Configure supervisord
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
