@@ -8,7 +8,16 @@ EXPOSE 80
 
 # We want to run php5 fpm plus a nginx to properly use it in a single instance
 # Supervisor will execute both services properly
-RUN apt-get update && apt-get install -y nginx supervisor curl
+RUN apt-get update && apt-get install -y nginx supervisor curl \
+    mysql-client \
+    libmcrypt-dev \
+    libxml2-dev \
+    libcurl4-nss-dev \
+    libc-client-dev
+
+RUN docker-php-ext-install -j$(nproc) mcrypt \
+    && docker-php-ext-install -j$(nproc) curl \
+    && docker-php-ext-install mysql mysqli pdo pdo_mysql
 
 # Configure nginx
 COPY config/citeplag.conf /etc/nginx/conf.d/default.conf
