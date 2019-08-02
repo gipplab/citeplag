@@ -32,7 +32,10 @@ COPY config/zzz_custom_php.ini /usr/local/etc/php/conf.d/custom_php.ini
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Copy frontend files
-COPY . /app
+COPY index.php  /citeplag/
+COPY app /citeplag/app/
+COPY lib /citeplag/lib/
+RUN chmod -R 777 /citeplag/app/tmp/
 
 # Let supervisord start nginx & php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
