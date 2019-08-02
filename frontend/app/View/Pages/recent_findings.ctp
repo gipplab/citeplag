@@ -5,7 +5,8 @@
 <div class="title">Recent Findings</div>
 	<div class="description-title">Translation Plagiarism:</div>
 <ul>
-	<li><?php echo $this->Html->link('Doctoral thesis of the former German defence minister (Guttenberg) - translation plagiarism, high citation and low text similarity', '/compare/6861131?substpat_a=(%25)&substpat_b=(%25)'); ?></li>
+	<li><?php echo $this->Html->link('Doctoral thesis of the former German defence minister (Guttenberg) - translation plagiarism, high citation and low text similarity', '/compare/6861131?substpat_a=(%25)&substpat_b=(%25)'); ?>
+	<br/> (We have some issues with our database. The comparison of this document can therefore lead to a timeout.)</li>
 <!--	<li><?php echo $this->Html->link('Translation plagiarism Chinese to English, high citation and no text similarity', '/compare/6861270/6861269'); ?></li>-->
 	
 </ul>
