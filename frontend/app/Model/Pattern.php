@@ -73,6 +73,7 @@ class Pattern extends AppModel {
 	);
 	
 	public function getCitationProdeduresWithFullScope() {
+		$this->debug_to_console('getCitationProdeduresWithFullScope');
 		return array(
 			Pattern::TYPE_LONGEST_COMMON_CITATION_SEQUENCE, Pattern::TYPE_LONGEST_COMMON_CITATION_SEQUENCE_DISTINCT, Pattern::TYPE_GREEDY_CITATION_TILING_ALL, Pattern::TYPE_BIBLIOGRAPHIC_COUPLING, Pattern::TYPE_BOTH_DOC_SHINGLED_ADJACENT_CIT_NO_MERGE
 		);
@@ -83,8 +84,24 @@ class Pattern extends AppModel {
 			Pattern::TYPE_ENCOPLOT_PATTERN
 		);
 	}
+
+	/**
+	 * Simple helper to debug to the console
+	 *
+	 * @param  Array, String $data
+	 * @return String
+	 */
+	function debug_to_console( $data ) {
+		if ( is_array( $data ) )
+			$output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+		else
+			$output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+		echo $output;
+	}
 	
 	public function getCitationPatternByDocumentIds($documentId1, $documentId2) {
+		$this->debug_to_console('getCitationPatternByDocumentIds');
 		$patterns = $this->find('all', array(
 			'conditions' => array(
 				'OR' => array(

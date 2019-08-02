@@ -8,7 +8,7 @@ EXPOSE 80
 
 # We want to run php5 fpm plus a nginx to properly use it in a single instance
 # Supervisor will execute both services properly
-RUN apt-get update && apt-get install -y nginx supervisor curl \
+RUN apt-get update && apt-get install -y nginx supervisor curl nano \
     mysql-client \
     libmcrypt-dev \
     libxml2-dev \

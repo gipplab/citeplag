@@ -272,6 +272,7 @@ class ReportsController extends AppController {
 	}
 	
 	public function renderDocuments( $sourceId = null, $comparisonId = null ) {
+		$this->debug_to_console("renderDocuments");
 		$citationPattern = $this->Document->Pattern->getCitationPatternByDocumentIds($sourceId, $comparisonId);
 		$textPattern = $this->Document->Pattern->getTextPatternByDocumentIds($sourceId, $comparisonId, $this->Session->read('cbpdp.settings.encoplot_keylength'));
 		$pattern['Pattern'] = array_merge($citationPattern, $textPattern);
@@ -285,6 +286,21 @@ class ReportsController extends AppController {
 		}
 		$this->set(compact('source', 'comparison', 'pattern', 'algorithmEmphasis'));
 		$this->layout = 'ajax';
+	}
+
+	/**
+	 * Simple helper to debug to the console
+	 *
+	 * @param  Array, String $data
+	 * @return String
+	 */
+	function debug_to_console( $data ) {
+		if ( is_array( $data ) )
+			$output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+		else
+			$output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+		echo $output;
 	}
 }
 ?>
