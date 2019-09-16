@@ -17,7 +17,7 @@ If you are interested in details on the detection algorithms or the CitePlag sys
 
 ## Please cite as: ##
 
-N. Meuschke, B. Gipp, and C. Breitinger. CitePlag: A Citation-based Plagiarism Detection System Prototype. In Proceedings of the 5th International Plagiarism Conference, Newcastle upon Tyne, UK, July 16-18 2012.
+N. Meuschke, B. Gipp, and C. Breitinger. CitePlag: A Citation-based Plagiarism Detection System Prototype. In Proceedings of the 5th International Plagiarism Conference, Newcastle upon Tyne, UK, July 16-18 2012. [(PDF)](http://www.sciplore.org/wp-content/papercite-data/pdf/meuschke12.pdf)
 
 *BibTeX:*
 
