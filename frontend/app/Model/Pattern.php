@@ -128,14 +128,16 @@ class Pattern extends AppModel {
 					array(
 						'Pattern.document_id1' => $documentId1,
 						'Pattern.document_id2' => $documentId2,
+				                'Pattern.procedure' => $this->getTextProdeduresWithFullScope(),
+				                'Pattern.pattern_score >=' => $minLength,
 					),
 					array(
 						'Pattern.document_id1' => $documentId2,
 						'Pattern.document_id2' => $documentId1,
+				                'Pattern.procedure' => $this->getTextProdeduresWithFullScope(),
+				                'Pattern.pattern_score >=' => $minLength,
 					)
 				),
-				'Pattern.procedure' => $this->getTextProdeduresWithFullScope(),
-				'Pattern.pattern_score >=' => $minLength
 			),
 			'fields' => array('Pattern.pattern_id', 'Pattern.procedure', 'Pattern.pattern_score'),
 		));
