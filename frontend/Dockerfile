@@ -1,6 +1,6 @@
 # Image to run Citeplag Frontend in a single docker instance.
 # A msql/maria db instance for the pmc oas files is still needed.
-FROM php:5.6-fpm
+FROM php:7.1-fpm
 LABEL maintainer="vincent.stange@uni-konstanz.de"
 
 # Expose the port nginx is reachable on
@@ -9,7 +9,7 @@ EXPOSE 80
 # We want to run php5 fpm plus a nginx to properly use it in a single instance
 # Supervisor will execute both services properly
 RUN apt-get update && apt-get install -y nginx supervisor curl nano \
-    mysql-client \
+    default-mysql-client \
     libmcrypt-dev \
     libxml2-dev \
     libcurl4-nss-dev \
@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y nginx supervisor curl nano \
 
 RUN docker-php-ext-install -j$(nproc) mcrypt \
     && docker-php-ext-install -j$(nproc) curl \
-    && docker-php-ext-install mysql mysqli pdo pdo_mysql
+    && docker-php-ext-install mysqli pdo pdo_mysql
 
 # Configure nginx
 COPY config/citeplag.conf /etc/nginx/conf.d/default.conf
