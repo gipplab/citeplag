@@ -33,7 +33,7 @@
 						<?php echo $this->Html->link( $this->Html->tag('i', '', array('class' => 'icon-white icon-info-sign')).__( ' About', true ), '/js/templates/pages/about.ejs', array( 'data-modal' => 'modal', 'escape' => false ) ); ?>
 					</li>
 					<li>
-						<a href="http://www.isg.uni-konstanz.de" title="Information Science Group, Univ. of Konstanz" id="logo" target="_blank">
+						<a href="https://gipplab.org" title="Chair for Scientific Information Analytics, University of Göttingen" id="logo" target="_blank">
 							<?php echo $this->Html->image('isg_logo.png', array('alt' => 'ISG Logo'))?>
 						</a>
 					</li>

@@ -18,7 +18,7 @@ If you have any questions please contact <a href="mailto:Bela@Gipp.com">me.</a>
 <p><strong>Data  and Source-code Downloads</strong></p>
 <p>The following files are publicly available  for download:</p>
 <ul>
-  <li>The doctoral thesis (<a href="http://www.gipp.com/wp-content/papercite-data/pdf/thesisbelagipp.pdf" title="Doctoral thesis" target="_blank">PDF</a>)</li>
+  <li>The doctoral thesis (<a href="https://gipplab.org/wp-content/papercite-data/pdf/thesisbelagipp.pdf" title="Doctoral thesis" target="_blank">PDF</a>)</li>
   <li>Introductory <a href="http://youtu.be/cNzMFvY_FXw" title="GoogleTechTalks" target="_blank">video</a> to CbPD (GoogleTechTalks/DocEng)</li>
   <li>Source code for the CitePlag  prototype (<a href="mailto:Bela@Gipp.com">on request</a>)</li>
 </ul>
