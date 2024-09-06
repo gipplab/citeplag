@@ -13,7 +13,7 @@
 </div>
 
 <div class="description-title">CitePlag demonstrates Citation-based Plagiarism Detection (CbPD)</div>
-<p class="description">CbPD is  a novel approach to identifying plagiarism by analyzing citation pattern matches between documents to detect both local and global document similarities at the semantic level. For details on CbPD see our <a href="http://sciplore.org/projects/citation-based-plagiarism-detection">related publications</a> or the doctoral thesis of <a href="http://www.gipp.com/contact">Bela Gipp</a>.</p>
+<p class="description">CbPD is  a novel approach to identifying plagiarism by analyzing citation pattern matches between documents to detect both local and global document similarities at the semantic level. For details on CbPD see our <a href="http://sciplore.org/projects/citation-based-plagiarism-detection">related publications</a> or the doctoral thesis of <a href="https://gipplab.org/team/prof-dr-bela-gipp">Bela Gipp</a>.</p>
 <p class="description">If you have any questions please <a href="mailto:team@sciplore.org">contact us.</a></p>
 
 <script type="text/javascript" charset="utf-8">

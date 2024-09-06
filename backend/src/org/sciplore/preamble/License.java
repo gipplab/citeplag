@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 public @interface License {
 	String author () default "Gipplab (www.gipplab.org)";
 	String license() default "Copyright (c) 2015, Chair for Scientific Information Analytics, University of Göttingen (https://gipplab.org/)"
-	+"\nBela Gipp (http://gipp.com/contact), Norman Meuschke (www.meuschke.org), Mario Lipinski (www.lipinski.tk) and others."
+	+"\nBela Gipp (https://gipplab.org/team/prof-dr-bela-gipp), Norman Meuschke (www.meuschke.org), Mario Lipinski (www.lipinski.tk) and others."
 	+"\nFor publications related to this work see www.isg.uni-konstanz.de/publications/pub."
 	+"\npublished under MIT License";
 }
